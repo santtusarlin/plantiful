@@ -73,8 +73,11 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
 
- 
+#### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
+#### Hyväksymiskriteerit:
+- Käytämme mielialan lisäämiseen iconeja
   
+
   
 
 
