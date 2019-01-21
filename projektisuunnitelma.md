@@ -145,17 +145,12 @@ Asiakasta ei ole, toistaiseksi.
 
 ### Työkalut
 
--Tyoasemat (läppärit)
-
--Visual Studio Code
-
--GitHub
-
--ZenHub
-
--InkScape
-
--GIMP
+- Työasemat (läppärit)
+- Visual Studio Code
+- GitHub
+- ZenHub
+- InkScape
+- GIMP
 
 ## Aikataulu
 
@@ -163,7 +158,6 @@ Asiakasta ei ole, toistaiseksi.
 
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
-Työpäivä | 09:00 - 16:00 | TC projektitila, joustavat työajat 10:00-14:00 on pakko olla paikalla, töihin saa tulla 08:00 - 10:00, poikkeustapaukset sovitaan erikseen.
 Esituotanto alkaa | 21.1.2019 | TC projektila, paikalla kaikki
 Sprintti 1 alkaa | x.x.2019 | TC Projektitila, paikalla kaikki
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
@@ -185,15 +179,15 @@ Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, 
 
 ### Kommunikointitavat
 
-\Microsoft Teams toimii projektin virallisen kommunikaatiotyökaluna.
+Microsoft Teams toimii projektin virallisen kommunikaatiotyökaluna.
 
 ## Dokumentointi
 
-\GitHub commit kommentit ja koodi kommentoidaan.
+GitHub commit kommentit ja koodi kommentoidaan.
 
 ### Dokumenttipohjat
 
-\Projektissa käytetään jamktiko github-organisaation alta löytyviä dokumenttipohjia.
+Projektissa käytetään jamktiko github-organisaation alta löytyviä dokumenttipohjia.
 
 ### Dokumenttien hallinta
 
@@ -201,13 +195,11 @@ Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, 
 
 ## Riskien hallinta
 
-\<Kuvaa tässä kuinka projekti aikoo hallinnoida ja seurata projektiriskejä>
-
-Esimerkiksi näin.
-
 | Riskit | Todennäköisyys | Impakti | Minimointi
 |---|---|---|---|
-Työntekijät eivät ole motivoituneita ja eivät saavu paikalle | Pieni | Suuri | Pidetään työpaikalla kahvia ja pullaa.
+Työntekijöiden sairastuminen | Pieni | Keskisuuri | Jokainen pitää itsestään huolta <3
+Hermoromahdus | Pieni | Hyvin Suuri | Ei crunchailla ja pidetään itsestämme huolta <3
+
 
 ## Avoimet asiat
 
