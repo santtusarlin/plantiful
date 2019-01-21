@@ -18,17 +18,16 @@
 
 ## Projektin tiedot
 
-\Plantiful
+### Plantiful
 
 Tekijät:
-Miika Pollari
-Santtu Sarlin
-Mikko Hannukainen
-Mikko Poutanen
+- Miika Pollari
+- Santtu Sarlin
+- Mikko Hannukainen
+- Mikko Poutanen
 
 ### Termit ja lyhenteet
 
-<\Esimerkiksi:>
 | Termi | Kuvaus |
 |---|---|
 GIT | Versionhallintajärjestelmä
@@ -37,7 +36,6 @@ Markdown | Merkkauskieli
 
 ### Viitteet
 
-<\Esimerkiksi:>
 | Viittaus | Materiaali |
 |---|---|
 HLTP | \<linkki hltp dokumenttiin>
