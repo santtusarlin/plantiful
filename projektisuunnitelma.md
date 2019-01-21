@@ -49,11 +49,11 @@ Mikko Poutanen
 GIT | Versionhallintajärjestelmä
 GitHub | Palvelu joka on rakennettu GIT versionhallinnan ympärille
 Markdown | Merkkauskieli
-Scrum | 
+Scrum | Sovelluskehitysmuoto, jonka pääpointteina on Daily Scrumit tekä Sprintit
 Daily Scrum | Päivittäinen tilannekatsaus
 Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
-Retrospektiivi | Sprintin jä
-Backlog | 
+Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
+Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
 
 ### Viitteet
 
