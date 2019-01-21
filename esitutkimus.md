@@ -76,6 +76,8 @@ Esimerkiksi:
 
 \<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
+NativeScript + Angular
+
 #### Toteutettavat kertomukset
 
 \<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
@@ -94,6 +96,88 @@ Suunnittelu | 10 | Jee
 #### Pros and Cons
 
 \<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+
+### Ratkaisuvaihtoehto 2
+
+#### Toteutusympäristö
+
+\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
+
+React Native
+
+#### Toteutettavat kertomukset
+
+\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
+
+#### Työmääräarviot
+
+<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
+
+<\Esimerkiksi:>
+| Vaihe | Tunnit | Muuta?
+|---|---|---|
+Käynnistys | 10 | Jee
+Suunnittelu | 10 | Jee
+**Yht** | 20 | Paljon tunteja
+
+#### Pros and Cons
+
+\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+
+### Ratkaisuvaihtoehto 3
+
+#### Toteutusympäristö
+
+\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
+
+Google Flutter + Dart
+
+#### Toteutettavat kertomukset
+
+\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
+
+#### Työmääräarviot
+
+<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
+
+<\Esimerkiksi:>
+| Vaihe | Tunnit | Muuta?
+|---|---|---|
+Käynnistys | 10 | Jee
+Suunnittelu | 10 | Jee
+**Yht** | 20 | Paljon tunteja
+
+#### Pros and Cons
+
+\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+
+### Ratkaisuvaihtoehto 4
+
+#### Toteutusympäristö
+
+\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
+
+Android Native app, Java/Kotlin
+
+#### Toteutettavat kertomukset
+
+\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
+
+#### Työmääräarviot
+
+<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
+
+<\Esimerkiksi:>
+| Vaihe | Tunnit | Muuta?
+|---|---|---|
+Käynnistys | 10 | Jee
+Suunnittelu | 10 | Jee
+**Yht** | 20 | Paljon tunteja
+
+#### Pros and Cons
+
+\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+
 
 ## Yhteenveto
 
