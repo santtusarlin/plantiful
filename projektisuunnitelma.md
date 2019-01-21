@@ -100,8 +100,10 @@ Esitutkimus | \<linkki esitutkimus dokumenttiin>
 
 | Nimi | Rooli(t) | Yhteystiedot
 |---|---|---|
-Martti Vainaa | Scrum Master | A1234@student.jamk.fi
-Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
+Santtu Sarlin| Tekniikka, Scrum Master | k8644@student.jamk.fi
+Miika Pollari | Tekniikka, Product Owner | k84614@student.jamk.fi
+Mikko Hannukainen | Tekniikka, Tester | x@student.jamk.fi
+Mikko Poutanen | Sisällöntuotanto, Liiketoiminta | l4305@student.jamk.fi
 
 ### Ohjausryhmä
 
