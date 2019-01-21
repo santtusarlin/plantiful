@@ -34,9 +34,10 @@
 
 ## Projektin tiedot
 
-\Plantiful
+###Projektin nimi:
+Plantiful
 
-Tekijät:
+###Tekijät:
 Santtu Sarlin
 Miika Pollari
 Mikko Hannukainen
@@ -83,7 +84,7 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 
 ### Projektin hyväskyminen
 
-\Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
+Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
 
 ## Toimintasuunnitelma
 
@@ -138,7 +139,7 @@ Niko Kiviaho | Ohjaaja | niko.kiviaho@jamk.fi
 
 ### Työryhmät
 
-\Organisaatiossa ei toistaiseksi ole työryhmiä.
+Organisaatiossa ei toistaiseksi ole työryhmiä.
 
 ### Asiakkaan vastuut
 Asiakasta ei ole, toistaiseksi.
@@ -174,7 +175,7 @@ Henkilökunta näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
-\Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
+Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
 Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
 
 ### Kommunikointitavat
