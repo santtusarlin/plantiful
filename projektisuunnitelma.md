@@ -34,7 +34,7 @@
 
 ## Projektin tiedot
 
-\Plantiful
+Plantiful
 
 Tekijät:
 Santtu Sarlin
@@ -74,12 +74,15 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 
 ### Tuotokset
 
-\<Kirjoita tähän mitä projekti tuottaa elinkaarensa aikana. Esim. >
-
 - Projektisuunnitelma
 - HTLP
 - Esitutkimus
-- Spring backlog
+- Sprint backlog
+- Dokumentointi
+- Markkinointisuunnitelma
+- Business model canvas
+- Toimiva tuote
+
 
 ### Projektin hyväskyminen
 
