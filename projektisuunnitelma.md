@@ -34,9 +34,13 @@
 
 ## Projektin tiedot
 
-\<Projektin nimi>
+\Plantiful
 
 Tekijät:
+Santtu Sarlin
+Miika Pollari
+Mikko Hannukainen
+Mikko Poutanen
 
 ### Termit ja lyhenteet
 
@@ -51,7 +55,7 @@ Markdown | Merkkauskieli
 | Viittaus | Materiaali |
 |---|---|
 HTLP | \<linkki hltp dokumenttiin>
-GDD | \<linkki gamedesign dokumenttiin>
+Esitutkimus | \<linkki esitutkimus dokumenttiin>
 
 ## Projektin sisältö
 
@@ -68,8 +72,8 @@ GDD | \<linkki gamedesign dokumenttiin>
 \<Kirjoita tähän mitä projekti tuottaa elinkaarensa aikana. Esim. >
 
 - Projektisuunnitelma
+- HTLP
 - Esitutkimus
-- Game Design Document
 - Spring backlog
 
 ### Projektin hyväskyminen
