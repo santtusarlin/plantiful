@@ -145,8 +145,6 @@ Asiakasta ei ole, toistaiseksi.
 
 ### Työkalut
 
-\<Listaa tähän kaikki työkalut joita projekti tarvitsee projektin onnistumiseksi. Niin ohjelmistot kuin raudatkin. Mikäli asiakas tarjoaa jotain siitä tulee mainita tässä kappaleessa>
-
 -Tyoasemat (läppärit)
 -Visual Studio Code
 -GitHub
