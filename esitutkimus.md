@@ -100,6 +100,22 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 - Viivakaavio aukeaa päävalikosta
 - Viivakaaviosta pääsee takaisin päävalikkoon
 
+### Käyttäjäkertomus
+#### Huonomuistisena käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
+#### Hyväksymiskriteerit:
+- Sovellus muistuttaa käyttäjää hauluamanaan aikana
+- Muistutuksen voidaan laittaa päältä/pois
+
+### Käyttäjäkertomus
+#### Sovelluksen kehittäjänä haluan saada kerätä dataa anynoyymisti käyttäjien merkinnöistä
+#### Hyväksymiskriteerit:
+- Sovellus kerää dataa anonyymisti
+
+### Käyttäjäkertomus
+#### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
+#### Hyväksymiskriteerit:
+- Voidaan luoda uusia aktiviteetteja ja valita niille iconit
+
 ## Tekniset vaatimukset
 
 \<Lista projektin teknisistä vaatimuksista>
