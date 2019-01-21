@@ -100,8 +100,10 @@ Plantiful on mobiiliapplikaatio joka toimii mielialapäiväkirjana. Sen päätoi
 
 | Nimi | Rooli(t) | Yhteystiedot
 |---|---|---|
-Martti Vainaa | Scrum Master | A1234@student.jamk.fi
-Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
+Santtu Sarlin | Scrum Master | k8644@student.jamk.fi
+Miika Pollari | Tekniikka, Product Owner | k8461@student.jamk.fi
+Mikko Hannukainen | Tekniikka, Testaus | xxxxx@student.jamk.fi
+Mikko Poutanen | Sisällöntuotto, Liiketoiminta | l4305@student.jamk.fi
 
 ### Ohjausryhmä
 
