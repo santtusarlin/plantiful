@@ -148,10 +148,15 @@ Asiakasta ei ole, toistaiseksi.
 \<Listaa tähän kaikki työkalut joita projekti tarvitsee projektin onnistumiseksi. Niin ohjelmistot kuin raudatkin. Mikäli asiakas tarjoaa jotain siitä tulee mainita tässä kappaleessa>
 
 -Tyoasemat (läppärit)
+
 -Visual Studio Code
+
 -GitHub
+
 -ZenHub
+
 -InkScape
+
 -GIMP
 
 ## Aikataulu
@@ -160,6 +165,7 @@ Asiakasta ei ole, toistaiseksi.
 
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
+Työpäivä | 09:00 - 16:00 | TC projektitila, joustavat työajat 10:00-14:00 on pakko olla paikalla, töihin saa tulla 08:00 - 10:00, poikkeustapaukset sovitaan erikseen.
 Esituotanto alkaa | 21.1.2019 | TC projektila, paikalla kaikki
 Sprintti 1 alkaa | x.x.2019 | TC Projektitila, paikalla kaikki
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
