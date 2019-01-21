@@ -110,8 +110,9 @@ Mikko Poutanen | Sisällöntuotto, Liiketoiminta | l4305@student.jamk.fi
 
 | Nimi | Rooli(t) | Yhteystiedot
 |---|---|---|
-Martti Vainaa | Ohjaaja | A1234@jamk.fi
-Kalevi Kuollut | Lehtori | B1234@student.jamk.fi
+Teemu Pölkki | Ohjaaja, Labramestari | teemu.polkki@jamk.fi
+Janne Hanhela | Ohjaaja | janne.hanhela@jamk.fi
+Niko Kiviaho | Ohjaaja | niko.kiviaho@jamk.fi
 
 ### Työryhmät
 
@@ -125,16 +126,18 @@ Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
 
 \<Jos on asiakas!>
 
-\<Tässä luvussa kuvataan mitä vastuita asiakkaalla on projektia kohtaan. Listaa tähän kaikki resurssit joita asiakas projektille antaa eri vaiheissa. Näitä voidaan pitää asiakkaan vastuina, jotta projektia voidaan viedä eteenpäin. Muistakaa painottaa asiakkaalle, mitä heiltä vaaditaan projektin onnistumiselle>
+\Asiakasta ei ole, toistaiseksi.
 
 ### Työkalut
 
 \<Listaa tähän kaikki työkalut joita projekti tarvitsee projektin onnistumiseksi. Niin ohjelmistot kuin raudatkin. Mikäli asiakas tarjoaa jotain siitä tulee mainita tässä kappaleessa>
 
-- Palvelimet?
-- Pilvipalvelut?
-- Työasemat?
-- Jne
+-Tyoasemat (läppärit)
+-Visual Studio Code
+-GitHub
+-ZenHub
+-InkScape
+-GIMP
 
 ## Aikataulu
 
@@ -142,8 +145,9 @@ Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
 
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
-Esituotanto alkaa | pvm | TC projektitiloisas, paikalla koko ryhmä
-Projektin konkurssi | pvm | Saunatiloilla, tuothan oman pyyhkeen, paikalla kaikki
+Esituotanto alkaa | 21.1.2019 | TC projektila, paikalla kaikki
+Sprintti 1 alkaa | x.x.2019 | TC Projektitila, paikalla kaikki
+Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
 
 ## Raportointi ja kommunikointi
 
