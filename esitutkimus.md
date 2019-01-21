@@ -72,6 +72,7 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
+  
 
 ### Käyttäjäkertomus
 #### Käyttäjänä haluan kirjata tämänhetkisen mielentilani ja valita sen ikoneista.
@@ -84,6 +85,10 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 #### Hyväksymiskriteerit:
 - Kattava valikoima ikoneita useaan eri aktiviteettiin ja oloon.
 - Mood-kirjaus aukeaa päävalikosta.
+
+#### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
+#### Hyväksymiskriteerit:
+- Käytämme mielialan lisäämiseen iconeja
   
 
 
