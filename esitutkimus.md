@@ -56,8 +56,20 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 ## Käyttäjäkertomukset
 
 \<Listaa käyttäjäkertomukset ja niiden hyväksymiskriteeristö>
-
-#### Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
+### Käyttäjäkertomus 1
+### Masentuneena käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
+#### Hyväksymiskriteerit:
+- Kasvi muuttuu mood-kirjausten mukaan.
+- Kasvi syntyy ensimmäisen kirjauksen jälkeen.
+ 
+### Käyttäjäkertomus 2
+### Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
+#### Hyväksymiskriteerit:
+- Kasvi muuttuu mood-kirjausten mukaan.
+- Kasvi syntyy ensimmäisen kirjauksen jälkeen.
+ 
+### Käyttäjäkertomus 3
+### Psykoterapian aloittaneena käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Kasvi syntyy ensimmäisen kirjauksen jälkeen.
@@ -66,8 +78,7 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
  
   
   
-  Masentunut käyttäjä haluaa varmistusta omasta mielentilastaan ja saa sitä sovelluksen tilastoista.
-Psykoterapian aloittanut käyttäjä haluaa seurata mielentilansa kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
+
 
 ## Tekniset vaatimukset
 
