@@ -152,27 +152,28 @@ Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kai
 
 ### Sisäinen raportointi
 
-\<Kuvaa kuinka projekti raportoi omalle organisaatiolleen ja kuka vastaa mistäkin raportoinnista>
+\Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat dokumentit uploadataan GitHubiin. Daily Scrumissa raportoidaan päivittäin tilannetta.
 
 ### Asiakasraportointi
 
-\<Kuvaa kuinka projekti raportoi asiakkaalle ja millä aikataululla. Kenelle tehdyt raportit lähetetään.>
+\Henkilökunta näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
-\<Projektin viikkopalaveri pidetään xxx paikassa xxx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa>
+\Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
+Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia?
 
 ### Kommunikointitavat
 
-\<Kuvaa mitä eri tapoja projektilla ja asiakkaalla on käytössään kommunikointiin projektin aikana. Mikäli yrityksellä tai asiakkaalla on jokin järjestelmä esim. konferenssipuhelujen käyttämiseen, se tulee mainita tässä (mielellään myös käyttöohjeet).>
+\Microsoft Teams toimii projektin virallisen kommunikaatiotyökaluna.
 
 ## Dokumentointi
 
-\<Kirjaa tähän miten projekti on ajatellut työnsä dokumentoida. Vai dokumentoiko lainkaan?>
+\GitHub commit kommentit ja koodi kommentoidaan.
 
 ### Dokumenttipohjat
 
-\<Kuvaa mitä pohjia dokumentoinnissa käytetään. Onko kyseessä projektin omat vai JAMKin pohjat vai jotain muuta>
+\Projektissa käytetään jamktiko github-organisaation alta löytyviä dokumenttipohjia.
 
 ### Dokumenttien hallinta
 
