@@ -1,8 +1,12 @@
 # High level test plan
 
-\<Projektin nimi>
+Plaintful
 
 Tekijät:
+Santtu Sarlin
+Miika Pollari
+Mikko Hannukainen
+Mikko Poutanen
 
 ## Viitteet
 
@@ -16,12 +20,12 @@ GDD | \<linkki gamedesign dokumenttiin>
 
 ### Projekti lyhyesti
 
-\<Projektin tiedot lyhyesti>
+Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen päätoimintoihin kuuluu myös virtuaalinen kasvi, joka kasvaa jokaiselle käyttäjälle erilaiseksi käytön myötä.
 
 ### Tarkoitus
 
 \<Dokumentin tarkoitus, mitä dokumentti sisältää>
-\<Chapter that tells the reader why this document is created. It usually includes references to the testing policy (QA and CM plans) of the company, project plan, standards etc.>
+Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 ## Testistrategia
 
@@ -33,6 +37,8 @@ GDD | \<linkki gamedesign dokumenttiin>
 - What is to be tested and in what level?
 - How the items are transmitted to the testers?
 
+- 
+
 FI: Mitkä ovat testattavat kohteet?
 
 ### Testing tasks
@@ -41,6 +47,10 @@ FI: Mitkä ovat testattavat kohteet?
 - What kind of dependencies there are in the activities?
 
 FI: Mitä pitää tehdä.
+- Dynaaminen testaus 
+- Käyttäjätestauksessa käydään sovelluksen toiminnot läpi
+- Whitebox testaus
+
 
 ### Testattavat ominaisuudet
 
