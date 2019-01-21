@@ -49,6 +49,11 @@ Mikko Poutanen
 GIT | Versionhallintajärjestelmä
 GitHub | Palvelu joka on rakennettu GIT versionhallinnan ympärille
 Markdown | Merkkauskieli
+Scrum | 
+Daily Scrum | Päivittäinen tilannekatsaus
+Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
+Retrospektiivi | Sprintin jä
+Backlog | 
 
 ### Viitteet
 
@@ -83,8 +88,10 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 ## Toimintasuunnitelma
 
 \<Tässä luvussa kuvataan tapa, jolla projekti viedään läpi. Esim. Scrum, OMT++, Protoilu jne.>
+Käytämme toimintatapanamme agile menetelmää scrum.
 
 ### Projektin aloittamisesta
+Projektin varsinainen tuotanto aloitetaan 28.1.
 
 ### Projektin toteuttamisesta
 
