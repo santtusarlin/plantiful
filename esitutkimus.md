@@ -57,11 +57,10 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 
 \<Listaa käyttäjäkertomukset ja niiden hyväksymiskriteeristö>
 
-Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
-
+### Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
 Hyväksymiskriteerit:
-> Kasvi muuttuu mood-kirjausten mukaan.
-> Kasvi syntyy ensimmäisen kirjauksen jälkeen.
+Kasvi muuttuu mood-kirjausten mukaan.
+Kasvi syntyy ensimmäisen kirjauksen jälkeen.
 
 ## Tekniset vaatimukset
 
