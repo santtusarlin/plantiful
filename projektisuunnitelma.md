@@ -35,10 +35,10 @@
 ## Projektin tiedot
 
 
-###Projektin nimi:
+### Projektin nimi:
 Plantiful
 
-###Tekijät:
+### Tekijät:
 Santtu Sarlin
 Miika Pollari
 Mikko Hannukainen
@@ -56,6 +56,7 @@ Daily Scrum | Päivittäinen tilannekatsaus
 Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
 Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
 Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
+Branch | 
 
 ### Viitteet
 
@@ -92,8 +93,6 @@ Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
 
 ## Toimintasuunnitelma
 
-\<Tässä luvussa kuvataan tapa, jolla projekti viedään läpi. Esim. Scrum, OMT++, Protoilu jne.>
-
 ### Projektin aloittamisesta
 Projektin varsinainen tuotanto aloitetaan 28.1. Tätä ennen kuluva viikko menee esituotantoon, jonka aikana tuotetaan projektisuunnitelma, esitutkimus sekä high level test plan. Product owner luo myös alustavan backlogin.
 
@@ -122,8 +121,6 @@ Projekti loppuu projektin konkurssipäivänä 10.5.2019.
 ## Projektin resurssit
 
 ### Projektin organisaatio
-
-\<Ketä projektiin kuuluu ja mitkä ovat henkilöiden päävastuut. Kuinka projekti organisoituu ja minkä tyyppisiä ryhmiä/työmuotoja muodostetaan. Selvittäkää myös ohjauksen ja asiakkaan kuin myös muidenkin projektiin osallistuneiden tehtävät ja toimet>
 
 | Nimi | Rooli(t) | Yhteystiedot
 |---|---|---|
@@ -158,8 +155,6 @@ Asiakasta ei ole, toistaiseksi.
 - GIMP
 
 ## Aikataulu
-
-\<Kirjaa tähän lukuun aikataulu. Millä tavoin projekti viedään läpi. Voitte itse päättää mikä taso on teidän projektillenne paras>
 
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
@@ -196,7 +191,9 @@ Projektissa käytetään jamktiko github-organisaation alta löytyviä dokumentt
 
 ### Dokumenttien hallinta
 
-\<Kuvaa dokumenttien säilytys, kenellä on oikeudet dokumenttien hallintaan, miten backupit on hoidettu, kuinka dokumentteja versioidaan (esim. 1.0 on vasta kun asiakas on hyväksynyt dokumentin) ja nimetään (onko esim. dokumentin nimessä versionumero)>
+Käytämme versionhallintaan GitHubia, josta jokaisella tiimin jäsenellä on oikeus nähdä dokumentit. Käytämme versionhallintaan myös versionumeroita ja 1.0 julkaistaan vasta, kun tuote on hyväksyttävästi valmis.
+
+Tiimin jäsenet branchaavat itselleen masterin ja mergeävät muutokset, jotka product owner lopulta hyväksyttää.
 
 ## Riskien hallinta
 
@@ -208,4 +205,4 @@ Hermoromahdus | Pieni | Hyvin Suuri | Ei crunchailla ja pidetään itsestämme 
 
 ## Avoimet asiat
 
-\<Kuvaa tässä luvussa mitä asioita projektista on vielä avoinna. Mihin asiakkaan tulisi ottaa kantaa>
+Aikataulut ovat vielä hieman auki, mutta tarkemmat tiedot päivitetään esituotantoviikon aikana.
