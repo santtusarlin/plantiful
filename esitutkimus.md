@@ -64,31 +64,41 @@ Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. 
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Kasvi syntyy ensimmäisen kirjauksen jälkeen.
- 
+- Kasvi aukeaa päävalikosta
+- Kasvi-näkymästä pääsee takaisin päävalikkoon
+
 ### Käyttäjäkertomus 3
 #### Psykoterapian aloittaneena käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
-  
 
 ### Käyttäjäkertomus
 #### Käyttäjänä haluan kirjata tämänhetkisen mielentilani ja valita sen ikoneista.
 #### Hyväksymiskriteerit:
 - Mood-kirjaus aukeaa päävalikosta.
 - Mielentila valitaan ikonilla.
+- Mood-kirjauksesta pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus
 #### Käyttäjänä haluan tehdä mood-kirjauksen ja valita päivän aikana tapahtuneet aktiviteetit, mielentilat ja olot ikoneista. 
 #### Hyväksymiskriteerit:
 - Kattava valikoima ikoneita useaan eri aktiviteettiin ja oloon.
 - Mood-kirjaus aukeaa päävalikosta.
+- Mood-kirjauksesta pääsee takaisin päävalikkoon
 
+### Käyttäjäkertomus
 #### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
 #### Hyväksymiskriteerit:
 - Käytämme mielialan lisäämiseen iconeja
   
-
+### Käyttäjäkertomus
+#### Käyttäjänä haluan avata viivakaavion josta näen mielentilan muutokset ja valita ajanjakson.
+#### Hyväksymiskriteerit:
+- Mood-kirjausten historia näkyy viivakaaviona.
+- Ajanjakson voi valita 7d, 30d, ½y, 1y.
+- Viivakaavio aukeaa päävalikosta
+- Viivakaaviosta pääsee takaisin päävalikkoon
 
 ## Tekniset vaatimukset
 
