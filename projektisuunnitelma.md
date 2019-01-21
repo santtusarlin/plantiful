@@ -119,6 +119,7 @@ TBD by Mikko H. :)
 Projekti loppuu projektin konkurssipäivänä 10.5.2019.
 
 ## Projektin resurssit
+4 henkilöä, 6h 45min työtunteja per päivä.
 
 ### Projektin organisaatio
 
@@ -158,8 +159,17 @@ Asiakasta ei ole, toistaiseksi.
 
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
-Esituotanto alkaa | 21.1.2019 | TC projektila, paikalla kaikki
-Sprintti 1 | x.x.2019 - x.x.2019 | TC Projektitila, paikalla kaikki
+Esituotanto | 21.1.2019 - 25.1.2019 | TC projektila
+Sprintti 1 | 28.1.2019 -  8.2.2019 | TC Projektitila
+Sprintti 2 | 11.2.2019 - 22.2.2019 | TC Projektitila
+Gate 1 | 22.2.2019 | TC Projektitila, kaikki paikalla
+Sprintti 3 | 4.3.2019 - 15.3.2019 | TC Projektitila
+Sprintti 4 | 18.3.2019 - 29.3.2019 | TC Projektitila
+Gate 2 | 29.3.2019 | TC Projektitila
+Sprintti 5 | 1.4.2019 - 12.4.2019 | TC Projektitila
+Sprintti 6 | 15.4.2019 - 26.4.2019 | TC Projektitila
+Gate 3 | 26.4.2019 | TC Projektitila
+Jälkituotanto | 29.4.2019 - 10.5.2019 | TC Projektitila 
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
 
 ## Raportointi ja kommunikointi
@@ -174,8 +184,9 @@ Henkilökunta näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
-Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
-Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
+Viikkopalaveri pidetään perjantaisin klo 12:30. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
+
+Daily Scrum päivittäin klo 10:00 projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
 
 ### Kommunikointitavat
 
