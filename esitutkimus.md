@@ -141,8 +141,9 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 
 Esimerkiksi:
 
-1. Applikaation/sivuston tulee käyttää TLS/SLS salausta
-2. Pelin tulee toimi sulavasti (>60fps) Samsung Galaxy S2 puhelimella
+1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
+2. 
+3. 
 
 ## Ratkaisuvaihtoehdot
 
