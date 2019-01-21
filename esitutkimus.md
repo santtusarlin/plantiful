@@ -116,6 +116,18 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 #### Hyväksymiskriteerit:
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
 
+### Käyttäjäkertomus
+#### Käyttäjänä haluan luoda varmuuskopion tilastoistani.
+#### Hyväksymiskriteerit:
+- Valikosta voi valita varmuuskopion luonnin
+- Valikosta voi valita varmuuskopion palautuksen
+- Varmuuskopion voi luoda pilveen käyttäjän omaan Google Driveen
+
+### Käyttäjäkertomus
+#### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
+#### Hyväksymiskriteerit:
+- Voidaan luoda uusia aktiviteetteja ja valita niille iconit
+
 ## Tekniset vaatimukset
 
 \<Lista projektin teknisistä vaatimuksista>
