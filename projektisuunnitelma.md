@@ -83,7 +83,7 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 
 ### Projektin hyväskyminen
 
-\<Kirjoita tähän lukuun minkä toimintojen jälkeen projekti on hyväksyttävissä. Yleensä hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.>
+\Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
 
 ## Toimintasuunnitelma
 
@@ -93,7 +93,13 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 Projektin varsinainen tuotanto aloitetaan 28.1.
 
 ### Projektin toteuttamisesta
-Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit.
+Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit. Tulevan sprintin aikana tehtävä työ suunnitellaan Sprint Planningissa, johon
+osallistuu koko Scrum-tiimi. Aluksi Scrum-tiimi määrittelee, mikä on tulevan Sprintin Sprint Goal ja kuinka paljon töitä tiimi pystyy tekemään Sprintin aikana. Sitten Scrum-tiimi käy Product Ownerin johdolla läpi Product Backlogia ja valitsevat sieltä Sprint
+Goalin mukaiset User Storyt ja siirtävät ne Sprint Backlogiin. Tämän jälkeen
+Scrum-tiimi käy läpi Sprint Backlogissa olevat User Storyt ja pilkkovat ne
+Taskeihin, jotka ovat tarkkoja kuvauksia yksittäisistä asioista, joita User Story
+sisältää. Taskeille voidaan myös tarvittaessa suunnitella tarkat määreet, miltä
+lopputuloksen tulisi näyttää tai miten se tulisi toimia.
 
 ### Projektin testaamisesta
 
@@ -112,6 +118,7 @@ Santtu Sarlin | Scrum Master | k8644@student.jamk.fi
 Miika Pollari | Tekniikka, Product Owner | k8461@student.jamk.fi
 Mikko Hannukainen | Tekniikka, Testaus | xxxxx@student.jamk.fi
 Mikko Poutanen | Sisällöntuotto, Liiketoiminta | l4305@student.jamk.fi
+Henna Haarala | Ulkoistettu apu, Graafikko | 
 
 ### Ohjausryhmä
 
@@ -123,11 +130,7 @@ Niko Kiviaho | Ohjaaja | niko.kiviaho@jamk.fi
 
 ### Työryhmät
 
-\<jos on>
-| Nimi | Rooli(t) | Yhteystiedot
-|---|---|---|
-Martti Vainaa | Scrum Master | A1234@student.jamk.fi
-Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
+\Organisaatiossa ei toistaiseksi ole työryhmiä.
 
 ### Asiakkaan vastuut
 
