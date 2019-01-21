@@ -18,9 +18,13 @@
 
 ## Projektin tiedot
 
-\<Projektin nimi>
+\Plantiful
 
 Tekijät:
+Miika Pollari
+Santtu Sarlin
+Mikko Hannukainen
+Mikko Poutanen
 
 ### Termit ja lyhenteet
 
