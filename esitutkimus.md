@@ -73,26 +73,26 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 4
 #### Käyttäjänä haluan kirjata tämänhetkisen mielentilani ja valita sen ikoneista.
 #### Hyväksymiskriteerit:
 - Mood-kirjaus aukeaa päävalikosta.
 - Mielentila valitaan ikonilla.
 - Mood-kirjauksesta pääsee takaisin päävalikkoon
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 5
 #### Käyttäjänä haluan tehdä mood-kirjauksen ja valita päivän aikana tapahtuneet aktiviteetit, mielentilat ja olot ikoneista. 
 #### Hyväksymiskriteerit:
 - Kattava valikoima ikoneita useaan eri aktiviteettiin ja oloon.
 - Mood-kirjaus aukeaa päävalikosta.
 - Mood-kirjauksesta pääsee takaisin päävalikkoon
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 6
 #### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
 #### Hyväksymiskriteerit:
 - Käytämme mielialan lisäämiseen iconeja
   
-### Käyttäjäkertomus
+### Käyttäjäkertomus 7
 #### Käyttäjänä haluan avata viivakaavion josta näen mielentilan muutokset ja valita ajanjakson.
 #### Hyväksymiskriteerit:
 - Mood-kirjausten historia näkyy viivakaaviona.
@@ -100,30 +100,30 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 - Viivakaavio aukeaa päävalikosta
 - Viivakaaviosta pääsee takaisin päävalikkoon
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 8
 #### Huonomuistisena käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
 #### Hyväksymiskriteerit:
 - Sovellus muistuttaa käyttäjää hauluamanaan aikana
 - Muistutuksen voidaan laittaa päältä/pois
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 9
 #### Sovelluksen kehittäjänä haluan saada kerätä dataa anynoyymisti käyttäjien merkinnöistä
 #### Hyväksymiskriteerit:
 - Sovellus kerää dataa anonyymisti
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 10
 #### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
 #### Hyväksymiskriteerit:
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 11
 #### Käyttäjänä haluan luoda varmuuskopion tilastoistani.
 #### Hyväksymiskriteerit:
 - Valikosta voi valita varmuuskopion luonnin
 - Valikosta voi valita varmuuskopion palautuksen
 - Varmuuskopion voi luoda pilveen käyttäjän omaan Google Driveen
 
-### Käyttäjäkertomus
+### Käyttäjäkertomus 12
 #### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
 #### Hyväksymiskriteerit:
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
@@ -147,7 +147,7 @@ Esimerkiksi:
 
 \<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
-NativeScript + Angular
+NativeScript + Angular + Google Firebase (?) TAI mongoDB + node.js-server
 
 #### Toteutettavat kertomukset
 
@@ -174,7 +174,7 @@ Suunnittelu | 10 | Jee
 
 \<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
-React Native
+React Native + node.js + mongoDB TAI Google Firebase
 
 #### Toteutettavat kertomukset
 
@@ -201,7 +201,7 @@ Suunnittelu | 10 | Jee
 
 \<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
-Google Flutter + Dart
+Google Flutter + Dart + Google Firebase
 
 #### Toteutettavat kertomukset
 
