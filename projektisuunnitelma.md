@@ -34,9 +34,11 @@
 
 ## Projektin tiedot
 
+
+###Projektin nimi:
 Plantiful
 
-Tekijät:
+###Tekijät:
 Santtu Sarlin
 Miika Pollari
 Mikko Hannukainen
@@ -86,7 +88,7 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 
 ### Projektin hyväskyminen
 
-\Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
+Hyväksyminen voidaan todeta kun projektin tavoitteet ovat toteutuneet.
 
 ## Toimintasuunnitelma
 
@@ -96,7 +98,7 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 Projektin varsinainen tuotanto aloitetaan 28.1. Tätä ennen kuluva viikko menee esituotantoon, jonka aikana tuotetaan projektisuunnitelma, esitutkimus sekä high level test plan. Product owner luo myös alustavan backlogin.
 
 ### Projektin toteuttamisesta
-Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit. Tulevan sprintin aikana tehtävä työ suunnitellaan Sprint Planningissa, johon
+Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit. Sprinttien kesto on 2 viikkoa. Gatet 4 viikon välein jossa esitellään demot. Tulevan sprintin aikana tehtävä työ suunnitellaan Sprint Planningissa, johon
 osallistuu koko Scrum-tiimi.
 
 Aluksi Scrum-tiimi määrittelee, mikä on tulevan Sprintin Sprint Goal ja kuinka paljon töitä tiimi pystyy tekemään Sprintin aikana.
@@ -141,7 +143,7 @@ Niko Kiviaho | Ohjaaja | niko.kiviaho@jamk.fi
 
 ### Työryhmät
 
-\Organisaatiossa ei toistaiseksi ole työryhmiä.
+Organisaatiossa ei toistaiseksi ole työryhmiä.
 
 ### Asiakkaan vastuut
 Asiakasta ei ole, toistaiseksi.
@@ -162,7 +164,7 @@ Asiakasta ei ole, toistaiseksi.
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
 Esituotanto alkaa | 21.1.2019 | TC projektila, paikalla kaikki
-Sprintti 1 alkaa | x.x.2019 | TC Projektitila, paikalla kaikki
+Sprintti 1 | x.x.2019 - x.x.2019 | TC Projektitila, paikalla kaikki
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
 
 ## Raportointi ja kommunikointi
@@ -177,7 +179,7 @@ Henkilökunta näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
-\Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
+Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
 Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
 
 ### Kommunikointitavat
