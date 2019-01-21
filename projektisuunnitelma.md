@@ -66,6 +66,7 @@ Plantiful on mobiiliapplikaatio joka toimii mielialapäiväkirjana. Sen päätoi
 ### Projektin tausta ja tavoitteet
 
 \<Mitä tehdään ja kelle? Mitkä ovat projektin tavoitteet?>
+ö
 
 ### Tuotokset
 
