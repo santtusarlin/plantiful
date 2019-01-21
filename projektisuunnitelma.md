@@ -70,7 +70,7 @@ Plantiful on mobiiliapplikaatio joka toimii mielialapäiväkirjana. Sen päätoi
 
 ### Projektin tausta ja tavoitteet
 
-Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä itsereflektiota analysoimalla dataa joka näytetään käyttäjälle. Projektissa on kiinteä aikataulu, joten tarvittaessa toiminnallisuuksista tingitään, jotta aikaan saadaan julkaisukelpoinen tuote.
+Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä itsereflektiota analysoimalla dataa joka näytetään käyttäjälle. Projektissa on kiinteä aikataulu, joten tarvittaessa toiminnallisuuksista tingitään, jotta aikaan saadaan julkaisukelpoinen tuote, jossa on toiminnallisuuksina toimiva mielialapäiväkirja, kalenteri josta voi seurata merkintöjä sekä erilaiseksi kasvava kasvi.
 
 ### Tuotokset
 
@@ -90,12 +90,13 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 \<Tässä luvussa kuvataan tapa, jolla projekti viedään läpi. Esim. Scrum, OMT++, Protoilu jne.>
 
 ### Projektin aloittamisesta
-Projektin varsinainen tuotanto aloitetaan 28.1.
+Projektin varsinainen tuotanto aloitetaan 28.1. Tätä ennen kuluva viikko menee esituotantoon, jonka aikana tuotetaan projektisuunnitelma, esitutkimus sekä high level test plan. Product owner luo myös alustavan backlogin.
 
 ### Projektin toteuttamisesta
 Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit.
 
 ### Projektin testaamisesta
+TBD by Mikko H. :)
 
 ### Projektin lopettamisesta
 Projekti loppuu projektin konkurssipäivänä 10.5.2019.
@@ -130,10 +131,7 @@ Martti Vainaa | Scrum Master | A1234@student.jamk.fi
 Kalevi Kuollut | Developer, testing lead | B1234@student.jamk.fi
 
 ### Asiakkaan vastuut
-
-\<Jos on asiakas!>
-
-\Asiakasta ei ole, toistaiseksi.
+Asiakasta ei ole, toistaiseksi.
 
 ### Työkalut
 
@@ -160,11 +158,11 @@ Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kai
 
 ### Sisäinen raportointi
 
-\Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat dokumentit uploadataan GitHubiin. Daily Scrumissa raportoidaan päivittäin tilannetta.
+Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat dokumentit uploadataan GitHubiin. Daily Scrumissa raportoidaan päivittäin tilannetta.
 
 ### Asiakasraportointi
 
-\Henkilökunta näkee tuotetut dokumentit GitHubista.
+Henkilökunta näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
