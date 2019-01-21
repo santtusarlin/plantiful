@@ -49,7 +49,7 @@ Luvussa 2. listataan vaatimukset, luvussa 3. käyttötapaukset…>
 
 ## Visio
 
-Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. Käyttäjien elämä helpottuu ja huolet hoituvat.
+Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä tutkimaan eri asioiden vaikutuksia mielialaansa ja hyödyntämään tietoa itsehoidossa tai ammattilaisen apuna.
 
 ## Käyttäjäkertomukset
 
