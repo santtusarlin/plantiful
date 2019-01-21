@@ -88,16 +88,17 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 ## Toimintasuunnitelma
 
 \<Tässä luvussa kuvataan tapa, jolla projekti viedään läpi. Esim. Scrum, OMT++, Protoilu jne.>
-Käytämme toimintatapanamme agile menetelmää scrum.
 
 ### Projektin aloittamisesta
 Projektin varsinainen tuotanto aloitetaan 28.1.
 
 ### Projektin toteuttamisesta
+Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit.
 
 ### Projektin testaamisesta
 
 ### Projektin lopettamisesta
+Projekti loppuu projektin konkurssipäivänä 10.5.2019.
 
 ## Projektin resurssit
 
@@ -168,7 +169,7 @@ Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kai
 ### Viikkopalaverikäytäntö/Daily Scrum
 
 \Viikkopalaveri pidetään perjantaisin klo xx:xx. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
-Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia?
+Daily Scrum päivittäin klo xx:xx projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
 
 ### Kommunikointitavat
 
