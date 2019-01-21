@@ -94,11 +94,18 @@ Projektin varsinainen tuotanto aloitetaan 28.1.
 
 ### Projektin toteuttamisesta
 Projektin toteutuksessa toimitaan SCRUM:in menetlmien mukaisesti. Pidämme säännöliset Daily Scrum palaverit, viikkopalaverit, sprint reviewit ja sprint retrospektiivit. Tulevan sprintin aikana tehtävä työ suunnitellaan Sprint Planningissa, johon
-osallistuu koko Scrum-tiimi. Aluksi Scrum-tiimi määrittelee, mikä on tulevan Sprintin Sprint Goal ja kuinka paljon töitä tiimi pystyy tekemään Sprintin aikana. Sitten Scrum-tiimi käy Product Ownerin johdolla läpi Product Backlogia ja valitsevat sieltä Sprint
-Goalin mukaiset User Storyt ja siirtävät ne Sprint Backlogiin. Tämän jälkeen
+osallistuu koko Scrum-tiimi.
+
+Aluksi Scrum-tiimi määrittelee, mikä on tulevan Sprintin Sprint Goal ja kuinka paljon töitä tiimi pystyy tekemään Sprintin aikana.
+
+Sitten Scrum-tiimi käy Product Ownerin johdolla läpi Product Backlogia ja valitsevat sieltä Sprint
+Goalin mukaiset User Storyt ja siirtävät ne Sprint Backlogiin.
+
+Tämän jälkeen
 Scrum-tiimi käy läpi Sprint Backlogissa olevat User Storyt ja pilkkovat ne
 Taskeihin, jotka ovat tarkkoja kuvauksia yksittäisistä asioista, joita User Story
-sisältää. Taskeille voidaan myös tarvittaessa suunnitella tarkat määreet, miltä
+sisältää. 
+Taskeille voidaan myös tarvittaessa suunnitella tarkat määreet, miltä
 lopputuloksen tulisi näyttää tai miten se tulisi toimia.
 
 ### Projektin testaamisesta
