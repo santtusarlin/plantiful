@@ -124,9 +124,16 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 - Varmuuskopion voi luoda pilveen käyttäjän omaan Google Driveen
 
 ### Käyttäjäkertomus 12
-#### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
+#### Käyttäjänä haluan valita sovelluksen väriskeeman
 #### Hyväksymiskriteerit:
-- Voidaan luoda uusia aktiviteetteja ja valita niille iconit
+- Asetukset-valikosta löytyy väriskeema valitsin
+- Voin valita värit itse tai valmiista templaatista.
+
+### Käyttäjäkertomus 13
+#### Käyttäjänä haluan lisätä sovellukseen lukitksen
+#### Hyväksymiskriteerit:
+- Voin valita lukituksen pin-koodin itse
+- Voin valita onko lukitus käytössä vai ei
 
 ## Tekniset vaatimukset
 
