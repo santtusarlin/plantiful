@@ -51,7 +51,7 @@ Luvussa 2. listataan vaatimukset, luvussa 3. käyttötapaukset…>
 
 ## Visio
 
-\<Tässä aliluvussa kuvataan tuotteen visio ja mahdollinen slogan>
+Visiomme mukaan me autamme ihmisiä heidän joka päiväisessä elämässään. Käyttäjien elämä helpottuu ja huolet hoituvat.
 
 ## Käyttäjäkertomukset
 
