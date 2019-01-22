@@ -155,8 +155,6 @@ Esimerkiksi:
 
 #### Toteutusympäristö
 
-\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
-
 NativeScript + Angular + Google Firebase (?) TAI mongoDB + node.js-server
 
 #### Toteutettavat kertomukset
@@ -165,14 +163,14 @@ Jokaisella ratkaisuvaihtoehdoilla käyttäjäkermotusten vaatimukset ovat toteut
 
 #### Työmääräarviot
 
-<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
-
-<\Esimerkiksi:>
 | Vaihe | Tunnit | Muuta?
 |---|---|---|
-Käynnistys | 10 | Jee
-Suunnittelu | 10 | Jee
-**Yht** | 20 | Paljon tunteja
+Suunnittelu | 200 |
+Toteutus | 2100 |
+Testaus | 200 |
+Päättäminen | 200 |
+**Yht** | 2700 |
+
 
 #### Pros and Cons
 
@@ -185,8 +183,6 @@ Suunnittelu | 10 | Jee
 ### Ratkaisuvaihtoehto 2
 
 #### Toteutusympäristö
-
-\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
 React Native + node.js + mongoDB TAI Google Firebase
 
@@ -201,8 +197,6 @@ React Native + node.js + mongoDB TAI Google Firebase
 
 #### Toteutusympäristö
 
-\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
-
 Google Flutter + Dart + Google Firebase
 
 #### Pros and Cons
@@ -216,8 +210,6 @@ Google Flutter + Dart + Google Firebase
 
 #### Toteutusympäristö
 
-\<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
-
 Android Native app, Java/Kotlin
 
 #### Pros and Cons
@@ -230,4 +222,4 @@ Android Native app, Java/Kotlin
 
 ## Yhteenveto
 
-\<Tässä luvussa tehdään ehdotus järjestelmän toteutustavasta (siis jokin edellä esitellyistä vaihtoehdoista) ja perustellaan ko. valinta.>
+Päätimme ratkaisuvaihtoehdoksi vaihtoehdon 1, eli NativeScript + Angular. Olemme opiskelleet Angularin  käyttöä syksyn ajan, ja koemme että sillä saisimme luotua natiivinapplikaation helpoiten laadukkaimmaiksi ilman liian monen uuden asian opettelua. 
