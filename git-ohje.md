@@ -26,4 +26,4 @@ git pull // ennen mergeä päivitetään master
 
 git merge < omahaara >
 
-git push
+git push origin HEAD:prod
