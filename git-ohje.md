@@ -24,6 +24,6 @@ git checkout master
 
 git pull // ennen mergeä päivitetään master
 
-git merge <omahaara>
+git merge < omahaara >
 
 git push
