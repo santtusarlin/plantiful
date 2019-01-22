@@ -56,7 +56,7 @@ Daily Scrum | Päivittäinen tilannekatsaus
 Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
 Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
 Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
-Branch | 
+Branch | GitHub repositoryn haara
 
 ### Viitteet
 
@@ -75,7 +75,7 @@ Plantiful on mobiiliapplikaatio joka toimii mielialapäiväkirjana. Sen päätoi
 
 Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä itsereflektiota analysoimalla dataa joka näytetään käyttäjälle. Projektissa on kiinteä aikataulu, joten tarvittaessa toiminnallisuuksista tingitään, jotta aikaan saadaan julkaisukelpoinen tuote, jossa on toiminnallisuuksina toimiva mielialapäiväkirja, kalenteri josta voi seurata merkintöjä sekä erilaiseksi kasvava kasvi.
 
-### Tuotokset
+### Tuotokset     
 
 - Projektisuunnitelma
 - HTLP
@@ -85,6 +85,9 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 - Markkinointisuunnitelma
 - Business model canvas
 - Toimiva tuote
+- Viikkopalaveri-pöytäkirjat
+- Sprint Review-pöytäkirjat
+- Sprint Retrospektiivi-pöytäkirjat
 
 
 ### Projektin hyväskyminen
@@ -160,15 +163,34 @@ Asiakasta ei ole, toistaiseksi.
 | Tapahtuma | Päivämäärä | Muut tiedot/osanottajat
 |---|---|---|
 Esituotanto | 21.1.2019 - 25.1.2019 | TC projektila
+||||
 Sprintti 1 | 28.1.2019 -  8.2.2019 | TC Projektitila
+Sprint Review | 8.2.2019 | TC Projektitila
+Sprint Retrospektiivi | 8.2.2019 | TC Projektitila
+||||
 Sprintti 2 | 11.2.2019 - 22.2.2019 | TC Projektitila
 Gate 1 | 22.2.2019 | TC Projektitila, kaikki paikalla
+Sprint Review | 22.2.2019 | TC Projektitila
+Sprint Retrospektiivi | 22.2.2019 | TC Projektitila
+||||
 Sprintti 3 | 4.3.2019 - 15.3.2019 | TC Projektitila
+Sprint Review | 15.3.2019 | TC Projektitila
+Sprint Retrospektiivi | 15.3.2019 | TC Projektitila
+||||
 Sprintti 4 | 18.3.2019 - 29.3.2019 | TC Projektitila
 Gate 2 | 29.3.2019 | TC Projektitila
+Sprint Review | 29.3.2019 | TC Projektitila
+Sprint Retrospektiivi | 29.3.2019 | TC Projektitila
+||||
 Sprintti 5 | 1.4.2019 - 12.4.2019 | TC Projektitila
+Sprint Review | 12.4.2019 | TC Projektitila
+Sprint Retrospektiivi | 12.4.2019 | TC Projektitila
+||||
 Sprintti 6 | 15.4.2019 - 26.4.2019 | TC Projektitila
 Gate 3 | 26.4.2019 | TC Projektitila
+Sprint Review | 26.4.2019 | TC Projektitila
+Sprint Retrospektiivi | 26.4.2019 | TC Projektitila
+||||
 Jälkituotanto | 29.4.2019 - 10.5.2019 | TC Projektitila 
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
 
