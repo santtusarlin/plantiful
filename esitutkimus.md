@@ -144,12 +144,8 @@ Plantify your mood
 Esimerkiksi:
 
 1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
-<<<<<<< HEAD
 2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
 3. Data pitää saada suojattua
-=======
-
->>>>>>> 2c278d2a8590132d9630464d519da6a01eb496bd
 
 ## Ratkaisuvaihtoehdot
 
