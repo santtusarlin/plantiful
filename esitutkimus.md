@@ -154,7 +154,9 @@ Esimerkiksi:
 
 #### Toteutusympäristö
 
-NativeScript + Angular + Google Firebase (?) TAI mongoDB + node.js-server
+NativeScript
+Angular
+Google Firebase => Cloud Firestore & Cloud Functions
 
 #### Toteutettavat kertomukset
 
