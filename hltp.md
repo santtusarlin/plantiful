@@ -37,7 +37,7 @@ Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 - What is to be tested and in what level?
 - How the items are transmitted to the testers?
 
-- 
+- Koodi ja käytettävyys
 
 FI: Mitkä ovat testattavat kohteet?
 
