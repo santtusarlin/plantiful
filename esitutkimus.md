@@ -39,25 +39,25 @@ Markdown | Merkkauskieli
 | Viittaus | Materiaali |
 |---|---|
 HLTP | \<linkki hltp dokumenttiin>
-GDD | \<linkki gamedesign dokumenttiin>
 
 ## Johdanto
 
-\<Tämän dokumentin tarkoituksena on tuottaa esitutkimus tietojärjestelmästä X. Tietojärjestelmä X on …
+Tämän dokumentin tarkoituksena on tuottaa esitutkimus Plantifulista. 
 
-Luvussa 2. listataan vaatimukset, luvussa 3. käyttötapaukset…>
+Luvussa 2. kerrotaan visio, luvussa 3. käydään läpi käyttäjäkertomukset ja niiden hyväksymiskriteerit, 4. listataan tekniset vaatimukset ja luvussa 5. listataan ratkaisuvaihtoehdot.
+
 
 ## Visio
 
 Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä tutkimaan eri asioiden vaikutuksia mielialaansa ja hyödyntämään tietoa itsehoidossa tai ammattilaisen apuna.
 
+#####Slogan:
 Plantify your mood
 
 ## Käyttäjäkertomukset
 
-\<Listaa käyttäjäkertomukset ja niiden hyväksymiskriteeristö>
 ### Käyttäjäkertomus 1
-#### Masentuneena käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
+#### Käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
 #### Hyväksymiskriteerit:
 - Sovelluksen kalenterista näkee värikoodatusti muutoksia kuukauden ajalta
  
@@ -70,7 +70,7 @@ Plantify your mood
 - Kasvi-näkymästä pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 3
-#### Psykoterapian aloittaneena käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
+#### Käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
@@ -90,7 +90,7 @@ Plantify your mood
 - Mood-kirjauksesta pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 6
-#### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
+#### Käyttäjänä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
 #### Hyväksymiskriteerit:
 - Käytämme mielialan lisäämiseen iconeja
   
@@ -103,10 +103,10 @@ Plantify your mood
 - Viivakaaviosta pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 8
-#### Huonomuistisena käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
+#### Käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
 #### Hyväksymiskriteerit:
 - Sovellus muistuttaa käyttäjää hauluamanaan aikana
-- Muistutuksen voidaan laittaa päältä/pois
+- Muistutus voidaan laittaa päältä/pois
 
 ### Käyttäjäkertomus 9
 #### Sovelluksen kehittäjänä haluan saada kerätä dataa anynoyymisti käyttäjien merkinnöistä
@@ -114,7 +114,7 @@ Plantify your mood
 - Sovellus kerää dataa anonyymisti
 
 ### Käyttäjäkertomus 10
-#### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
+#### Käyttäjänä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
 #### Hyväksymiskriteerit:
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
 
@@ -139,11 +139,10 @@ Plantify your mood
 
 ## Tekniset vaatimukset
 
-\<Lista projektin teknisistä vaatimuksista>
 
 Esimerkiksi:
 
-1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
+1. Applikaatio pyritään kehittämään toimimaan Android versiosta 4.4 ylöspäin, mutta  tämä ei välttämättä tule toteutumaan testauksessa käytettävien laitteiden avulla
 2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
 3. Data pitää saada suojattua
 
@@ -223,3 +222,5 @@ Android Native app, Java/Kotlin
 ## Yhteenveto
 
 Päätimme ratkaisuvaihtoehdoksi vaihtoehdon 1, eli NativeScript + Angular. Olemme opiskelleet Angularin  käyttöä syksyn ajan, ja koemme että sillä saisimme luotua natiivinapplikaation helpoiten laadukkaimmaiksi ilman liian monen uuden asian opettelua. 
+
+Käytämme myös tietojen tallentamiseen FireBasen tietokantaa, emmekä tallenna sitä lokaalisti vaihtoehtoisen pilvibackupin avustamana.

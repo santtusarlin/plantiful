@@ -39,10 +39,10 @@
 Plantiful
 
 ### Tekijät:
-Santtu Sarlin
-Miika Pollari
-Mikko Hannukainen
-Mikko Poutanen
+- Santtu Sarlin
+- Miika Pollari
+- Mikko Hannukainen
+- Mikko Poutanen
 
 ### Termit ja lyhenteet
 
@@ -75,6 +75,8 @@ Plantiful on mobiiliapplikaatio joka toimii mielialapäiväkirjana. Sen päätoi
 
 Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä itsereflektiota analysoimalla dataa joka näytetään käyttäjälle. Projektissa on kiinteä aikataulu, joten tarvittaessa toiminnallisuuksista tingitään, jotta aikaan saadaan julkaisukelpoinen tuote, jossa on toiminnallisuuksina toimiva mielialapäiväkirja, kalenteri josta voi seurata merkintöjä sekä erilaiseksi kasvava kasvi.
 
+Tavoitteena on saada tuotettua kaikki tuotokset listattuna alempana:
+
 ### Tuotokset     
 
 - Projektisuunnitelma
@@ -84,7 +86,7 @@ Plantiful on tarkoitettu kaikille, jotka haluavat seurata mielialaansa ja tehdä
 - Dokumentointi
 - Markkinointisuunnitelma
 - Business model canvas
-- Toimiva tuote
+- Demo tuote
 - Viikkopalaveri-pöytäkirjat
 - Sprint Review-pöytäkirjat
 - Sprint Retrospektiivi-pöytäkirjat
@@ -116,13 +118,13 @@ Taskeille voidaan myös tarvittaessa suunnitella tarkat määreet, miltä
 lopputuloksen tulisi näyttää tai miten se tulisi toimia.
 
 ### Projektin testaamisesta
-TBD by Mikko H. :)
+Testit tehdään high level test plan- dokumentin mukaisesti.
 
 ### Projektin lopettamisesta
 Projekti loppuu projektin konkurssipäivänä 10.5.2019.
 
 ## Projektin resurssit
-4 henkilöä, 6h 45min työtunteja per päivä.
+4 henkilöä, 6h 45min työtunteja per päivä. Keskiviikkoisin on Concept Lab 13.2 alkaen, joten päivät kestävät silloin 9.12
 
 ### Projektin organisaatio
 
@@ -157,6 +159,7 @@ Asiakasta ei ole, toistaiseksi.
 - ZenHub
 - InkScape
 - GIMP
+- Microsoft teams
 
 ## Aikataulu
 
@@ -208,7 +211,7 @@ Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat 
 
 ### Asiakasraportointi
 
-Henkilökunta näkee tuotetut dokumentit GitHubista.
+Ohjausryhmä näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
 
