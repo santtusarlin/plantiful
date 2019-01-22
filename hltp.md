@@ -1,6 +1,6 @@
 # High level test plan
 
-Plaintful
+Plantiful
 
 Tekijät:
 Santtu Sarlin
