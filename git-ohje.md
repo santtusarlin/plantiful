@@ -1,5 +1,17 @@
 # Git-käyttöohje
 
+## Init
+
+git init // alusta oma kansio
+
+git remote add origin https://github.com/jamktiko/plantiful.git
+
+git branch --set-upstream-to=origin/master master // oma master-haara trackaa serverin masteria
+
+git pull origin master 
+
+---
+
 ## Workflow
 
 git pull // päivitetään oma master branch hakemalla serverin master
