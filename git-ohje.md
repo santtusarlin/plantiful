@@ -6,15 +6,15 @@ git init // alusta oma kansio
 
 git remote add origin https://github.com/jamktiko/plantiful.git
 
-git branch --set-upstream-to=origin/master master // oma master-haara trackaa serverin masteria
+git pull origin prod 
 
-git pull origin master 
+git branch --set-upstream-to=origin/prod master // oma master-haara trackaa serverin prodia
 
 ---
 
 ## Workflow
 
-git pull // päivitetään oma master branch hakemalla serverin master
+git pull // päivitetään oma master branch hakemalla serverin prod
 
 git branch < omahaara > master // luodaan masterista oma branch
 
