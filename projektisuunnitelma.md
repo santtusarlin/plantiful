@@ -174,7 +174,7 @@ Sprint Retrospektiivi | 8.2.2019 | TC Projektitila
 ||||
 Sprintti 2 | 11.2.2019 - 22.2.2019 | TC Projektitila
 Sprint Planning | 11.2.2019 | TC Projektitila
-Gate 1 | 22.2.2019 | TC Projektitila, kaikki paikalla
+Gate 1 | 22.2.2019 | TC Projektitila
 Sprint Review | 22.2.2019 | TC Projektitila
 Sprint Retrospektiivi | 22.2.2019 | TC Projektitila
 ||||
