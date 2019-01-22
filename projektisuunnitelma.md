@@ -165,28 +165,34 @@ Asiakasta ei ole, toistaiseksi.
 Esituotanto | 21.1.2019 - 25.1.2019 | TC projektila
 ||||
 Sprintti 1 | 28.1.2019 -  8.2.2019 | TC Projektitila
+Sprint Planning | 28.1.2019 | TC Projektitila
 Sprint Review | 8.2.2019 | TC Projektitila
 Sprint Retrospektiivi | 8.2.2019 | TC Projektitila
 ||||
 Sprintti 2 | 11.2.2019 - 22.2.2019 | TC Projektitila
+Sprint Planning | 11.2.2019 | TC Projektitila
 Gate 1 | 22.2.2019 | TC Projektitila, kaikki paikalla
 Sprint Review | 22.2.2019 | TC Projektitila
 Sprint Retrospektiivi | 22.2.2019 | TC Projektitila
 ||||
 Sprintti 3 | 4.3.2019 - 15.3.2019 | TC Projektitila
+Sprint Planning | 4.3.2019 | TC Projektitila
 Sprint Review | 15.3.2019 | TC Projektitila
 Sprint Retrospektiivi | 15.3.2019 | TC Projektitila
 ||||
 Sprintti 4 | 18.3.2019 - 29.3.2019 | TC Projektitila
+Sprint Planning | 18.3.2019 | TC Projektitila
 Gate 2 | 29.3.2019 | TC Projektitila
 Sprint Review | 29.3.2019 | TC Projektitila
 Sprint Retrospektiivi | 29.3.2019 | TC Projektitila
 ||||
 Sprintti 5 | 1.4.2019 - 12.4.2019 | TC Projektitila
+Sprint Planning | 1.4.2019 | TC Projektitila
 Sprint Review | 12.4.2019 | TC Projektitila
 Sprint Retrospektiivi | 12.4.2019 | TC Projektitila
 ||||
 Sprintti 6 | 15.4.2019 - 26.4.2019 | TC Projektitila
+Sprint Planning | 15.4.2019 | TC Projektitila
 Gate 3 | 26.4.2019 | TC Projektitila
 Sprint Review | 26.4.2019 | TC Projektitila
 Sprint Retrospektiivi | 26.4.2019 | TC Projektitila
