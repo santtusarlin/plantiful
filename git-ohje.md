@@ -16,9 +16,9 @@ git pull origin master
 
 git pull // päivitetään oma master branch hakemalla serverin master
 
-git branch <omahaara> master // luodaan masterista oma branch
+git branch < omahaara > master // luodaan masterista oma branch
 
-git checkout <omahaara> // muutokset tehdään omalla haaralla
+git checkout < omahaara > // muutokset tehdään omalla haaralla
 
 git checkout master
 
