@@ -142,8 +142,8 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 Esimerkiksi:
 
 1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
-2. 
-3. 
+2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
+3. Data pitää saada suojattua
 
 ## Ratkaisuvaihtoehdot
 
