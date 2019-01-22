@@ -51,6 +51,8 @@ Luvussa 2. listataan vaatimukset, luvussa 3. käyttötapaukset…>
 
 Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä tutkimaan eri asioiden vaikutuksia mielialaansa ja hyödyntämään tietoa itsehoidossa tai ammattilaisen apuna.
 
+Plantify your mood
+
 ## Käyttäjäkertomukset
 
 \<Listaa käyttäjäkertomukset ja niiden hyväksymiskriteeristö>
@@ -142,8 +144,12 @@ Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä t
 Esimerkiksi:
 
 1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
+<<<<<<< HEAD
 2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
 3. Data pitää saada suojattua
+=======
+
+>>>>>>> 2c278d2a8590132d9630464d519da6a01eb496bd
 
 ## Ratkaisuvaihtoehdot
 
@@ -174,7 +180,11 @@ Suunnittelu | 10 | Jee
 
 #### Pros and Cons
 
-\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+#### Pros
+- Osaamme jo toimia Angularin parissa
+- Saamme natiivitoiminnallisuuden helpoiten kykyihimme nähden
+#### Cons
+- 
 
 ### Ratkaisuvaihtoehto 2
 
@@ -201,7 +211,10 @@ Suunnittelu | 10 | Jee
 
 #### Pros and Cons
 
-\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+#### Pros
+- Sopisi projektiin ehkä paremmin minimalistisuutensa vuoksi
+#### Cons
+- Pitäisi opetella uutta teknologiaa
 
 ### Ratkaisuvaihtoehto 3
 
@@ -228,7 +241,10 @@ Suunnittelu | 10 | Jee
 
 #### Pros and Cons
 
-\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+#### Pros
+- Sopisi projektiin ehkä paremmin minimalistisuutensa vuoksi
+#### Cons
+- Pitäisi opetella uutta teknologiaa
 
 ### Ratkaisuvaihtoehto 4
 
@@ -255,7 +271,10 @@ Suunnittelu | 10 | Jee
 
 #### Pros and Cons
 
-\<Tässä aliluvussa kerrotaan ratkaisuvaihtoehdon hyvät ja huonot puolet objektiivisesti>
+#### Pros
+- Sopisi projektiin ehkä paremmin minimalistisuutensa vuoksi
+#### Cons
+- Pitäisi opetella uutta teknologiaa
 
 
 ## Yhteenveto
