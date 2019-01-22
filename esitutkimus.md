@@ -161,7 +161,7 @@ NativeScript + Angular + Google Firebase (?) TAI mongoDB + node.js-server
 
 #### Toteutettavat kertomukset
 
-\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
+Jokaisella ratkaisuvaihtoehdoilla käyttäjäkermotusten vaatimukset ovat toteuttamismahdollisia. 
 
 #### Työmääräarviot
 
@@ -180,7 +180,7 @@ Suunnittelu | 10 | Jee
 - Osaamme jo toimia Angularin parissa
 - Saamme natiivitoiminnallisuuden helpoiten kykyihimme nähden
 #### Cons
-- 
+- Open Source kirjastot joita tulemme käyttämään ovat riippumattomia NativeScriptin omasta tuesta, ja näin saattavat olla huonosti päivitettyjä.
 
 ### Ratkaisuvaihtoehto 2
 
@@ -189,21 +189,6 @@ Suunnittelu | 10 | Jee
 \<Tässä aliluvussa kerrotaan ympäristön jossa tietojärjestelmä tulee toimimaan. Tähän kannattaa liittää myös yksinkertainen arkkitehtuurikuva, josta pystytään havainnoimaan järjestelmän oleelliset osat ja osien välinen kommunikointi>
 
 React Native + node.js + mongoDB TAI Google Firebase
-
-#### Toteutettavat kertomukset
-
-\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
-
-#### Työmääräarviot
-
-<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
-
-<\Esimerkiksi:>
-| Vaihe | Tunnit | Muuta?
-|---|---|---|
-Käynnistys | 10 | Jee
-Suunnittelu | 10 | Jee
-**Yht** | 20 | Paljon tunteja
 
 #### Pros and Cons
 
@@ -220,21 +205,6 @@ Suunnittelu | 10 | Jee
 
 Google Flutter + Dart + Google Firebase
 
-#### Toteutettavat kertomukset
-
-\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
-
-#### Työmääräarviot
-
-<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
-
-<\Esimerkiksi:>
-| Vaihe | Tunnit | Muuta?
-|---|---|---|
-Käynnistys | 10 | Jee
-Suunnittelu | 10 | Jee
-**Yht** | 20 | Paljon tunteja
-
 #### Pros and Cons
 
 #### Pros
@@ -250,27 +220,12 @@ Suunnittelu | 10 | Jee
 
 Android Native app, Java/Kotlin
 
-#### Toteutettavat kertomukset
-
-\<Tässä aliluvussa kerrotaan mitä kertomuksia kyseisellä tekniikalla pystytään toteuttamaan ja mitä ei>
-
-#### Työmääräarviot
-
-<Tähän arvioidaan hyvin karkealla tasolla työhön kuluva aika. Tehkää arviot käyttäen hyväksi seurantaraportin Työmäärien arviointi -välilehteä (SeurantaRaportti_Projektin_nimi.xls). Työmäärien arvioinnissa jokainen projektin jäsen tekee omat arvionsa ja sen jälkeen keskustellaan arviot läpi, jolloin päätetään vaiheeseen arvioitavat tunnit.>
-
-<\Esimerkiksi:>
-| Vaihe | Tunnit | Muuta?
-|---|---|---|
-Käynnistys | 10 | Jee
-Suunnittelu | 10 | Jee
-**Yht** | 20 | Paljon tunteja
-
 #### Pros and Cons
 
 #### Pros
-- Sopisi projektiin ehkä paremmin minimalistisuutensa vuoksi
+- Työelämän kannalta Javalla android applikaatioiden kehitys olisi hyödyllistä opetella
 #### Cons
-- Pitäisi opetella uutta teknologiaa
+- Osaamme NativeScript + Angular kehityksen paremmin
 
 
 ## Yhteenveto
