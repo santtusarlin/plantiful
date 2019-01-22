@@ -238,7 +238,7 @@ Suunnittelu | 10 | Jee
 #### Pros and Cons
 
 #### Pros
-- Sopisi projektiin ehkä paremmin minimalistisuutensa vuoksi
+- Kauniin UI:n luominen olisi melko helppoa
 #### Cons
 - Pitäisi opetella uutta teknologiaa
 
