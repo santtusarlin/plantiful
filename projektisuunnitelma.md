@@ -63,8 +63,8 @@ HLTP | High Level Test Plan
 
 | Viittaus | Materiaali |
 |---|---|
-HLTP | ./htlp.md
-Esitutkimus | ./estitutkimus.md
+HLTP | [HLTP.md](hltp.md)
+Esitutkimus | [esitutkimus.md](esitutkimus.md)
 
 ## Projektin sisältö
 
