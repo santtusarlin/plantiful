@@ -33,12 +33,13 @@ Tekijät:
 GIT | Versionhallintajärjestelmä
 GitHub | Palvelu joka on rakennettu GIT versionhallinnan ympärille
 Markdown | Merkkauskieli
+HLTP | High Level Test Plan
 
 ### Viitteet
 
 | Viittaus | Materiaali |
 |---|---|
-HLTP | \<linkki hltp dokumenttiin>
+HLTP | [HLTP.md](hltp_.md)
 
 ## Johdanto
 
@@ -144,6 +145,7 @@ Esimerkiksi:
 
 1. Applikaatio pyritään kehittämään toimimaan Android versiosta 4.4 ylöspäin, mutta  tämä ei välttämättä tule toteutumaan testauksessa käytettävien laitteiden avulla
 2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
+2. Applikaation tulee toimia myös offline-tilassa.
 3. Data pitää saada suojattua
 
 ## Ratkaisuvaihtoehdot
