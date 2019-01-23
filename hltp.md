@@ -14,7 +14,6 @@ Mikko Poutanen
 | Viittaus | Materiaali |
 |---|---|
 Projektisuunnitelma | \<linkki  projektisuunnitelmaan>
-GDD | \<linkki gamedesign dokumenttiin>
 
 ## Intro
 
@@ -24,52 +23,50 @@ Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen
 
 ### Tarkoitus
 
-\<Dokumentin tarkoitus, mitä dokumentti sisältää>
 Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 ## Testistrategia
 
-\<Tässä aliluvussa kerrotaan mitä testataan, miksi testataan, miten testataan, milloin testaus on valmista, jne>
-
 ### Test items
 
-- Screens, executables, documentation, reports, help, etc…
-- What is to be tested and in what level?
-- How the items are transmitted to the testers?
+- Ulkoasu
+  - Heuristiikka
+- ToiminnallisuusMak
+- Datan kulku
+  - Kyselyt tietokantaan
+  - Yhteyden toiminnallisuus
+  - Datan talletus paikallisesti
 
-- Koodi ja käytettävyys
-
-FI: Mitkä ovat testattavat kohteet?
 
 ### Testing tasks
 
-- What are the activities that must take place during testing? It includes all the planning and executing!
-- What kind of dependencies there are in the activities?
+#### Tekniikka
+Kehitysvaiheessa olevan sovelluksen komponenttia testataan ennen käyttöönottoa. Hyväksynnän jälkeen ko. komponentti voidaan yhdistää gitissä master-haaraan, missä suoritetaan vielä integraatiotesti.
 
-FI: Mitä pitää tehdä.
-- Dynaaminen testaus 
-- Käyttäjätestauksessa käydään sovelluksen toiminnot läpi
-- Whitebox testaus
+#### Ulkoasu ja käyttöliittymä
+Käyttöliittymää testataan käyttäjätestein: Ensiksi suunnitteilla olevaa ulkoasua testataan paperisena toteutuksena. Toinen testi on ulkoasun kehityksen jälkeinen käytettävyystesti mobiililaitteella.
 
 
 ### Testattavat ominaisuudet
 
-List the features of the software/product to be tested. Distinguishing characteristic of a software item like performance, portablity, functionality, reliability... and why?
-Provide references to the Requirements and/or Design specifications of the features to be tested.
+Sovelluksen luontevuuden vuoksi yksi tärkeimpiä testejä ovat ulkoasun funktionaalisuus ja heurestiikka. Kehitysvaiheessa pitää aina varmistaa, että jokainen sovelluksen elementti antaa loppukäyttäjälle sen tuloksen mitä elementille on ennaltaan määritetty. Tässä vaiheessa heurestiikkaa testataan myös sekä minimalistisuuden että käytettävyyden vuoksi.
 
-FI: Mitä toimintoja testataan ja mihin niiden testien tekeminen ja ajaminen perustuu?
+Tekniikan osalta tärkeimpinä osina testauksessa ovat datan kulku sekä validointi, ja kasvin algoritmien oikeanlaisen luonnin ja sen mukaisen tuloksen saannin käyttöliittymälle. Tietokannasta saatava data pitää saapua mobiililaitteelle oikeassa muodossa virheettömästi, sekä datan siirto tietokantaan pitää tapahtua oikeassa muodossa ja ilman komplikaatioita. Kun datan siirtyminen toteutuu oikeanlaisesti, algoritmit osaavat täden luoda käyttäjälle oikeanlaisen kasvin.
+
+Kasvin generointi pitää myös tapahtua oikeasti ja että siihen tarvittavat algoritmit osaavat muodostaa käyttäjän datasta oikeanlaisen rakenteen, mistä sitä kasvia voidaan lähteä buildaa.
 
 ### Ei testattavat ominaisuudet
 
-What is not tested? Remember to explain why something is left out.
-
-FI: Mitä toimintoja priorisoidaan pois? Esim. ulkoiset komponentit.
+Sovelluksen yleiset animaatiot sekä siirtymiset koetaan mitättömiksi tapauksiksi ryhtyä testaamaan. Kyseisten elementit eivät kuulu sovelluksen valmistumisen kriteereihin, eli mikäli ne eivät toimi tai käyttäjätestauksessa ne koetaan vaikuttavan negatiivisesti käyttäjäkokemukseen, voidaan tuolloin tehdä päätös joko niille tarvittavista muutokstista tai niiden poistosta.
 
 ### Lähestymistapa
 
 - Activities, techniques and tools
 - What principles are used on testing
 - Identify constraints (staff, environment, deadlines) for the testing.
+
+ - Jenkins
+ - Appium
 
 FI: Lähestymiskulma. Mitä toimintoja, tekniikoita ja työkaluja käytetään. Harrastetaanko testiautomaatiota vai not? Onko esim. TDD prinsiippinä? Testauksen rajoitteet mukaan myös.
 
