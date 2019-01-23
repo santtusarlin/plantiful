@@ -57,13 +57,14 @@ Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisuk
 Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
 Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
 Branch | GitHub repositoryn haara
+HLTP | High Level Test Plan
 
 ### Viitteet
 
 | Viittaus | Materiaali |
 |---|---|
-HTLP | \<linkki hltp dokumenttiin>
-Esitutkimus | \<linkki esitutkimus dokumenttiin>
+HLTP | ./htlp.md
+Esitutkimus | ./estitutkimus.md
 
 ## Projektin sisältö
 
@@ -159,7 +160,7 @@ Asiakasta ei ole, toistaiseksi.
 - ZenHub
 - InkScape
 - GIMP
-- Microsoft teams
+- Microsoft Teams
 
 ## Aikataulu
 
