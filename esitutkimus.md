@@ -62,6 +62,7 @@ Plantify your mood
 #### Käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
 #### Hyväksymiskriteerit:
 - Sovelluksen kalenterista näkee värikoodatusti muutoksia kuukauden ajalta
+- Sovelluksen viivakaaviosta näkee muutokset tietyn ajan väliltä
  
 ### Käyttäjäkertomus 2
 #### Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
@@ -109,6 +110,7 @@ Plantify your mood
 #### Hyväksymiskriteerit:
 - Sovellus muistuttaa käyttäjää hauluamanaan aikana
 - Muistutus voidaan laittaa päältä/pois
+- Muistutuksesta pääsee suoraan Mood-kirjausvalikkoon
 
 ### Käyttäjäkertomus 9
 #### Sovelluksen kehittäjänä haluan saada kerätä dataa anynoyymisti käyttäjien merkinnöistä
@@ -121,23 +123,28 @@ Plantify your mood
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
 
 ### Käyttäjäkertomus 11
-#### Käyttäjänä haluan luoda varmuuskopion tilastoistani.
-#### Hyväksymiskriteerit:
-- Valikosta voi valita varmuuskopion luonnin
-- Valikosta voi valita varmuuskopion palautuksen
-- Varmuuskopion voi luoda pilveen käyttäjän omaan Google Driveen
-
-### Käyttäjäkertomus 12
 #### Käyttäjänä haluan valita sovelluksen väriskeeman
 #### Hyväksymiskriteerit:
 - Asetukset-valikosta löytyy väriskeema valitsin
-- Voin valita värit itse tai valmiista templaatista.
+- Valitaan valmiista templaatista.
 
-### Käyttäjäkertomus 13
-#### Käyttäjänä haluan lisätä sovellukseen lukitksen
+### Käyttäjäkertomus 12
+#### Käyttäjänä haluan lisätä sovellukseen lukituksen
 #### Hyväksymiskriteerit:
 - Voin valita lukituksen pin-koodin itse
 - Voin valita onko lukitus käytössä vai ei
+
+### Käyttäjäkertomus 13
+#### Käyttäjänä haluan nähdä kasvini tiedot ja tilastot
+#### Hyväksymiskriteerit:
+- Tiedoissa näkyy kasvin ikä, nimi ja kirjausten määrä
+- Tietoihin/tilastoihin pääsee päävalikon kautta
+- Tilastot-valikosta pääsee pois päävalikkoon
+
+### Käyttäjäkertomus 14
+#### Käyttäjänä haluan nähdä tilastoista kuinka monta päivää olen käyttänyt sovellusta putkeen
+#### Hyväksymiskriteerit:
+- Tilastot-valikosta löytää päivien määrän
 
 ## Tekniset vaatimukset
 
