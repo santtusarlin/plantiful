@@ -39,7 +39,8 @@ HLTP | High Level Test Plan
 
 | Viittaus | Materiaali |
 |---|---|
-HLTP | [HLTP.md](hltp.md)
+HLTP | [hltp.md](hltp.md)
+Projektisuunnitelma | [projektisuunnitelma.md](projektisuunnitelma.md)
 
 ## Johdanto
 
