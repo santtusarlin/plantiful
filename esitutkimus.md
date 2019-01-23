@@ -148,8 +148,6 @@ Esimerkiksi:
 
 ## Ratkaisuvaihtoehdot
 
-\<Listaa niin monta ratkaisuvaihtoehtoa kuin niitä tulee ilmi>
-
 ### Ratkaisuvaihtoehto 1
 
 #### Toteutusympäristö
@@ -178,6 +176,7 @@ Päättäminen | 200 |
 #### Pros
 - Osaamme jo toimia Angularin parissa
 - Saamme natiivitoiminnallisuuden helpoiten kykyihimme nähden
+- Cloud Firestore tarjoaa kattavat tietokanta ominaisuudet mukaanlukien offline-toiminnalisuuden.
 #### Cons
 - Open Source kirjastot joita tulemme käyttämään ovat riippumattomia NativeScriptin omasta tuesta, ja näin saattavat olla huonosti päivitettyjä.
 
