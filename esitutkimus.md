@@ -233,5 +233,4 @@ Android Native app, Java/Kotlin
 ## Yhteenveto
 
 Päätimme ratkaisuvaihtoehdoksi vaihtoehdon 1, eli NativeScript + Angular. Olemme opiskelleet Angularin  käyttöä syksyn ajan, ja koemme että sillä saisimme luotua natiivinapplikaation helpoiten laadukkaimmaiksi ilman liian monen uuden asian opettelua. 
-
 Käytämme myös tietojen tallentamiseen FireBasen tietokantaa, emmekä tallenna sitä lokaalisti vaihtoehtoisen pilvibackupin avustamana.
