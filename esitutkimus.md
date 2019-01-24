@@ -33,33 +33,36 @@ Tekijät:
 GIT | Versionhallintajärjestelmä
 GitHub | Palvelu joka on rakennettu GIT versionhallinnan ympärille
 Markdown | Merkkauskieli
+HLTP | High Level Test Plan
 
 ### Viitteet
 
 | Viittaus | Materiaali |
 |---|---|
-HLTP | \<linkki hltp dokumenttiin>
-GDD | \<linkki gamedesign dokumenttiin>
+HLTP | [hltp.md](hltp.md)
+Projektisuunnitelma | [projektisuunnitelma.md](projektisuunnitelma.md)
 
 ## Johdanto
 
-\<Tämän dokumentin tarkoituksena on tuottaa esitutkimus tietojärjestelmästä X. Tietojärjestelmä X on …
+Tämän dokumentin tarkoituksena on tuottaa esitutkimus Plantifulista. 
 
-Luvussa 2. listataan vaatimukset, luvussa 3. käyttötapaukset…>
+Luvussa 2. kerrotaan visio, luvussa 3. käydään läpi käyttäjäkertomukset ja niiden hyväksymiskriteerit, 4. listataan tekniset vaatimukset ja luvussa 5. listataan ratkaisuvaihtoehdot.
+
 
 ## Visio
 
 Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä tutkimaan eri asioiden vaikutuksia mielialaansa ja hyödyntämään tietoa itsehoidossa tai ammattilaisen apuna.
 
+#####Slogan:
 Plantify your mood
 
 ## Käyttäjäkertomukset
 
-\<Listaa käyttäjäkertomukset ja niiden hyväksymiskriteeristö>
 ### Käyttäjäkertomus 1
-#### Masentuneena käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
+#### Käyttäjänä haluan varmistusta omasta mielentilastani ja saan sitä sovelluksen tilastoista.
 #### Hyväksymiskriteerit:
 - Sovelluksen kalenterista näkee värikoodatusti muutoksia kuukauden ajalta
+- Sovelluksen viivakaaviosta näkee muutokset tietyn ajan väliltä
  
 ### Käyttäjäkertomus 2
 #### Käyttäjänä haluan nähdä kasvini jotta voin seurata sen tilaa.
@@ -70,7 +73,7 @@ Plantify your mood
 - Kasvi-näkymästä pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 3
-#### Psykoterapian aloittaneena käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
+#### Käyttäjänä haluan seurata mielentilani kehitystä, ja kasvi motivoi sovelluksen käytön jatkoa.
 #### Hyväksymiskriteerit:
 - Kasvi muuttuu mood-kirjausten mukaan.
 - Tilastoja voi seurata sovelluksesta 
@@ -90,7 +93,7 @@ Plantify your mood
 - Mood-kirjauksesta pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 6
-#### Lukihäiriöisenä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
+#### Käyttäjänä haluan, että sovelluksessa on mahdollisimman vähän tekstiä
 #### Hyväksymiskriteerit:
 - Käytämme mielialan lisäämiseen iconeja
   
@@ -103,10 +106,11 @@ Plantify your mood
 - Viivakaaviosta pääsee takaisin päävalikkoon
 
 ### Käyttäjäkertomus 8
-#### Huonomuistisena käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
+#### Käyttäjänä haluan, että sovellus muistuttaa minua merkitsemään merkinnät
 #### Hyväksymiskriteerit:
 - Sovellus muistuttaa käyttäjää hauluamanaan aikana
-- Muistutuksen voidaan laittaa päältä/pois
+- Muistutus voidaan laittaa päältä/pois
+- Muistutuksesta pääsee suoraan Mood-kirjausvalikkoon
 
 ### Käyttäjäkertomus 9
 #### Sovelluksen kehittäjänä haluan saada kerätä dataa anynoyymisti käyttäjien merkinnöistä
@@ -114,48 +118,53 @@ Plantify your mood
 - Sovellus kerää dataa anonyymisti
 
 ### Käyttäjäkertomus 10
-#### Paljon tekevänä käyttäjä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
+#### Käyttäjänä haluan mahdollisuuden lisätä omia aktiviteetteja sovellukseen ja valita niille iconin
 #### Hyväksymiskriteerit:
 - Voidaan luoda uusia aktiviteetteja ja valita niille iconit
 
 ### Käyttäjäkertomus 11
-#### Käyttäjänä haluan luoda varmuuskopion tilastoistani.
-#### Hyväksymiskriteerit:
-- Valikosta voi valita varmuuskopion luonnin
-- Valikosta voi valita varmuuskopion palautuksen
-- Varmuuskopion voi luoda pilveen käyttäjän omaan Google Driveen
-
-### Käyttäjäkertomus 12
 #### Käyttäjänä haluan valita sovelluksen väriskeeman
 #### Hyväksymiskriteerit:
 - Asetukset-valikosta löytyy väriskeema valitsin
-- Voin valita värit itse tai valmiista templaatista.
+- Valitaan valmiista templaatista.
 
-### Käyttäjäkertomus 13
-#### Käyttäjänä haluan lisätä sovellukseen lukitksen
+### Käyttäjäkertomus 12
+#### Käyttäjänä haluan lisätä sovellukseen lukituksen
 #### Hyväksymiskriteerit:
 - Voin valita lukituksen pin-koodin itse
 - Voin valita onko lukitus käytössä vai ei
 
+### Käyttäjäkertomus 13
+#### Käyttäjänä haluan nähdä kasvini tiedot ja tilastot
+#### Hyväksymiskriteerit:
+- Tiedoissa näkyy kasvin ikä, nimi ja kirjausten määrä
+- Tietoihin/tilastoihin pääsee päävalikon kautta
+- Tilastot-valikosta pääsee pois päävalikkoon
+
+### Käyttäjäkertomus 14
+#### Käyttäjänä haluan nähdä tilastoista kuinka monta päivää olen käyttänyt sovellusta putkeen
+#### Hyväksymiskriteerit:
+- Tilastot-valikosta löytää päivien määrän
+
 ## Tekniset vaatimukset
 
-\<Lista projektin teknisistä vaatimuksista>
 
 Esimerkiksi:
 
-1. Applikaation täytyy toimia vähintään Androidin versiosta 7.0 ylöspäin
+1. Applikaatio pyritään kehittämään toimimaan Android versiosta 4.4 ylöspäin, mutta  tämä ei välttämättä tule toteutumaan testauksessa käytettävien laitteiden avulla
 2. Applikaation pitää osata siirtää data tarvittaessa pilveen ja saada oikea data takaisin pilvestä
+2. Applikaation tulee toimia myös offline-tilassa.
 3. Data pitää saada suojattua
 
 ## Ratkaisuvaihtoehdot
-
-\<Listaa niin monta ratkaisuvaihtoehtoa kuin niitä tulee ilmi>
 
 ### Ratkaisuvaihtoehto 1
 
 #### Toteutusympäristö
 
-NativeScript + Angular + Google Firebase (?) TAI mongoDB + node.js-server
+NativeScript
+Angular
+Google Firebase => Cloud Firestore & Cloud Functions
 
 #### Toteutettavat kertomukset
 
@@ -177,6 +186,7 @@ Päättäminen | 200 |
 #### Pros
 - Osaamme jo toimia Angularin parissa
 - Saamme natiivitoiminnallisuuden helpoiten kykyihimme nähden
+- Cloud Firestore tarjoaa kattavat tietokanta ominaisuudet mukaanlukien offline-toiminnalisuuden.
 #### Cons
 - Open Source kirjastot joita tulemme käyttämään ovat riippumattomia NativeScriptin omasta tuesta, ja näin saattavat olla huonosti päivitettyjä.
 
@@ -223,3 +233,4 @@ Android Native app, Java/Kotlin
 ## Yhteenveto
 
 Päätimme ratkaisuvaihtoehdoksi vaihtoehdon 1, eli NativeScript + Angular. Olemme opiskelleet Angularin  käyttöä syksyn ajan, ja koemme että sillä saisimme luotua natiivinapplikaation helpoiten laadukkaimmaiksi ilman liian monen uuden asian opettelua. 
+Käytämme myös tietojen tallentamiseen FireBasen tietokantaa, emmekä tallenna sitä lokaalisti vaihtoehtoisen pilvibackupin avustamana.

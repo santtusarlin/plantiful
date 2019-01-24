@@ -10,11 +10,9 @@ Mikko Poutanen
 
 ## Viitteet
 
-<\Esimerkiksi:>
 | Viittaus | Materiaali |
 |---|---|
 Projektisuunnitelma | \<linkki  projektisuunnitelmaan>
-GDD | \<linkki gamedesign dokumenttiin>
 
 ## Intro
 
@@ -24,116 +22,75 @@ Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen
 
 ### Tarkoitus
 
-\<Dokumentin tarkoitus, mitä dokumentti sisältää>
 Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 ## Testistrategia
 
-\<Tässä aliluvussa kerrotaan mitä testataan, miksi testataan, miten testataan, milloin testaus on valmista, jne>
 
 ### Test items
 
-- Screens, executables, documentation, reports, help, etc…
-- What is to be tested and in what level?
-- How the items are transmitted to the testers?
+- Ulkoasu
+  - Heuristiikka
+- Toiminnallisuus
+- Datan kulku
+  - Kyselyt tietokantaan
+  - Yhteyden toiminnallisuus
+  - Datan talletus paikallisesti
 
-- 
-
-FI: Mitkä ovat testattavat kohteet?
 
 ### Testing tasks
 
-- What are the activities that must take place during testing? It includes all the planning and executing!
-- What kind of dependencies there are in the activities?
+#### Tekniikka
+Kehitysvaiheessa olevan sovelluksen komponenttia testataan ennen käyttöönottoa yksikkötesteillä. Hyväksynnän jälkeen ko. komponentti voidaan yhdistää gitissä master-haaraan, missä suoritetaan vielä integraatiotesti.
 
-FI: Mitä pitää tehdä.
-- Dynaaminen testaus 
-- Käyttäjätestauksessa käydään sovelluksen toiminnot läpi
-- Whitebox testaus
+#### Ulkoasu ja käyttöliittymä
+
+Käyttöliittymää testataan käyttäjätestein: Ensiksi suunnitteilla olevaa ulkoasua testataan paperisena toteutuksena. Toinen testi on ulkoasun kehityksen jälkeinen käytettävyystesti mobiililaitteella.
 
 
 ### Testattavat ominaisuudet
 
-List the features of the software/product to be tested. Distinguishing characteristic of a software item like performance, portablity, functionality, reliability... and why?
-Provide references to the Requirements and/or Design specifications of the features to be tested.
+Sovelluksen luontevuuden vuoksi yksi tärkeimpiä testejä ovat ulkoasun funktionaalisuus ja heuristiikka. Kehitysvaiheessa pitää aina varmistaa, että jokainen sovelluksen elementti antaa loppukäyttäjälle sen tuloksen mitä elementille on ennaltaan määritetty. Tässä vaiheessa heuristiikkaa testataan myös sekä minimalistisuuden että käytettävyyden vuoksi.
 
-FI: Mitä toimintoja testataan ja mihin niiden testien tekeminen ja ajaminen perustuu?
+Tekniikan osalta tärkeimpinä osina testauksessa ovat datan kulku sekä validointi, ja kasvin algoritmien oikeanlaisen luonnin ja sen mukaisen tuloksen saannin käyttöliittymälle. Tietokannasta saatava data pitää saapua mobiililaitteelle oikeassa muodossa virheettömästi, sekä datan siirto tietokantaan pitää tapahtua oikeassa muodossa ja ilman komplikaatioita. Kun datan siirtyminen toteutuu oikeanlaisesti, algoritmit osaavat täden luoda käyttäjälle oikeanlaisen kasvin.
+
+Kasvin generointi pitää myös tapahtua oikeasti ja että siihen tarvittavat algoritmit osaavat muodostaa käyttäjän datasta oikeanlaisen rakenteen, mistä sitä kasvia voidaan lähteä buildaa.
 
 ### Ei testattavat ominaisuudet
 
-What is not tested? Remember to explain why something is left out.
-
-FI: Mitä toimintoja priorisoidaan pois? Esim. ulkoiset komponentit.
+Sovelluksen yleiset animaatiot sekä siirtymiset koetaan mitättömiksi tapauksiksi ryhtyä testaamaan. Kyseisten elementit eivät kuulu sovelluksen valmistumisen kriteereihin, eli mikäli ne eivät toimi tai käyttäjätestauksessa ne koetaan vaikuttavan negatiivisesti käyttäjäkokemukseen, voidaan tuolloin tehdä päätös joko niille tarvittavista muutokstista tai niiden poistosta.
 
 ### Lähestymistapa
 
-- Activities, techniques and tools
-- What principles are used on testing
-- Identify constraints (staff, environment, deadlines) for the testing.
-
-FI: Lähestymiskulma. Mitä toimintoja, tekniikoita ja työkaluja käytetään. Harrastetaanko testiautomaatiota vai not? Onko esim. TDD prinsiippinä? Testauksen rajoitteet mukaan myös.
+Testauksessa käytetään mocha-ohjelmistokehystä, syinä jo pienehkö kokemus koulun puolesta ja Nativescript-tuki. Automatisointiin voidaan käyttää Appium-työkalua hyvän integraation ja helpon käyttöönoton vuoksi, mikäli taidot riittävät siihen. Tällöin voidaan taata automaattisen testauksen mobiiliympäristössä.
 
 ### Hyväksymiskriteerit
 
-- Specify the criteria that will be used to determine whether each test item (software/product) has passed or failed testing.
-- What criteria we use on testing? You  can define the criteria for each testable level (component, integration in the small, system etc.) separately
-- Remember that you can use metrics as a passing criteria also!
-
-FI: Millä tavalla jokin testaustaso voidaan todeta päättyneeksi? Mittaristo sille, että testaus on suoritettu.
+Hyväksymiskriteereinä toimii sovelluksen integraatiotestien läpäisy, sekä käyttäjätesteissä positiivinen tulos.
 
 ### Testauksen keskeytys ja jatkaminen
 
-- For all or part of testing activities. When the testing is suspended and why?
-- Which activities must be repeated on resumption? Smoke tests etc?
-
-FI: Kriteeristö sille milloin testaus keskeytetään ja milloin se voidaan uudelleen aloittaa. Esimerkkejä?
+Mikäli testaajan koodin rakenne mahdollistaa testin kaatumiset ja muita komplikaatioita, tämä voidaan määrittää testin keskeytymiseksi. Kun koodi saadaan refaktoiroitua kunnolliseksi, testi voi jatkua.
 
 ## Tuotokset
 
-- List test deliverables, and links to them if available, including the following:
-  - Plans and specifications
-  - All kinds of test reports
-  - Logs
-  - Scripts and testing data
-  - Basically define everything the testing activities is producing to the customer
-
-FI: Samoin kuin projektisuunnitelmassa projektin osalta. Mitä asiakas/muu ryhmä saa testauksen aikana käsiinsä.
+Projektiryhmän muut jäsenet saavat tiedon/palautteen testien suoriutumisesta. Esim. jos käyttäjätestauksessa ilmenee virheitä, tästä ilmoitetaan sisällöntuottajalle.
 
 ## Ympäristö
 
-- All environmental requirements like
-  - Security
-  - Office space
-  - Hardware
-  - Software
-  - Tools
-
-FI: Ympäristön vaatimukset. Jos eroavat eri testaustasoilla, niin pitää kirjata erikseen jokaiseen testaukseen liittyen.
+Ympäristön osalta ei suuria muutoksia. Hyvä ergonomia ja rauhallinen asenne auttaa pitkälle.
 
 ## Velvollisuudet/vastuut
 
-- What are the roles and responsibilities of the testing team members?
-- What responsibilities the development team has towards the testing team?
-- 3rd party responsibilities?
-
-FI: Vastuut. Yksinkertaisesti. Tässä meillä?
+Ryhmän testivastaaja (Mikko Hannukainen) on vastuussa testien luonnista sekä niiden laadusta, mutta jokaisella on velvoite kirjoittaa testit omiin luotuihin komponentteihin.
 
 ## Osaaminen ja sen hankinta
 
-- How the team is prepared for tasks ahead?
-- Do they know what to do?
-- Define every skill the team must have to accomplish exellent testing! Remember roles.
-
-FI: Mitä osaamista tarvitaan ja miten se hankitaan jos sitä ei ole.
+Osaamista ryhmällä on vähän ja kokemusta testeistä on ainoastaan pienesti koulun puolesta. Jokainen ohjelmoija perehtyy testikehyksiin ja työkaluihin itsenäisesti tai testivastaajan kanssa.
 
 ## Aikataulut
 
-- Milestones (following the project milestones). General dates and checkpoints.
-- Item transmittal milestones. When components are ready for testing? When a certain document is to be delivered?
-- Environmental milestones. F.ex. when a certain tool is delivered?
-- Resource milestones (what is needed and when). Also includes testing personnel! It might be so that a key test designer is in another project in the beginning.
-
-FI: Testauksen aikataulutusta.
+Ryhmän kokemuksen puutteen vuoksi testaukseen käytetään resursseja testaajan näkökulman kannalta. Käyttäjätestausta varten tiimi valitsee demoa edeltävän päivän, jolloin käydään vielä viimeiset käyttäjätestaukset.
 
 ## Riskit
 
@@ -142,9 +99,27 @@ FI: Testauksen aikataulutusta.
 
 FI: Mitä riskejä ja miten ne hallitaan. Perus PM kamaa.
 
+#### 1. Kosmeettiset riskit
+
+Kirjoitusvirheet, väärän muotoiset/väriset elementit. Eivät vaikuta sovelluksen toimintaan.
+
+#### 2. Matalan tason riskit
+
+Kirjoitusvirheet, väärän muotoiset/väriset 
+elementit. Eivät vaikuta sovelluksen toimintaan.
+
+#### 3. Keskitason riskit
+
+Elementit ovat kohdistettu väärin, tai eivät näy. Painikkeet eivät toimi. Helposti korjattavissa olevat riskit.
+
+#### 4. Korkean tason riskit
+
+Data viedään tietokantaan väärässä muodossa, tai tieokannasta tuotu data on väärässä muodossa/ei löydy. Kasvi generoituu vääränlaisesti, algoritmit eivät toimi. Vaatii isompia toimenpiteitä.
+
+#### 5. Vakavat riskit
+
+Serveri tai backend kaatuu, frontendin virheellinen tulostus. Datan siirto aiheuttaa komponentin kaatumisen tai sovelluksen kehitysvaiheessa olevan komponentin integrointi rikkoo sovelluksen osia. Hyvin vakavasti otettavat riskit.
+
 ## Oletukset ja riippvuudet
 
-- List the assumptions that have been made during the preparation of this plan.
-- List the dependencies.
 
-FI: Listaa olettamukset ja mahdolliset riippuvuudet
