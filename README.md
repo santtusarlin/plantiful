@@ -1,2 +1,3 @@
-# plantiful
-# testi!
+# Plantiful
+## Ticorporate projekti
+Teretulemast Plantifulin GitHubiin
