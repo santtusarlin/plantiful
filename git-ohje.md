@@ -2,28 +2,22 @@
 
 ## Init
 
-git init // alusta oma kansio
+git clone https://github.com/jamktiko/plantiful.git // alusta oma kansio
 
-git remote add origin https://github.com/jamktiko/plantiful.git
+git pull origin dev 
 
-git pull origin prod 
-
-git branch --set-upstream-to=origin/prod master // oma master-haara trackaa serverin prodia
+git checkout dev // automaattiseti setuppaa remote branch trackin origin/dev
 
 ---
 
 ## Workflow
 
-git pull // päivitetään oma master branch hakemalla serverin prod
+git checkout -b feature_name // dev branchista oma branchi jolla tehdään muutokset
 
-git branch < omahaara > master // luodaan masterista oma branch
-
-git checkout < omahaara > // muutokset tehdään omalla haaralla
-
-git checkout master
+git checkout dev
 
 git pull // ennen mergeä päivitetään master
 
-git merge < omahaara >
+git merge feature_name
 
-git push origin HEAD:prod
+git push
