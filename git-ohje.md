@@ -14,6 +14,10 @@ git checkout dev // automaattiseti setuppaa remote branch trackin origin/dev
 
 git checkout -b feature_name // dev branchista oma branchi jolla tehdään muutokset
 
+git add . // muutokset stageen
+
+git commit -m "message" // commit muutokset
+
 git checkout dev
 
 git pull // ennen mergeä päivitetään master
