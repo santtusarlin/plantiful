@@ -53,7 +53,7 @@ Luvussa 2. kerrotaan visio, luvussa 3. käydään läpi käyttäjäkertomukset j
 
 Haluamme tulla käytetyimmäksi mielialanpäiväkirjaksi, joka auttaa ihmisiä tutkimaan eri asioiden vaikutuksia mielialaansa ja hyödyntämään tietoa itsehoidossa tai ammattilaisen apuna.
 
-#####Slogan:
+##### Slogan:
 Plantify your mood
 
 ## Käyttäjäkertomukset
