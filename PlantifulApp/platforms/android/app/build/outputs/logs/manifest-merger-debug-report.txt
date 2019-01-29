@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:multidex:1.0.2] /home/santtu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/18b5651bf0da7987eb3dd4aecfff9bd8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2d4a14fbecf6169051c24b8d07c15fbc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/140f1984d722ebcbc447106b6c5a207c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/587e7c2639133f58d4ea9d798bf827cd/AndroidManifest.xml:17:1-22:12
+MERGED from [:nativescript-optimized-with-inspector:] /home/santtu/.gradle/caches/transforms-1/files-1.1/nativescript-optimized-with-inspector.aar/17ee7ed6f70e78dde9c131081defd949/AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] /home/santtu/.gradle/caches/transforms-1/files-1.1/widgets-release.aar/deea4570f0216aa9244fd801ef7f72c3/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/04ef116efb2ac450a2f99521e23742d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/7079c1310d93c5c17c2ec03f4fecd248/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/48ddb6578e1739b348586d810d4d30c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/556e51414a25cdc69862620d92c4f124/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c2203cfb61aa1275cb90258d3fec9a57/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/faac70f36d78e29bb658e7f09290848e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8409c3129cb960516c0086e0b51bac25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/44f94a758f3886925f306192fbfaab25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c052c91f3ea509f5bda8c0673274a629/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3e8a58b0cb7cc9a6686a5fdb4288e2ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/a176c0334eb3ffaf9338583f5be17f4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/42a42dc78aa16edd46898cb12d0920bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d33d1bd9268a2c722926953663305eed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/068598d0f3d617cbd0d627c31d6c6bef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a10f19482572a13abaef5e6894720d16/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/27e0136096f7622dd68c9b1a7ecd7845/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9b06f149b00d2b30989ae7029823d2bf/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0439d53ef1a29452691e4b9c42685b22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d94e7aac79d45ea8f0e38fd6e8038a1e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4192c52281d40644e40f45d8a298689/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a46ca7ac51f3770cdae31eabdd204049/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/44b73e63a1da1d70fe272134d93336d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aaa22a6a281aa24510a60e19a3f12fd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab5b508939b4d0f38e56e694f20587f1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/179080fbaf759332970846fafe433145/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/bf1cfc66378abb6db3972f92986f35af/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/e2c3fd1806d42b676e6455587fd2ba2c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3933aea24fe46527cab18e6c5540978a/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:3:2-41
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:5:2-27
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:4:2-25
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:7:2-11:33
+	android:largeScreens
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:10:3-30
+	android:smallScreens
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:8:3-30
+	android:normalScreens
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:9:3-31
+	android:xlargeScreens
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:11:3-31
+uses-sdk
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+MERGED from [com.android.support:multidex:1.0.2] /home/santtu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/18b5651bf0da7987eb3dd4aecfff9bd8/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /home/santtu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/18b5651bf0da7987eb3dd4aecfff9bd8/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2d4a14fbecf6169051c24b8d07c15fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2d4a14fbecf6169051c24b8d07c15fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/140f1984d722ebcbc447106b6c5a207c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/140f1984d722ebcbc447106b6c5a207c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/587e7c2639133f58d4ea9d798bf827cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/587e7c2639133f58d4ea9d798bf827cd/AndroidManifest.xml:20:5-44
+MERGED from [:nativescript-optimized-with-inspector:] /home/santtu/.gradle/caches/transforms-1/files-1.1/nativescript-optimized-with-inspector.aar/17ee7ed6f70e78dde9c131081defd949/AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] /home/santtu/.gradle/caches/transforms-1/files-1.1/nativescript-optimized-with-inspector.aar/17ee7ed6f70e78dde9c131081defd949/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /home/santtu/.gradle/caches/transforms-1/files-1.1/widgets-release.aar/deea4570f0216aa9244fd801ef7f72c3/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /home/santtu/.gradle/caches/transforms-1/files-1.1/widgets-release.aar/deea4570f0216aa9244fd801ef7f72c3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/04ef116efb2ac450a2f99521e23742d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/04ef116efb2ac450a2f99521e23742d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/7079c1310d93c5c17c2ec03f4fecd248/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/7079c1310d93c5c17c2ec03f4fecd248/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/48ddb6578e1739b348586d810d4d30c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/48ddb6578e1739b348586d810d4d30c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/556e51414a25cdc69862620d92c4f124/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/556e51414a25cdc69862620d92c4f124/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c2203cfb61aa1275cb90258d3fec9a57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c2203cfb61aa1275cb90258d3fec9a57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/faac70f36d78e29bb658e7f09290848e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/faac70f36d78e29bb658e7f09290848e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8409c3129cb960516c0086e0b51bac25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8409c3129cb960516c0086e0b51bac25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/44f94a758f3886925f306192fbfaab25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/44f94a758f3886925f306192fbfaab25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c052c91f3ea509f5bda8c0673274a629/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c052c91f3ea509f5bda8c0673274a629/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3e8a58b0cb7cc9a6686a5fdb4288e2ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3e8a58b0cb7cc9a6686a5fdb4288e2ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/a176c0334eb3ffaf9338583f5be17f4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/a176c0334eb3ffaf9338583f5be17f4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/42a42dc78aa16edd46898cb12d0920bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/42a42dc78aa16edd46898cb12d0920bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d33d1bd9268a2c722926953663305eed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d33d1bd9268a2c722926953663305eed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/068598d0f3d617cbd0d627c31d6c6bef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/068598d0f3d617cbd0d627c31d6c6bef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a10f19482572a13abaef5e6894720d16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a10f19482572a13abaef5e6894720d16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/27e0136096f7622dd68c9b1a7ecd7845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/27e0136096f7622dd68c9b1a7ecd7845/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9b06f149b00d2b30989ae7029823d2bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9b06f149b00d2b30989ae7029823d2bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0439d53ef1a29452691e4b9c42685b22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0439d53ef1a29452691e4b9c42685b22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d94e7aac79d45ea8f0e38fd6e8038a1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d94e7aac79d45ea8f0e38fd6e8038a1e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4192c52281d40644e40f45d8a298689/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4192c52281d40644e40f45d8a298689/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a46ca7ac51f3770cdae31eabdd204049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a46ca7ac51f3770cdae31eabdd204049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/44b73e63a1da1d70fe272134d93336d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/44b73e63a1da1d70fe272134d93336d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aaa22a6a281aa24510a60e19a3f12fd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aaa22a6a281aa24510a60e19a3f12fd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab5b508939b4d0f38e56e694f20587f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab5b508939b4d0f38e56e694f20587f1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/179080fbaf759332970846fafe433145/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/179080fbaf759332970846fafe433145/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/bf1cfc66378abb6db3972f92986f35af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/bf1cfc66378abb6db3972f92986f35af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/e2c3fd1806d42b676e6455587fd2ba2c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/e2c3fd1806d42b676e6455587fd2ba2c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3933aea24fe46527cab18e6c5540978a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/santtu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3933aea24fe46527cab18e6c5540978a/AndroidManifest.xml:20:5-44
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+	android:targetSdkVersion
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:15:3-32
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:14:3-29
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:17:2-76
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:17:19-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:18:2-77
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:18:19-75
+uses-permission#android.permission.INTERNET
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:19:2-63
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:19:19-61
+application
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:21:2-42:16
+MERGED from [com.android.support:design:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/140f1984d722ebcbc447106b6c5a207c/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/140f1984d722ebcbc447106b6c5a207c/AndroidManifest.xml:22:5-20
+MERGED from [:widgets-release:] /home/santtu/.gradle/caches/transforms-1/files-1.1/widgets-release.aar/deea4570f0216aa9244fd801ef7f72c3/AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] /home/santtu/.gradle/caches/transforms-1/files-1.1/widgets-release.aar/deea4570f0216aa9244fd801ef7f72c3/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9b06f149b00d2b30989ae7029823d2bf/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9b06f149b00d2b30989ae7029823d2bf/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/santtu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c8dd95dcad8056e790a0e269862b5ae2/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:25:3-35
+	android:icon
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:24:3-32
+	android:allowBackup
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:23:3-29
+	android:theme
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:26:3-34
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:22:3-49
+activity#com.tns.NativeScriptActivity
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:28:3-40:14
+	android:label
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:30:4-49
+	android:configChanges
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:31:4-65
+	android:theme
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:32:4-44
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:29:4-47
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:34:4-87
+	android:resource
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:34:50-84
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:34:15-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:36:4-39:20
+action#android.intent.action.MAIN
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:37:5-57
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:37:13-54
+category#android.intent.category.LAUNCHER
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:38:5-65
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:38:15-62
+activity#com.tns.ErrorReportActivity
+ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:41:3-57
+	android:name
+		ADDED from /home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/AndroidManifest.xml:41:13-55
