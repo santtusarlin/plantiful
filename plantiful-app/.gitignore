@@ -3,6 +3,13 @@ hooks/
 node_modules/
 platforms/
 
+# compiled
+*.js.map
+*.js
+*.css
+!tools/*.js
+!hooks/after-createProject/*.js
+
 # Logs
 logs
 *.log
