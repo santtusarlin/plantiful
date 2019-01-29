@@ -1,1 +1,0 @@
-/home/santtu/plantiful/PlantifulApp/platforms/android/app/src/main/assets/app
