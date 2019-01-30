@@ -3,12 +3,10 @@ hooks/
 node_modules/
 platforms/
 
-# compiled
+# NativeScript Template
 *.js.map
 *.js
-*.css
-!tools/*.js
-!hooks/after-createProject/*.js
+!webpack.config.js
 
 # Logs
 logs
