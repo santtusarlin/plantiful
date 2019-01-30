@@ -212,6 +212,8 @@ Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat 
 
 ### Asiakasraportointi
 
+Scrum Master raportoi projektin tilasta Niko Kiviaholle viikottain perjantaina viikkopalaverin jälkeen, klo 16:00 mennessä.
+
 Ohjausryhmä näkee tuotetut dokumentit GitHubista.
 
 ### Viikkopalaverikäytäntö/Daily Scrum
