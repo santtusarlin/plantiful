@@ -4,8 +4,6 @@
 
 git clone https://github.com/jamktiko/plantiful.git // alusta oma kansio
 
-git pull origin dev 
-
 git checkout dev // automaattiseti setuppaa remote branch trackin origin/dev
 
 ---
