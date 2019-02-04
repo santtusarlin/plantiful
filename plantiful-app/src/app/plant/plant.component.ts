@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Page } from 'tns-core-modules/ui/page';
 @Component({
   selector: 'ns-plant',
   templateUrl: './plant.component.html',
@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlantComponent implements OnInit {
 
-  constructor() { }
+  constructor(private page: Page) { }
 
   ngOnInit() {
+    this.page.actionBarHidden = true;
   }
 
 }
