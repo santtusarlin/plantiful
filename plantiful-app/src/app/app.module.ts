@@ -7,6 +7,8 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { PlantComponent } from "./plant/plant.component";
 import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
+import { GraphComponent } from './stats/graph/graph.component';
+import { CalendarComponent } from './stats/calendar/calendar.component';
 
 @NgModule({
     bootstrap: [
@@ -21,7 +23,9 @@ import { SettingsComponent } from './settings/settings.component';
         NavbarComponent,
         PlantComponent,
         StatsComponent,
-        SettingsComponent
+        SettingsComponent,
+        GraphComponent,
+        CalendarComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA
