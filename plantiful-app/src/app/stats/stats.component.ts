@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
+  isTrue: boolean = true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setBoolean(b) {
+    this.isTrue = b;
   }
 
 }
