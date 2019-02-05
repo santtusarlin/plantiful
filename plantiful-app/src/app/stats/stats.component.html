@@ -1,7 +1,7 @@
 <StackLayout>
-    <StackLayout class="leiska" orientation="horizontal" height="100" horizontalAlignment="center" verticalAlignment="top">
-        <Button class="nappi" text="Kalenteri" (tap)="setBoolean(true)"></Button>
-        <Button class="nappi" text="Graafi" (tap)="setBoolean(false)"></Button>
+    <StackLayout orientation="horizontal" height="100" horizontalAlignment="center" verticalAlignment="top">
+        <Button text="Kalenteri" (tap)="setBoolean(true)"></Button>
+        <Button text="Graafi" (tap)="setBoolean(false)"></Button>
     </StackLayout>
     <StackLayout *ngIf="isTrue">
         <ns-calendar></ns-calendar>
