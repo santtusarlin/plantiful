@@ -65,6 +65,8 @@ HLTP | High Level Test Plan
 |---|---|
 HLTP | [HLTP.md](hltp.md)
 Esitutkimus | [esitutkimus.md](esitutkimus.md)
+Git-Ohje | [git-ohje.md](../git_ohjeet/git-ohje.md)
+Git-Workflow | [github_workflow.png](../git_ohjeet/github_workflow.png)
 
 ## Projektin sisältö
 
@@ -81,13 +83,13 @@ Tavoitteena on saada tuotettua kaikki tuotokset listattuna alempana:
 ### Tuotokset     
 
 - Projektisuunnitelma
-- HTLP
+- HLTP
 - Esitutkimus
 - Sprint backlog
 - Dokumentointi
 - Markkinointisuunnitelma
 - Business model canvas
-- Demo tuote
+- Julkaisukelpoinen Demo-tuote
 - Viikkopalaveri-pöytäkirjat
 - Sprint Review-pöytäkirjat
 - Sprint Retrospektiivi-pöytäkirjat
@@ -108,13 +110,9 @@ osallistuu koko Scrum-tiimi.
 
 Aluksi Scrum-tiimi määrittelee, mikä on tulevan Sprintin Sprint Goal ja kuinka paljon töitä tiimi pystyy tekemään Sprintin aikana.
 
-Sitten Scrum-tiimi käy Product Ownerin johdolla läpi Product Backlogia ja valitsevat sieltä Sprint
-Goalin mukaiset User Storyt ja siirtävät ne Sprint Backlogiin.
+Sitten Scrum-tiimi käy Product Ownerin johdolla läpi Product Backlogia ja valitsevat sieltä Sprint Goalin mukaiset User Storyt ja siirtävät ne Sprint Backlogiin.
 
-Tämän jälkeen
-Scrum-tiimi käy läpi Sprint Backlogissa olevat User Storyt ja pilkkovat ne
-Taskeihin, jotka ovat tarkkoja kuvauksia yksittäisistä asioista, joita User Story
-sisältää. 
+Tämän jälkeen Scrum-tiimi käy läpi Sprint Backlogissa olevat User Storyt ja pilkkovat ne Taskeihin, jotka ovat tarkkoja kuvauksia yksittäisistä asioista, joita User Story sisältää. 
 Taskeille voidaan myös tarvittaessa suunnitella tarkat määreet, miltä
 lopputuloksen tulisi näyttää tai miten se tulisi toimia.
 
@@ -125,7 +123,7 @@ Testit tehdään high level test plan- dokumentin mukaisesti.
 Projekti loppuu projektin konkurssipäivänä 10.5.2019.
 
 ## Projektin resurssit
-4 henkilöä, 6h 45min työtunteja per päivä. Keskiviikkoisin on Concept Lab 13.2 alkaen, joten päivät kestävät silloin 9.12
+4 henkilöä, 6h 45min työtunteja per päivä. Keskiviikkoisin on Concept Lab 13.2 alkaen, joten päivät kestävät silloin klo 9-12
 
 ### Projektin organisaatio
 
@@ -212,7 +210,7 @@ Microsoft Teams toimii tiimin virallisena kommunikaatiovälineenä. Tuotettavat 
 
 ### Asiakasraportointi
 
-Scrum Master raportoi projektin tilasta Niko Kiviaholle viikottain perjantaina viikkopalaverin jälkeen, klo 16:00 mennessä.
+Scrum Master raportoi projektin tilasta Niko Kiviaholle viikottain perjantaisin viikkopalaverin jälkeen, klo 16:00 mennessä.
 
 Ohjausryhmä näkee tuotetut dokumentit GitHubista.
 
@@ -220,15 +218,13 @@ Ohjausryhmä näkee tuotetut dokumentit GitHubista.
 
 Viikkopalaveri pidetään perjantaisin klo 12:30. Palaverin aikana selvitetään tehdyt työt ja suunnitellaan tulevat. Palavereista tehdään pöytäkirja joita säilytetään projektihakemistossa.
 
-Daily Scrum päivittäin klo 10:00 projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia? Sprinttien jälkeen pidetään Sprint Review ja Sprint Retrospektiivi.
+Daily Scrum päivittäin klo 10:00 projektin toimitilassa whiteboardin edessä, käydään läpi nopeasti: Mitä tehtiin eilen? Mitä aiotaan tehdä tänään? Oliko ongelmia?
 
 ### Kommunikointitavat
 
 Microsoft Teams toimii projektin virallisen kommunikaatiotyökaluna.
 
 ## Dokumentointi
-
-GitHub commit kommentit ja koodi kommentoidaan.
 
 ### Dokumenttipohjat
 
@@ -238,7 +234,7 @@ Projektissa käytetään jamktiko github-organisaation alta löytyviä dokumentt
 
 Käytämme versionhallintaan GitHubia, josta jokaisella tiimin jäsenellä on oikeus nähdä dokumentit. Käytämme versionhallintaan myös versionumeroita ja 1.0 julkaistaan vasta, kun tuote on hyväksyttävästi valmis.
 
-Tiimin jäsenet branchaavat itselleen masterin ja mergeävät muutokset, jotka product owner lopulta hyväksyttää.
+Tiimi käyttää GitHubia tiimin oman git-ohjeen mukaan sovitulla tavalla.
 
 ## Riskien hallinta
 
@@ -249,5 +245,4 @@ Hermoromahdus | Pieni | Hyvin Suuri | Ei crunchailla ja pidetään itsestämme 
 
 
 ## Avoimet asiat
-
-Aikataulut ovat vielä hieman auki, mutta tarkemmat tiedot päivitetään esituotantoviikon aikana.
+--
