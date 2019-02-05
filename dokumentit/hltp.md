@@ -12,7 +12,7 @@ Mikko Poutanen
 
 | Viittaus | Materiaali |
 |---|---|
-Projektisuunnitelma | \<linkki  projektisuunnitelmaan>
+Projektisuunnitelma | [projektisuunnitelma.md](projektisuunnitelma.md)
 
 ## Intro
 
