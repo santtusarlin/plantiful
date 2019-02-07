@@ -33,9 +33,10 @@
   - [Avoimet asiat](#avoimet-asiat)
 
 ### Muutoshistoria
-| Versio | Kuvaus | Tekijä
-|---|---|---|
-0.9p | Valmis proposal | Santtu Sarlin 
+| Versio | Kuvaus | Tekijä | pvm
+|---|---|---|---|
+0.1d | Alustava luonnos | Santtu Sarlin | 21.1.2019
+0.9p | Valmis proposal | Santtu Sarlin | 6.2.2019 
 
 ## Projektin tiedot
 
@@ -58,6 +59,7 @@ Markdown | Merkkauskieli
 Scrum | Sovelluskehitysmuoto, jonka pääpointteina on Daily Scrumit tekä Sprintit
 Daily Scrum | Päivittäinen tilannekatsaus
 Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
+Sprint Review | Sprintin jälkeen pidettävä sessio, jossa tutkitaan mitä on sprintin aikana saatu tehtyä
 Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
 Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
 Branch | GitHub repositoryn haara
@@ -248,7 +250,7 @@ Tiimi käyttää GitHubia tiimin oman git-ohjeen mukaan sovitulla tavalla.
 
 ## Riskien hallinta
 
-Viikkopalaverissa havainnoidaan ja käydään läpi mahdollisia esille tulleita riskejä ja arvioidaan niiden todennäköisyys, impakti, ja kuinka ne saadaan hallittua. Myös retrospektiivissä voidaan nostaa potentiaaliset riskit esille.
+Viikkopalaverissa havainnoidaan ja käydään läpi mahdollisia esille tulleita riskejä ja arvioidaan niiden todennäköisyys, impakti, ja mietitään toimenpiteet kuinka ne saadaan hallittua. Myös retrospektiivissä voidaan nostaa potentiaaliset riskit esille.
 
 
 ## Avoimet asiat
