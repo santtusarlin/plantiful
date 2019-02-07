@@ -18,7 +18,10 @@ Projektisuunnitelma | [projektisuunnitelma.md](projektisuunnitelma.md)
 
 ### Projekti lyhyesti
 
-Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen päätoimintoihin kuuluu myös virtuaalinen kasvi, joka kasvaa jokaiselle käyttäjälle erilaiseksi käytön myötä.
+Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen päätoimintoihin kuuluu myös virtuaalinen kasvi, joka kasvaa jokaiselle käyttäjälle erilaiseksi käytön myötä. Tarkoituksena on tuoda käyttäjille mahdollisuus kirjata päivän mielialat vaivattomasti ja kerätä heille kooste näistä kirjauksista. Näin käyttäjä voi tarkastella omaa mielialaansa isompina kokonaisuuksina, eikä pelkästään yhden päivän mukaan. Tämän toivotaan antavan käyttäjälle näkökulmaa siitä, että kaikki päivät eivät ole toinen toistaan kamalia.
+
+Testaus tässä projektissa on tarkoitus varmistaa sovelluksen vaadittu laatu sekä toimivuus, millä taataan käyttäjille tuotteemme visio.
+
 
 ### Tarkoitus
 
@@ -29,14 +32,10 @@ Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 ### Test items
 
-- Ulkoasu
-  - Heuristiikka
 - Toiminnallisuus
-- Datan kulku
-  - Kyselyt tietokantaan
-  - Yhteyden toiminnallisuus
-  - Datan talletus paikallisesti
-
+- Käyttäjäkokemus
+  - Ulkoasu
+  - Heuristiikka
 
 ### Testing tasks
 
@@ -62,42 +61,41 @@ Sovelluksen yleiset animaatiot sekä siirtymiset koetaan mitättömiksi tapauksi
 
 ### Lähestymistapa
 
-Testauksessa käytetään mocha-ohjelmistokehystä, syinä jo pienehkö kokemus koulun puolesta ja Nativescript-tuki. Automatisointiin voidaan käyttää Appium-työkalua hyvän integraation ja helpon käyttöönoton vuoksi, mikäli taidot riittävät siihen. Tällöin voidaan taata automaattisen testauksen mobiiliympäristössä.
+Yksikkkötestauksessa käytetään mocha-ohjelmistokehystä, syinä jo pienehkö kokemus koulun puolesta ja Nativescript-tuki. Käyttöliittymän mockupista luodaan malli Adobe XD:llä, jolla voidaan suorittaa käyttäjätestaus. Manuaalitestaus harjoitetaan tarvittaessa.
 
 ### Hyväksymiskriteerit
 
-Hyväksymiskriteereinä toimii sovelluksen integraatiotestien läpäisy, sekä käyttäjätesteissä positiivinen tulos.
+Yksittäinen stoori voidaan todeta hyväksytyksi kun siihen kohdistetut testitapaukset on ajettu ja 	tärkeimmät bugit on korjattu
 
 ### Testauksen keskeytys ja jatkaminen
 
-Mikäli testaajan koodin rakenne mahdollistaa testin kaatumiset ja muita komplikaatioita, tämä voidaan määrittää testin keskeytymiseksi. Kun koodi saadaan refaktoiroitua kunnolliseksi, testi voi jatkua.
+Kriittisen virheen sattuessa testi keskeytetään niin pitkäksi aikaa, kunnes virhe on saatu korjattua.
 
 ## Tuotokset
 
-Projektiryhmän muut jäsenet saavat tiedon/palautteen testien suoriutumisesta. Esim. jos käyttäjätestauksessa ilmenee virheitä, tästä ilmoitetaan sisällöntuottajalle.
+Projektin aikana tapahtuvan testauksen myötä syntyy dokumentaatiota testien suoriutumisesta ja bugiraporteista.
 
 ## Ympäristö
-
-Ympäristön osalta ei suuria muutoksia. Hyvä ergonomia ja rauhallinen asenne auttaa pitkälle.
+mitään ympäristöä testaamista varten. Kaikki yksikkö
+Projektin testauksessa ei tulla luomaan erillistä ympäristöä.
 
 ## Velvollisuudet/vastuut
 
-Ryhmän testivastaaja (Mikko Hannukainen) on vastuussa testien luonnista sekä niiden laadusta, mutta jokaisella on velvoite kirjoittaa testit omiin luotuihin komponentteihin.
+Olemme vastuussa tuotteen laadun varmistamisesta, ettei mikään sovelluksen osa integroida päähaaran buildiin ilman laadunvarmistusta.
 
 ## Osaaminen ja sen hankinta
 
-Osaamista ryhmällä on vähän ja kokemusta testeistä on ainoastaan pienesti koulun puolesta. Jokainen ohjelmoija perehtyy testikehyksiin ja työkaluihin itsenäisesti tai testivastaajan kanssa.
+Osaamista haetaan tarvittaessa yhdessä testivastaajan ja opetusta tarvitsevan kanssa joko verkkomateriaalia tutkien, tai opettajana avulla.
 
 ## Aikataulut
 
-Ryhmän kokemuksen puutteen vuoksi testaukseen käytetään resursseja testaajan näkökulman kannalta. Käyttäjätestausta varten tiimi valitsee demoa edeltävän päivän, jolloin käydään vielä viimeiset käyttäjätestaukset.
+Kun task on siirretty in progressista review:n, sen taskin testi tulee suorittaa ennen lopullista hyväksyntää.
 
 ## Riskit
 
-- List the risks that have been identified.
-- Create a plan for each event that the identified risks may create when triggered.
+Testien riskinhallinta toteutetaan yhdessä projektin riskinhallintaprosessin kanssa, jossa testaaja voi esittää omia näkökulmia.
 
-FI: Mitä riskejä ja miten ne hallitaan. Perus PM kamaa.
+## Bugitasot
 
 #### 1. Kosmeettiset riskit
 
@@ -121,5 +119,5 @@ Data viedään tietokantaan väärässä muodossa, tai tieokannasta tuotu data o
 Serveri tai backend kaatuu, frontendin virheellinen tulostus. Datan siirto aiheuttaa komponentin kaatumisen tai sovelluksen kehitysvaiheessa olevan komponentin integrointi rikkoo sovelluksen osia. Hyvin vakavasti otettavat riskit.
 
 ## Oletukset ja riippvuudet
-
+N/A
 
