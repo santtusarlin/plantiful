@@ -1,0 +1,69 @@
+# The Business Model Canvas
+ 
+### Avainkumppanit
+ 
+Jamk hyvinvointivastaavan kanssa voidaan tehdä yhteistyötä.
+Lisäksi kuraattori, tutor opettajat, koulupsykologi ja oppilaitospappi
+voivat olla kiinnostuneita. Masentuneet ovat potenttiaallisia käyttäjiä
+joten mielenterveyden parissa työskentelevien kanssa yhteistyö on luontevaa.
+ 
+Henna Haarala on sovittu että hän tarvittaessa tuottaa meille
+grafiikkaa. Henna on vakituisesti Superkivafuntimessä.
+ 
+### Avaintoiminnat
+ 
+Eroamme vastaavista kilpailijoista visuaallisen kasvin avulla
+joka kasvaa sovellusta käyttäessä. Tämän ja minimalistisen estetiikan
+avulla saamme asiakkaat kiinnostuneiksi sovelluksestamme ja
+ostamaan maksullisen version.
+ 
+### Avainresurssit
+ 
+Tärkein resurssimme on osaava työvoima. Tarvitsemme osaamista
+markkinoinnissa, koodauksessa, sisällöntuotannossa ja projektinhallinnassa.
+Toinen asia on laitteisto joka koostuu tietokoneista ja niiden
+oheislaitteista.
+ 
+### Arvolupaus
+ 
+Tarjoamme käyttäjille mahdollisuuden tarkkailla päivien laatua
+pidemmälläkin aikavälillä. Sovelluksessamme olevan kasvin avulla
+tarjoamme visuaallista ilmettä. Kasvi kehittyy siihen syötettyjen
+päivien laadun mukaan. Näin myös erotumme kilpailjoistamme.
+ 
+### Asiakassuhteet
+ 
+Käyttäjät tavoittavat meidät sosiaallisen median kautta.
+Tärkeimmät kanavamme ovat instagram ja twitter. Koska olemme
+pieni yritys niin keskitymme inbound markkinointiin. Meillä
+on omat nettisivut jonka avulla kerromme potenttiaallisille
+käyttäjille sovelluksestamme. Myös mainostajat löytävät meidät
+sivujemme kautta.
+ 
+### Jakelukanavat
+ 
+Koska sovelluksemme on applikaatio kännykälle niin käytämme
+Google Play-kauppaa androidille ja iOS appstorea applen käyttäjille.
+ 
+### Asiakasryhmät
+ 
+Kaikki omaa elämäänsä seuraavat ihmiset ovat potenttiaallisia
+asiakkaita. Etenkin nuoret naiset (16-30 vuotiaat) ovat
+kohderyhmämme. Lifestylestä kiinnostuneet käyttävät Plantifulin
+tyylisiä applikaatioita, joten me myös kohdennamme markkinointia
+heihin. Eroamme kilpailijoista visuaallisen kasvin avulla, joten
+visuaalista ilmettä haluavat käyttävät sovellustamme. Masentuneet ovat
+myös oma ryhmänsä, koska he tarvitsevat apua elämänhallintaan.
+ 
+### Kustannusrakenne
+ 
+Sovelluskauppojen maksut ja ylläpidosta aiheutuvat kulut. Myös firebasen
+ja pilvipalveluiden ylläpito aiheuttaa kuluja. Muuten kulut ovat erittäin
+maltilliset.
+ 
+### Tulovirrat
+ 
+Saamme tuloja kahdella eri tavalla. Ensimmäinen on mainostulot sovelluksessa.
+Toinen keino on tarjota maksullinen premium käyttäjä. Premium ostetaan
+kertamaksulla sovelluskaupan avulla. Premium-käyttäjiltä on piilotettu
+mainokset.
