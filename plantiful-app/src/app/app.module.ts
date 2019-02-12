@@ -9,6 +9,7 @@ import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GraphComponent } from './stats/graph/graph.component';
 import { CalendarComponent } from './stats/calendar/calendar.component';
+import { MoodEntryComponent } from './mood-entry/mood-entry.component';
 
 @NgModule({
     bootstrap: [
@@ -25,7 +26,8 @@ import { CalendarComponent } from './stats/calendar/calendar.component';
         StatsComponent,
         SettingsComponent,
         GraphComponent,
-        CalendarComponent
+        CalendarComponent,
+        MoodEntryComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA
