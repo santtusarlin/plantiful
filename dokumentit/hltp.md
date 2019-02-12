@@ -34,30 +34,20 @@ Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 - Toiminnallisuus
 - Käyttäjäkokemus
-  - Ulkoasu
+  - Ulkoasu/käyttöliittymä
   - Heuristiikka
-
-### Testing tasks
-
-#### Tekniikka
-Kehitysvaiheessa olevan sovelluksen komponenttia testataan ennen käyttöönottoa yksikkötesteillä. Hyväksynnän jälkeen ko. komponentti voidaan yhdistää gitissä master-haaraan, missä suoritetaan vielä integraatiotesti.
-
-#### Ulkoasu ja käyttöliittymä
-
-Käyttöliittymää testataan käyttäjätestein: Ensiksi suunnitteilla olevaa ulkoasua testataan paperisena toteutuksena. Toinen testi on ulkoasun kehityksen jälkeinen käytettävyystesti mobiililaitteella.
-
 
 ### Testattavat ominaisuudet
 
-Sovelluksen luontevuuden vuoksi yksi tärkeimpiä testejä ovat ulkoasun funktionaalisuus ja heuristiikka. Kehitysvaiheessa pitää aina varmistaa, että jokainen sovelluksen elementti antaa loppukäyttäjälle sen tuloksen mitä elementille on ennaltaan määritetty. Tässä vaiheessa heuristiikkaa testataan myös sekä minimalistisuuden että käytettävyyden vuoksi.
+Testattavia ominaisuuksia sovelluksessa ovat toiminnallisuuden testaaminen, sekä käyttäjäkokemus ja -liittymä. Toiminnallisuudesta esimerkiksi kasvi on sovelluksen yksi tärkeimmistä featureista, joten sen toimivuus on yksi tiimimme prioriteeteista saada testattua ja hyväksyttyä käyttöönottoa varten. Käyttäjäkokemus ja siihen liittyvät ulkoasun ja käyttöliittymän komponentit ovat tarpeellisia saada testattua toimiviksi, koska sovelluksemme on pääosin ulkoasupainoitteinen. Datan kulku tietokannan ja mobiililaitteen välillä on kanssa soveliasta testata toimivaksi.
 
-Tekniikan osalta tärkeimpinä osina testauksessa ovat datan kulku sekä validointi, ja kasvin algoritmien oikeanlaisen luonnin ja sen mukaisen tuloksen saannin käyttöliittymälle. Tietokannasta saatava data pitää saapua mobiililaitteelle oikeassa muodossa virheettömästi, sekä datan siirto tietokantaan pitää tapahtua oikeassa muodossa ja ilman komplikaatioita. Kun datan siirtyminen toteutuu oikeanlaisesti, algoritmit osaavat täden luoda käyttäjälle oikeanlaisen kasvin.
+Skaalautuvuus eri laitteille on nice to have, joten sitä testataan jos aikataulu sitä suosii.
 
-Kasvin generointi pitää myös tapahtua oikeasti ja että siihen tarvittavat algoritmit osaavat muodostaa käyttäjän datasta oikeanlaisen rakenteen, mistä sitä kasvia voidaan lähteä buildaa.
+Toimintoja ja datan kulkua testataan yksikkötestein. Käyttäjäkokemusta testataan ajoittain julkaisemalla sovelluksesta demo, mitä sitten voidaan testauttaa käyttäjillä. Ennen demon luontia pitää olla käyttäjäkokemusta varten kaikki siihen liittyvät toiminnallisuudet, sekä ulkoasun että käyttöliittymän komponentit, testattuna.
 
 ### Ei testattavat ominaisuudet
 
-Sovelluksen yleiset animaatiot sekä siirtymiset koetaan mitättömiksi tapauksiksi ryhtyä testaamaan. Kyseisten elementit eivät kuulu sovelluksen valmistumisen kriteereihin, eli mikäli ne eivät toimi tai käyttäjätestauksessa ne koetaan vaikuttavan negatiivisesti käyttäjäkokemukseen, voidaan tuolloin tehdä päätös joko niille tarvittavista muutokstista tai niiden poistosta.
+Tietoturva on meidän ominaisuuksista vähäisin tarve, sillä meidän sovelluksessa ei kulje edes takaisin mitään arvokasta tietoa. Tietokantaan siirtyy vaan dataa kasvista ja sen kasvutavasta, mikä varmuuskopioidaan talteen sitä varten, jos tietomurto tapahtuu.
 
 ### Lähestymistapa
 
@@ -76,7 +66,7 @@ Kriittisen virheen sattuessa testi keskeytetään niin pitkäksi aikaa, kunnes v
 Projektin aikana tapahtuvan testauksen myötä syntyy dokumentaatiota testien suoriutumisesta ja bugiraporteista.
 
 ## Ympäristö
-mitään ympäristöä testaamista varten. Kaikki yksikkö
+
 Projektin testauksessa ei tulla luomaan erillistä ympäristöä.
 
 ## Velvollisuudet/vastuut
