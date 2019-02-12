@@ -1,0 +1,58 @@
+Plantiful - Viikko 6 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Mikko Hannukainen: 27,08h
+- HLTP
+- Sovelluksen runko
+- Käyttäjätestaus
+ 
+Santtu Sarlin: 26,26h (+1 lomapäivä)
+- Tietokannan mallinnus
+- Sovelluksen runko
+- Firebaseen sekä NativeScriptiin perehtyminen
+ 
+Miika Pollari: 30,84h
+- Testaus mockupit
+- Käyttäjätestaus
+- Visual Guidelines
+
+Mikko Poutanen: 28,01h
+- Liiketoimintasuunnitelma
+- Wordpress-sivun pohjistusta
+- Liiketoiminta tehtäviä
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Mikko Hannukainen
+- Kasvin toteutuksen suunnittelua
+- Canvasin toteutus
+
+Santtu Sarlin
+- Mood-lisäys näkymän toteutus
+ 
+Miika Pollari
+- Kasvin toteutuksen suunnitelua
+- Canvasin toteutus
+
+Mikko Poutanen
+- Wordpress mockup ja toteutusta
+- Liiketoiminta juttuja
+ 
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+Miika Pollari: 80,26h - lomapäiviä käytetty: (2)
+Santtu Sarlin: 84,26h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (1)
+Mikko Poutanen: 88,02h - lomapäiviä käytetty: (0)
+Mikko Hannukainen: 72,66h - lomapäiviä käytetty: (3)
+
+4. AIKATAULU
+ 
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+Testauksen toteutus on vielä hieman auki, tähän tullaan perehtymään.
+Alunperin suunniteltu teknologinen ratkaisu kasvin toteuttamiseen osoittautui mahdollisesti mahdottomaksi, ratkaisua tutkitaan seuraavalla sprintillä.
+Burndown chart ei toteutunut ehkä ihan halutusti, vaikka sprint goal tavoitettiinkin hyvin, koitetaan ensi sprinttiin suunnitella taskit ja niiden pisteytys vähän paremmin.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+Demopäivänä 22.2.2019: Mikko Poutanen lomilla, ei muuta.
