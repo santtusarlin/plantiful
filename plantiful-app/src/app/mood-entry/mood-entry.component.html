@@ -2,20 +2,15 @@
 <StackLayout [formGroup]="moodForm">
     <SegmentedBar formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
     <!-- <Label height="400" [text]="mood" textWrap="true" verticalAlign="center" class="text-center"></Label> -->
-<!-- <ListView [items]="dataItems" (itemTap)="onItemTap($event)" rowHeight="60">
-    <ng-template let-item="item">
-        <StackLayout horizontalAlignment="center">
-            <Label [text]="item"></Label>
-        </StackLayout>
-    </ng-template>
-</ListView> -->
-
-    <GridView id="gridi" [items]="dataItems" (itemTap)="onItemTap($event)" colWidth="25%" rowHeight="60">
-        <ng-template let-item="item" >
-            <StackLayout id="itemi" verticalAlignment="stretch">
-                <Label id="labeli" [text]="item" textWrap="true"></Label>
-            </StackLayout>
-        </ng-template>
-    </GridView>
-    <Button text="Submit" type="submit" (tap)="submitLog()"></Button>
+    <StackLayout>
+            <Button text="Checkout items" (tap)="checkout()"></Button>
+        <Button text="Checkout mood" type="submit" (tap)="submitLog()"></Button>
+    </StackLayout>
+    <StackLayout>
+        <ListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
+            <ng-template let-item="item">
+                <app-item [item]="item"></app-item>
+            </ng-template>
+        </ListView>
+    </StackLayout>
 </StackLayout>
