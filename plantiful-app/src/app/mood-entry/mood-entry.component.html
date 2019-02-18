@@ -1,0 +1,16 @@
+<!-- Mieleialan valinta 1-5 -->
+<StackLayout [formGroup]="moodForm">
+    <SegmentedBar formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
+    <!-- <Label height="400" [text]="mood" textWrap="true" verticalAlign="center" class="text-center"></Label> -->
+    <StackLayout>
+            <Button text="Checkout items" (tap)="checkout()"></Button>
+        <Button text="Checkout mood" type="submit" (tap)="submitLog()"></Button>
+    </StackLayout>
+    <StackLayout>
+        <ListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
+            <ng-template let-item="item">
+                <app-item [item]="item"></app-item>
+            </ng-template>
+        </ListView>
+    </StackLayout>
+</StackLayout>
