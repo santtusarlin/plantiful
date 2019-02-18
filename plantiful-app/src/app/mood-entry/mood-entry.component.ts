@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { ActivityComponent } from './activity/activity.component';
 import { moodConfiguration } from '../model/mood';
 
 import { Item, ActivityService } from './activity/activity.service';
@@ -34,12 +33,15 @@ export class MoodEntryComponent implements OnInit {
   public currentConfig: any;
 
   constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService) {
+    // luodaan uusi formgrouppi johon pusketaan mood.
     this.moodForm = this.formBuilder.group({
       mood: new FormControl("")
     });
 
     this.items = activityService.getItems();
     
+    // for-loopilla numerot 1-5 jotka pusketaan myItems tauluun josta <SegmentedBar> ottaa iteminsä.
+    // tän voisi siirtää serviceen.
     this.myItems = [];
         for (let i = 1; i < 6; i++) {
             const item = new SegmentedBarItem();
@@ -58,6 +60,7 @@ export class MoodEntryComponent implements OnInit {
     console.log("click");
   }
   
+  // palauttaa selected itemit.
   checkout() {
     const result = this.items
       .filter(item => {
@@ -70,6 +73,7 @@ export class MoodEntryComponent implements OnInit {
     console.log(result);
   }
 
+  // logaa valitun moodin
   submitLog() {
     let config = new moodConfiguration(
       this.moodForm.value
@@ -77,6 +81,7 @@ export class MoodEntryComponent implements OnInit {
     this.currentConfig = config;
     console.log('Button Works');
     console.log('this.mood = ' + this.mood);
+    // currentConfig => mood olio
     console.log(this.currentConfig);
 
     dialogs.alert({
@@ -87,6 +92,7 @@ export class MoodEntryComponent implements OnInit {
   }
 
   public onSelectedIndexChange(args) {
+    // Otetaan segmentedBarin selectedIndex(numero) ja asetetaan se this.mood muuttujaan
     let segmentedBar = <SegmentedBar>args.object;
     this.mood = (segmentedBar.selectedIndex + 1);
 }
