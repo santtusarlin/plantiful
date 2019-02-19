@@ -3,14 +3,15 @@
     <SegmentedBar formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
     <!-- <Label height="400" [text]="mood" textWrap="true" verticalAlign="center" class="text-center"></Label> -->
     <StackLayout>
-            <Button text="Checkout items" (tap)="checkout()"></Button>
         <Button text="Checkout mood" type="submit" (tap)="submitLog()"></Button>
+        <Button text="Checkout items" (tap)="checkout()"></Button>
     </StackLayout>
     <StackLayout>
-        <ListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
-            <ng-template let-item="item">
+        <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
+            <ng-template tkListItemTemplate let-item="item">
                 <app-item [item]="item"></app-item>
             </ng-template>
-        </ListView>
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="4"></ListViewGridLayout>
+        </RadListView>
     </StackLayout>
 </StackLayout>

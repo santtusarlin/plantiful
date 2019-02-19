@@ -14,7 +14,7 @@ export class ActivityService {
   getItems(): Item[] {
     let items = [];
     
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 50; i++) {
       items.push({ name: "item " + i })
     }
 
