@@ -1,7 +1,8 @@
 import { Injectable } from "@angular/core";
 
 export interface Item {
-  name: string;
+  name: string,
+  surname: string
 }
 
 export interface ItemViewState {
@@ -14,8 +15,8 @@ export class ActivityService {
   getItems(): Item[] {
     let items = [];
     
-    for (let i = 1; i < 31; i++) {
-      items.push({ name: "item " + i })
+    for (let i = 0; i < 20; i++) {
+      items.push({ name: "item " + i, surname: "item " + i })
     }
 
     return items;

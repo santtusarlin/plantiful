@@ -1,13 +1,10 @@
 <StackLayout id="mainstack" [formGroup]="moodForm">
-    <StackLayout>
-        <Button text="Checkout mood" type="submit" (tap)="submitLog()"></Button>
-        <Button text="Checkout items" (tap)="checkout()"></Button>
-    </StackLayout>
+    
     <StackLayout>
         <!-- Mood-valinta -->
         <SegmentedBar formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
         <!-- Vapaa teksti -->
-        <TextField hint="Free text" autocorrect="false"></TextField>
+        <TextField formControlName="freeText" hint="Free text" autocorrect="false"></TextField>
         <!-- Aktiviteettien valinta -->
         <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
             <ng-template tkListItemTemplate let-item="item">
@@ -16,4 +13,7 @@
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="3"></ListViewGridLayout>
         </RadListView>
     </StackLayout>
+</StackLayout>
+<StackLayout class="buttonstack" verticalAlignment="bottom">
+    <Button text="Submit" type="submit" (tap)="submitLog()"></Button>
 </StackLayout>
