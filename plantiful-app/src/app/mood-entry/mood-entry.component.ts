@@ -90,13 +90,13 @@ export class MoodEntryComponent implements OnInit {
 
     this.currentConfig = config;
     console.log('Button Works');
-    console.log('this.mood = ' + this.mood);
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
     dialogs.alert({
-      title: "Mood number:",
-      message: "Current mood selected: " + this.mood,
+      title: "Success!",
+      message: `Here is your entry:\n${this.currentConfig.mood}\n${this.currentConfig.freeText}
+      \n${this.currentConfig.activities.map(data => data.name + data.surname +"\n")}`,
       okButtonText: "OK"
     });
   }
