@@ -16,3 +16,12 @@ For example, the following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
 
+
+.buttonstack {
+    margin-bottom: 150px;
+}
+.buttonstack button {
+    width: 250px;
+    height: 250px;
+}
+
