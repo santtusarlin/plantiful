@@ -84,11 +84,11 @@ export class MoodEntryComponent implements OnInit {
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
-    dialogs.alert({
+    /*dialogs.alert({
       title: "Mood number:",
       message: "Current mood selected: " + this.mood,
       okButtonText: "OK"
-  });
+  });*/
   }
 
   public onSelectedIndexChange(args) {
