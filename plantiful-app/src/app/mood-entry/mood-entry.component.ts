@@ -95,8 +95,8 @@ export class MoodEntryComponent implements OnInit {
 
     dialogs.alert({
       title: "Success!",
-      message: `Here is your entry:\n${this.currentConfig.mood}\n${this.currentConfig.freeText}
-      \n${this.currentConfig.activities.map(data => data.name + data.surname +"\n")}`,
+      message: `Here is your entry:\nMood koodi: ${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.name)}`,
       okButtonText: "OK"
     });
   }
