@@ -1,0 +1,49 @@
+Plantiful - Viikko 7 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Mikko Hannukainen: 24,33h
+- Kasvin toteutuksen tutkiminen ja suunnittelu
+- HLTP hiominen
+ 
+Santtu Sarlin: 30,6h
+- Kirjausnäkymän kehittäminen
+- Hoitanut Scrum tehtäviä
+ 
+Miika Pollari: 18,18h (sairastuksia)
+- Tutkinut kasvin kasvatus teknologiaa
+
+Mikko Poutanen: 30,42
+- Ostopersoonan suunnittelua
+- Wordpress sivuston kehittäminen
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Mikko Hannukainen
+- Kasvin toteuttaminen
+- Testauksen teoriaan tutustuminen
+
+Santtu Sarlin
+- Kirjausnäkymän prototyypin kehittäminen valmiiksi demoon
+ 
+Miika Pollari
+- Kasvin kasvun toteuttaminen
+
+Mikko Poutanen
+- Wordpress mockup ja toteutusta
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+Miika Pollari: 98,44h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (1)
+Santtu Sarlin: 114,76h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (1)
+Mikko Poutanen: 118,44hh - lomapäiviä käytetty: (0)
+Mikko Hannukainen: 96,66h - lomapäiviä käytetty: (3)
+
+4. AIKATAULU
+ 
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+Burndown chart näyttää vähän huonolta, koitetaan kehittää backlogin stooreja vähän järkevämmiksi ensi sprinttiin. 
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+Demopäivänä 22.2.2019: Mikko Poutanen lomilla, ei muuta.

@@ -32,8 +32,13 @@
   - [Riskien hallinta](#riskien-hallinta)
   - [Avoimet asiat](#avoimet-asiat)
 
-## Projektin tiedot
+### Muutoshistoria
+| Versio | Kuvaus | Tekijä | pvm
+|---|---|---|---|
+0.1d | Alustava luonnos | Santtu Sarlin | 21.1.2019
+0.9p | Valmis proposal | Santtu Sarlin | 6.2.2019 
 
+## Projektin tiedot
 
 ### Projektin nimi:
 Plantiful
@@ -54,6 +59,7 @@ Markdown | Merkkauskieli
 Scrum | Sovelluskehitysmuoto, jonka pääpointteina on Daily Scrumit tekä Sprintit
 Daily Scrum | Päivittäinen tilannekatsaus
 Sprint | Ajanjakso, jonka jälkeen tuotteesta on ainakin periaatteessa julkaisukelpoinen versio
+Sprint Review | Sprintin jälkeen pidettävä sessio, jossa tutkitaan mitä on sprintin aikana saatu tehtyä
 Retrospektiivi | Sprintin jälkeen pidettävä sessio, jossa tutkitaan miten sprintti on mennyt
 Backlog | Lista asioista, mitä projektin aikana tullaan toteuttamaan
 Branch | GitHub repositoryn haara
@@ -86,6 +92,7 @@ Tavoitteena on saada tuotettua kaikki tuotokset listattuna alempana:
 - HLTP
 - Esitutkimus
 - Sprint backlog
+- Product backlog
 - Dokumentointi
 - Markkinointisuunnitelma
 - Business model canvas
@@ -121,6 +128,7 @@ Testit tehdään high level test plan- dokumentin mukaisesti.
 
 ### Projektin lopettamisesta
 Projekti loppuu projektin konkurssipäivänä 10.5.2019.
+Projektista tuotetaan loppuraportti ja jatkokehitys-readme, jossa on lyhyt seloste projektin tekniikoista ja kehitysympäristöstä mahdollista projektin jatkoa varten. 
 
 ## Projektin resurssit
 4 henkilöä, 6h 45min työtunteja per päivä. Keskiviikkoisin on Concept Lab 13.2 alkaen, joten päivät kestävät silloin klo 9-12
@@ -177,6 +185,8 @@ Gate 1 | 22.2.2019 | TC Projektitila
 Sprint Review | 22.2.2019 | TC Projektitila
 Sprint Retrospektiivi | 22.2.2019 | TC Projektitila
 ||||
+Hiihtoloma | 25.2.2019 - 1.3.2019 | Loma
+||||
 Sprintti 3 | 4.3.2019 - 15.3.2019 | TC Projektitila
 Sprint Planning | 4.3.2019 | TC Projektitila
 Sprint Review | 15.3.2019 | TC Projektitila
@@ -195,11 +205,13 @@ Sprint Retrospektiivi | 12.4.2019 | TC Projektitila
 ||||
 Sprintti 6 | 15.4.2019 - 26.4.2019 | TC Projektitila
 Sprint Planning | 15.4.2019 | TC Projektitila
+Pääsiäinen | 19.4.2019 - 22.4.2019 | Loma
 Gate 3 | 26.4.2019 | TC Projektitila
 Sprint Review | 26.4.2019 | TC Projektitila
 Sprint Retrospektiivi | 26.4.2019 | TC Projektitila
 ||||
-Jälkituotanto | 29.4.2019 - 10.5.2019 | TC Projektitila 
+Jälkituotanto | 29.4.2019 - 10.5.2019 | TC Projektitila
+Vappu | 1.5.2019 | Loma 
 Projektin konkurssi | 10.5.2019 | Saunatila, tuothan oman pyyhkeen, paikalla kaikki
 
 ## Raportointi ja kommunikointi
@@ -238,10 +250,7 @@ Tiimi käyttää GitHubia tiimin oman git-ohjeen mukaan sovitulla tavalla.
 
 ## Riskien hallinta
 
-| Riskit | Todennäköisyys | Impakti | Minimointi
-|---|---|---|---|
-Työntekijöiden sairastuminen | Pieni | Keskisuuri | Jokainen pitää itsestään huolta <3
-Hermoromahdus | Pieni | Hyvin Suuri | Ei crunchailla ja pidetään itsestämme huolta <3
+Viikkopalaverissa havainnoidaan ja käydään läpi mahdollisia esille tulleita riskejä ja arvioidaan niiden todennäköisyys, impakti, ja mietitään toimenpiteet kuinka ne saadaan hallittua. Myös retrospektiivissä voidaan nostaa potentiaaliset riskit esille.
 
 
 ## Avoimet asiat

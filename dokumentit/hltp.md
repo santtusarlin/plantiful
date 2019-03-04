@@ -18,7 +18,10 @@ Projektisuunnitelma | [projektisuunnitelma.md](projektisuunnitelma.md)
 
 ### Projekti lyhyesti
 
-Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen päätoimintoihin kuuluu myös virtuaalinen kasvi, joka kasvaa jokaiselle käyttäjälle erilaiseksi käytön myötä.
+Projektin tarkoitus on tehdä mobiiliaplikaatio, joka toimii päiväkirjana. Sen päätoimintoihin kuuluu myös virtuaalinen kasvi, joka kasvaa jokaiselle käyttäjälle erilaiseksi käytön myötä. Tarkoituksena on tuoda käyttäjille mahdollisuus kirjata päivän mielialat vaivattomasti ja kerätä heille kooste näistä kirjauksista. Näin käyttäjä voi tarkastella omaa mielialaansa isompina kokonaisuuksina, eikä pelkästään yhden päivän mukaan. Tämän toivotaan antavan käyttäjälle näkökulmaa siitä, että kaikki päivät eivät ole toinen toistaan kamalia.
+
+Testaus tässä projektissa on tarkoitus varmistaa sovelluksen vaadittu laatu sekä toimivuus, millä taataan käyttäjille tuotteemme visio.
+
 
 ### Tarkoitus
 
@@ -26,78 +29,98 @@ Tässä dokumentissa on tarkoitus selventää kuinka projektia testataan.
 
 ## Testistrategia
 
-
 ### Test items
 
-- Ulkoasu
-  - Heuristiikka
-- Toiminnallisuus
-- Datan kulku
-  - Kyselyt tietokantaan
-  - Yhteyden toiminnallisuus
-  - Datan talletus paikallisesti
-
+- Dokumentit
+  - Hltp
+  - Liiketaloussuunnitelma
+  - Bmc
+  - Projektisuunnitelma
+- Kanta Firebase-palveluun
+- Nettisivut
+- Mockup
+- Client
 
 ### Testing tasks
 
-#### Tekniikka
-Kehitysvaiheessa olevan sovelluksen komponenttia testataan ennen käyttöönottoa yksikkötesteillä. Hyväksynnän jälkeen ko. komponentti voidaan yhdistää gitissä master-haaraan, missä suoritetaan vielä integraatiotesti.
-
-#### Ulkoasu ja käyttöliittymä
-
-Käyttöliittymää testataan käyttäjätestein: Ensiksi suunnitteilla olevaa ulkoasua testataan paperisena toteutuksena. Toinen testi on ulkoasun kehityksen jälkeinen käytettävyystesti mobiililaitteella.
-
+Jokainen testaamiseen osallistuva työntekijä (testausvastaava tai ohjelmoija) seuraa alla olevia ohjeistuksia:
+- Suunnittele testattavaa komponenttia varten testaus
+  - Mitä testataan?
+  - Millä? Mitä tarvitaan? (ympäristö, testauskirjasto jne.)
+  - Kuinka laajasti testataan?
+- Toteuta testit
+- Dokumentoi
 
 ### Testattavat ominaisuudet
 
-Sovelluksen luontevuuden vuoksi yksi tärkeimpiä testejä ovat ulkoasun funktionaalisuus ja heuristiikka. Kehitysvaiheessa pitää aina varmistaa, että jokainen sovelluksen elementti antaa loppukäyttäjälle sen tuloksen mitä elementille on ennaltaan määritetty. Tässä vaiheessa heuristiikkaa testataan myös sekä minimalistisuuden että käytettävyyden vuoksi.
+#### Käyttöliittymä
 
-Tekniikan osalta tärkeimpinä osina testauksessa ovat datan kulku sekä validointi, ja kasvin algoritmien oikeanlaisen luonnin ja sen mukaisen tuloksen saannin käyttöliittymälle. Tietokannasta saatava data pitää saapua mobiililaitteelle oikeassa muodossa virheettömästi, sekä datan siirto tietokantaan pitää tapahtua oikeassa muodossa ja ilman komplikaatioita. Kun datan siirtyminen toteutuu oikeanlaisesti, algoritmit osaavat täden luoda käyttäjälle oikeanlaisen kasvin.
+Käyttöliittymä testataan perusteellisesti, koska sovelluksen ulkoasu ja käyttäjäkokemus ovat projektimme tärkeimmistä arvoista. Näissä otetaan huomioon esimerkiksi sovelluksen heuristinen näkökulma ja minimalistisuuden toteutus.
 
-Kasvin generointi pitää myös tapahtua oikeasti ja että siihen tarvittavat algoritmit osaavat muodostaa käyttäjän datasta oikeanlaisen rakenteen, mistä sitä kasvia voidaan lähteä buildaa.
+#### Siirrettävyys
+
+Koska sovelluskehitysympäristönä toimii tietokoneet, siirrettävyys on hyvä testata ennenkun sovellus otetaan käyttöön mobiili- tai tablettilaitteessa. Käyttöjärjestelmänä kyseisissä laitteissa on tähtäimessä ainoastaan Android.
+
+#### Suorituskyky
+
+Suorituskyky varmistetaan clientissa, jotta pystytään takaamaan käyttäjälle minimalistinen ja nopeasti suoriutuva palvelu. Takkuava komponentti hidastaa palvelun käyttöä, mikä samalla vähentää käyttäjän mielenkiintoa sovellusta kohtaan.
+
+#### Kuormitus
+
+Kuormitus on suositeltavaa testata, jotta voidaan taata clientin ja serverin välinen yhteys kestämään useampaa pyyntöä yhtä aikaa. Ilman tämän ominaisuuden testausta emme voi olla varmoja pystyykö palvelumme tarjoamaan käyttäjän pyyntöjen suoritusta nopeasti.
+
+#### Luotettavuus
+
+Mikäli sovellus kaatuu joko oman yllättävän komplikaation, tai jonkun ulkopuolisen syyn vuoksi, täytyy näitä tilanteita varten suorittaa luotettavuustestausta. Tämän avulla pystytään varmistamaan sen, ettei käyttäjän data missään vaiheessa katoa tai korruptoidu.
 
 ### Ei testattavat ominaisuudet
 
-Sovelluksen yleiset animaatiot sekä siirtymiset koetaan mitättömiksi tapauksiksi ryhtyä testaamaan. Kyseisten elementit eivät kuulu sovelluksen valmistumisen kriteereihin, eli mikäli ne eivät toimi tai käyttäjätestauksessa ne koetaan vaikuttavan negatiivisesti käyttäjäkokemukseen, voidaan tuolloin tehdä päätös joko niille tarvittavista muutokstista tai niiden poistosta.
+
+#### Tietoturva
+
+Tietoturva on meidän ominaisuuksista vähäisin tarve, sillä meidän sovelluksessa ei kulje edes takaisin mitään arvokasta tietoa. Tietokantaan siirtyy vaan dataa kasvista ja sen kasvutavasta, mikä varmuuskopioidaan talteen sitä varten, jos tietomurto tapahtuu.
+
+#### Skaalautuvuus
+
+Skaalautuvuus on nice to have, mutta demoympäristössä, sekä ilmaisen pilvipalvelun rajoitteiden vuoksi sitä ei ole mitään merkitystä testata.
 
 ### Lähestymistapa
 
-Testauksessa käytetään mocha-ohjelmistokehystä, syinä jo pienehkö kokemus koulun puolesta ja Nativescript-tuki. Automatisointiin voidaan käyttää Appium-työkalua hyvän integraation ja helpon käyttöönoton vuoksi, mikäli taidot riittävät siihen. Tällöin voidaan taata automaattisen testauksen mobiiliympäristössä.
+Yksikkkötestauksessa käytetään mocha-ohjelmistokehystä, syinä jo pienehkö kokemus koulun puolesta ja Nativescript-tuki. Käyttöliittymän mockupista luodaan malli Adobe XD:llä, jolla voidaan suorittaa käyttäjätestaus. Manuaalitestaus harjoitetaan tarvittaessa.
 
 ### Hyväksymiskriteerit
 
-Hyväksymiskriteereinä toimii sovelluksen integraatiotestien läpäisy, sekä käyttäjätesteissä positiivinen tulos.
+Yksittäinen stoori voidaan todeta hyväksytyksi kun siihen kohdistetut testitapaukset on ajettu ja 	tärkeimmät bugit on korjattu
 
 ### Testauksen keskeytys ja jatkaminen
 
-Mikäli testaajan koodin rakenne mahdollistaa testin kaatumiset ja muita komplikaatioita, tämä voidaan määrittää testin keskeytymiseksi. Kun koodi saadaan refaktoiroitua kunnolliseksi, testi voi jatkua.
+Kriittisen virheen sattuessa testi keskeytetään niin pitkäksi aikaa, kunnes virhe on saatu korjattua.
 
 ## Tuotokset
 
-Projektiryhmän muut jäsenet saavat tiedon/palautteen testien suoriutumisesta. Esim. jos käyttäjätestauksessa ilmenee virheitä, tästä ilmoitetaan sisällöntuottajalle.
+Projektin aikana tapahtuvan testauksen myötä syntyy dokumentaatiota testien suoriutumisesta ja bugiraporteista.
 
 ## Ympäristö
 
-Ympäristön osalta ei suuria muutoksia. Hyvä ergonomia ja rauhallinen asenne auttaa pitkälle.
+Projektin testauksessa ei tulla luomaan erillistä ympäristöä.
 
 ## Velvollisuudet/vastuut
 
-Ryhmän testivastaaja (Mikko Hannukainen) on vastuussa testien luonnista sekä niiden laadusta, mutta jokaisella on velvoite kirjoittaa testit omiin luotuihin komponentteihin.
+Olemme vastuussa tuotteen laadun varmistamisesta, ettei mikään sovelluksen osa integroida päähaaran buildiin ilman laadunvarmistusta.
 
 ## Osaaminen ja sen hankinta
 
-Osaamista ryhmällä on vähän ja kokemusta testeistä on ainoastaan pienesti koulun puolesta. Jokainen ohjelmoija perehtyy testikehyksiin ja työkaluihin itsenäisesti tai testivastaajan kanssa.
+Osaamista haetaan tarvittaessa yhdessä testivastaajan ja opetusta tarvitsevan kanssa joko verkkomateriaalia tutkien, tai opettajana avulla.
 
 ## Aikataulut
 
-Ryhmän kokemuksen puutteen vuoksi testaukseen käytetään resursseja testaajan näkökulman kannalta. Käyttäjätestausta varten tiimi valitsee demoa edeltävän päivän, jolloin käydään vielä viimeiset käyttäjätestaukset.
+Kun task on siirretty in progressista review:n, sen taskin testi tulee suorittaa ennen lopullista hyväksyntää.
 
 ## Riskit
 
-- List the risks that have been identified.
-- Create a plan for each event that the identified risks may create when triggered.
+Testien riskinhallinta toteutetaan yhdessä projektin riskinhallintaprosessin kanssa, jossa testaaja voi esittää omia näkökulmia.
 
-FI: Mitä riskejä ja miten ne hallitaan. Perus PM kamaa.
+## Bugitasot
 
 #### 1. Kosmeettiset riskit
 
@@ -121,5 +144,5 @@ Data viedään tietokantaan väärässä muodossa, tai tieokannasta tuotu data o
 Serveri tai backend kaatuu, frontendin virheellinen tulostus. Datan siirto aiheuttaa komponentin kaatumisen tai sovelluksen kehitysvaiheessa olevan komponentin integrointi rikkoo sovelluksen osia. Hyvin vakavasti otettavat riskit.
 
 ## Oletukset ja riippvuudet
-
+N/A
 

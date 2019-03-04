@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Page } from 'tns-core-modules/ui/page';
-
 
 @Component({
   selector: 'ns-navbar',
@@ -10,10 +8,9 @@ import { Page } from 'tns-core-modules/ui/page';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private page: Page) { }
+  constructor() { }
 
   ngOnInit() {
-    this.page.actionBarHidden = true;
   }
 
 }

@@ -1,1 +1,15 @@
-<Label text="Statsivalikko toimii!" textWrap="true"></Label>
+<StackLayout>
+    <StackLayout orientation="horizontal" height="100" horizontalAlignment="center" verticalAlignment="top">
+        <Button text="Kalenteri" (tap)="setBoolean(true)"></Button>
+        <Button text="Graafi" (tap)="setBoolean(false)"></Button>
+    </StackLayout>
+    <StackLayout *ngIf="isTrue">
+        <ns-calendar></ns-calendar>
+    </StackLayout>
+    <StackLayout *ngIf="!isTrue">
+        <ns-graph></ns-graph>
+    </StackLayout>
+</StackLayout>
+<StackLayout class="buttonstack" verticalAlignment="bottom" horizontalAlignment="right">
+    <Button text="Mood" nsRouterLink="/mood_entry"></Button>    
+</StackLayout>

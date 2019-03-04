@@ -1,14 +1,8 @@
 <!-- Navigaatiopalkki -->
 <GridLayout height="60" verticalAlignment="bottom">
-    <GridLayout height="60" columns="*, *, *">
-        <GridLayout col="0">
-            <Button text="Plant" nsRouterLink="/plant"></Button>
-        </GridLayout>
-        <GridLayout col="1">
-            <Button text="Stats" nsRouterLink="/stats"></Button>
-        </GridLayout>
-        <GridLayout col="2">
-            <Button text="Settings" nsRouterLink="/settings"></Button>
-        </GridLayout>
-    </GridLayout>    
+    <GridLayout class="navGrid" height="60" columns="*, *, *">
+        <Button text="Plant" col="0" nsRouterLink="/plant"></Button>
+        <Button text="Stats" col="1" nsRouterLink="/stats"></Button>
+        <Button text="Settings" col="2" nsRouterLink="/settings"></Button>
+    </GridLayout>
 </GridLayout>

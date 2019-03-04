@@ -1,0 +1,47 @@
+Viikkoraporttipohja
+----------------------
+Pohjaan on kirjattu esimerkinomaisesti viikkoraportin sisällöt
+ 
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+Teemu: 34h
+- Graafinen suunnittelu
+- Käyttöliittymäsuunnittelu
+- (Mitä taskeja nyt sitten backlogissa onkaan)
+ 
+Tiina: 28h
+- Tietokanna rakentaminen
+- Tekninen tutkimus (MVC)
+- (Mitä taskeja nyt sitten backlogissa onkaan)
+ 
+2. TULEVAN VIIKON SUUNNITELMA
+(Karkea ajatus, Daily Scrumissa sitten tarkemmin)
+Teemu:
+- Leiskan rakentaminen (kaksi vaihtoehtoa)
+- Testauskoulutus
+- (Mitä taskeja nyt sitten backlogissa onkaan)
+ 
+Tiina:
+- Käyttöliittymäarkkitehtuurin rakentamien
+- Testauskoulutus
+- (Mitä taskeja nyt sitten backlogissa onkaan)
+ 
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+Miika Pollari: ??h
+Santtu Sarlin: ??h
+Mikko Poutanen: ??h
+Mikko Hannukainen: ??h
+
+ 
+4. AIKATAULU
+ 
+Burndown chart <liitteenä>
+ 
+5. ONGELMAT JA RISKIT
+Projektin henkilöstöllä on HTML5 osaaminen liian pienellä tasolla. Tästä aiheutuu riski projektin viivästymiselle.
+Olemme sopineet lähettävämme Teemun asianmukaiseen
+koulutukseen.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+MoneySails risteily torstaina 2.2.2012. Teemu, Tiina ja Kalle osallistuvat ko. risteilylle ja ovat sen vuoksi tuona
+päivänä poissa. Keijo toimii SM:n sijaisena ja ensisijaisena
+kontaktihenkilönä ko. päivänä.
