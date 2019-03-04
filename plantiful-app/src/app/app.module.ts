@@ -18,6 +18,8 @@ import { MoodEntryComponent } from './mood-entry/mood-entry.component';
 
 import { ActivityService } from './mood-entry/activity/activity.service';
 import { ActivityComponent } from './mood-entry/activity/activity.component';
+import { ModalComponent } from './settings/modal/modal.component';
+import { ModalDialogService } from "nativescript-angular/modal-dialog";
 
 @NgModule({
     bootstrap: [
@@ -32,8 +34,8 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         FormsModule,
         ReactiveFormsModule,
         GridViewModule
-        
     ],
+    entryComponents: [ModalComponent],
     declarations: [
         AppComponent,
         NavbarComponent,
@@ -43,10 +45,12 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         GraphComponent,
         CalendarComponent,
         MoodEntryComponent,
-        ActivityComponent
+        ActivityComponent,
+        ModalComponent
     ],
     providers: [
-        ActivityService
+        ActivityService,
+        ModalDialogService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
