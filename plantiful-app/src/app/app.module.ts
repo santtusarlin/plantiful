@@ -16,6 +16,9 @@ import { GraphComponent } from './stats/graph/graph.component';
 import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
 
+import { NativeScriptSvgModule } from "nativescript-svg/angular";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ActivityService } from './mood-entry/activity/activity.service';
 import { ActivityComponent } from './mood-entry/activity/activity.component';
 
@@ -31,8 +34,9 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         TNSCheckBoxModule,
         FormsModule,
         ReactiveFormsModule,
-        GridViewModule
-        
+        GridViewModule,
+        NativeScriptSvgModule,
+        BrowserAnimationsModule
     ],
     declarations: [
         AppComponent,
