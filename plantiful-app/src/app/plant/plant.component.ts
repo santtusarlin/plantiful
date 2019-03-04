@@ -12,7 +12,6 @@ export class PlantComponent implements OnInit {
 
 
   kakkaimg1: Image;
-  kakkaimg2: Image;
   isShown: boolean = true;
   constructor(private page: Page) { }
 
@@ -20,17 +19,6 @@ export class PlantComponent implements OnInit {
     this.page.actionBarHidden = true;
     const imaage = new Image();
     imaage.src = "res://plant1";
-    const imaage2 = new Image();
-    imaage2.src = "res://plant2";
     this.kakkaimg1 = imaage;
-    this.kakkaimg2 = imaage2;
-  }
-
-  toggleShown() {
-    if (this.isShown) {
-      this.isShown = false;
-    } else {
-      this.isShown = true;
-    }
   }
 }
