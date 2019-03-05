@@ -1,4 +1,4 @@
-<GridLayout rows="auto, auto, auto" columns="*, auto">
+<GridLayout rows="auto, auto, auto, auto" columns="*, auto">
     <GridLayout class="list" row="0" colSpan="auto" (tap)="showToS()">
         <Label class="teksti" text="ToS" textWrap="true"></Label>
     </GridLayout>
@@ -8,6 +8,9 @@
     <GridLayout class="list" row="2">
         <Label class="teksti" col="1" text="Hohoo" textWrap="true"></Label>
         <Switch col="2" [checked]="" class="switch"></Switch>
+    </GridLayout>
+    <GridLayout class="list" row="3" colSpan="auto" (tap)="showClock()">
+        <Label class="teksti" text="Kello" textWrap="true"></Label>
     </GridLayout>
 </GridLayout>
 
