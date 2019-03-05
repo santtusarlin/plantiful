@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { ModalDialogService } from "nativescript-angular/directives/dialogs";
+import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/directives/dialogs";
 import { ModalComponent } from "./modal/modal.component";
 
 @Component({
@@ -17,9 +17,22 @@ export class SettingsComponent implements OnInit {
     this.page.actionBarHidden = true;
   }
 
-  showModal() {
-    let options = {
-      context: {},
+  showToS() {
+    let options: ModalDialogOptions = {
+      context: {
+        viesti: "Tämä on ToS-modali!"
+      },
+      fullscreen: false,
+      viewContainerRef: this.vcRef
+    };
+    this.modal.showModal(ModalComponent, options)
+  }
+
+  showAbout() {
+    let options: ModalDialogOptions = {
+      context: {
+        viesti: "Tämä on About-modali!"
+      },
       fullscreen: false,
       viewContainerRef: this.vcRef
     };

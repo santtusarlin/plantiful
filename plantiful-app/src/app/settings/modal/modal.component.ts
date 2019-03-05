@@ -12,10 +12,11 @@ export class ModalComponent {
   hello: string;
 
   constructor(private params: ModalDialogParams) {
-    this.hello = "Olet kakkapylly!";
+    this.hello = params.context.viesti
   }
 
   public close(response: string) {
+    console.log(this.params.context);
     this.params.closeCallback(response);
   }
 
