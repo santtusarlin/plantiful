@@ -6,12 +6,10 @@ import { Image } from "tns-core-modules/ui/image";
   selector: 'ns-plant',
   templateUrl: './plant.component.html',
   styleUrls: ['./plant.component.css'],
-  animations: [
-  ],
   moduleId: module.id,
 })
-
 export class PlantComponent implements OnInit {
+
 
   kakkaimg1: Image;
   kakkaimg2: Image;
@@ -36,4 +34,3 @@ export class PlantComponent implements OnInit {
     }
   }
 }
-
