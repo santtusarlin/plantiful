@@ -1,4 +1,13 @@
-<StackLayout>
-    <Button text="ToS" (tap)="showToS()"></Button>
-    <Button text="About" (tap)="showAbout()"></Button>
-</StackLayout>
+<GridLayout rows="auto, auto, auto" columns="*, auto">
+    <GridLayout class="list" row="0" colSpan="auto" (tap)="showToS()">
+        <Label class="teksti" text="ToS" textWrap="true"></Label>
+    </GridLayout>
+    <GridLayout class="list" row="1" colSpan="auto" (tap)="showAbout()">
+        <Label class="teksti" text="About" textWrap="true"></Label>
+    </GridLayout>
+    <GridLayout class="list" row="2">
+        <Label class="teksti" col="1" text="Hohoo" textWrap="true"></Label>
+        <Switch col="2" [checked]="" class="switch"></Switch>
+    </GridLayout>
+</GridLayout>
+

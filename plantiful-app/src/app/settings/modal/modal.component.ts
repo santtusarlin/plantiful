@@ -16,7 +16,6 @@ export class ModalComponent {
   }
 
   public close(response: string) {
-    console.log(this.params.context);
     this.params.closeCallback(response);
   }
 

@@ -1,1 +1,9 @@
 /* Add mobile styles for the component here.  */
+.list{
+    background-color: rgb(56, 148, 140);
+    height: 150px;
+    margin-bottom: 5px;
+}
+.teksti {
+    margin-top: 15px;
+}
