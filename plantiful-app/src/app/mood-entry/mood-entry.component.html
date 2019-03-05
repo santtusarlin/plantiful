@@ -2,13 +2,15 @@
     
     <StackLayout>
         <!-- Mood-valinta -->
+        <Label class="moodText" text="HOW ARE YOU FEELING TODAY?" ></Label>
         <SegmentedBar class="segmentedBar" formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
         <!-- Aktiviteettien valinta -->
-        <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
+        <Label class="moodText" text="WHAT DID YOU DO TODAY?" ></Label>
+        <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60" height="310">
             <ng-template tkListItemTemplate let-item="item">
                 <app-item [item]="item"></app-item>
             </ng-template>
-            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="3"></ListViewGridLayout>
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
         </RadListView>
     </StackLayout>
     <!-- Vapaa teksti -->

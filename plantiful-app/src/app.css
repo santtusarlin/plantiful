@@ -10,11 +10,18 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
 @import '~nativescript-theme-core/css/core.light.css';
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 /*
 For example, the following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
+
+*{
+    color: #f5f5f5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 
 .buttonstack {
