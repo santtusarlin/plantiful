@@ -18,8 +18,11 @@ components that have the btn class name.
 */
 
 *{
-    color: #f5f5f5;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.moodText{
+    color: #f5f5f5;
 }
 
 

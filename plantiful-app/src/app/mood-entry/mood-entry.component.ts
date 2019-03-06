@@ -7,7 +7,6 @@ import { Mood, MoodService } from './mood/mood.service';
 import { ItemViewState } from '../model/itemviewstate';
 import { getViewState } from '../../view-state-utils';
 
-import { SegmentedBar, SegmentedBarItem, selectedIndexProperty } from "tns-core-modules/ui/segmented-bar";
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import * as dialogs from "tns-core-modules/ui/dialogs";
 
@@ -23,7 +22,6 @@ export class MoodEntryComponent implements OnInit {
 
   selected: boolean = false;
 
-  public myItems: Array<SegmentedBarItem>;
   //public dataItems = ['Cooking', 'Sports', 'Sleeping', 'Video games', 'Overclocking', 'Programming', 'Cleaning', 'Shopping'];
 
   items: Item[];
@@ -39,14 +37,7 @@ export class MoodEntryComponent implements OnInit {
     this.items = activityService.getItems();
     this.moods = moodService.getMoods();
 
-    // for-loopilla numerot 1-5 jotka pusketaan myItems tauluun josta <SegmentedBar> ottaa iteminsä.
-    // tän voisi siirtää serviceen.
-    this.myItems = [];
-    for (let i = 1; i < 6; i++) {
-      const item = new SegmentedBarItem();
-      item.title = "" + i;
-      this.myItems.push(item);
-    }
+   
   }
 
   // Otetaan moodForm-oliosta talteen controllerit, jotta niitä voidaan käyttää myöhemmin paljon siistimmin.
@@ -84,8 +75,14 @@ export class MoodEntryComponent implements OnInit {
       const vs = getViewState<ItemViewState>(item);
       return vs && vs.selected;
     })
+
+     const moodResult = this.moods.filter(item => {
+      const vs = getViewState<ItemViewState>(item);
+      return vs && vs.selected;
+    })
+    
     let config = {
-      mood: this.f.mood.value,
+      mood: moodResult,
       freeText: this.f.freeText.value,
       activities: result
 
@@ -98,17 +95,12 @@ export class MoodEntryComponent implements OnInit {
 
     dialogs.alert({
       title: "Success!",
-      message: `Here is your entry:\nMood koodi: ${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.name)}`,
+      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood.map(data => "\n" + data.title)}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
       okButtonText: "OK"
     });
   }
 
-  public onSelectedIndexChange(args) {
-    // Otetaan segmentedBarin selectedIndex(numero) ja asetetaan se this.mood muuttujaan
-    let segmentedBar = <SegmentedBar>args.object;
-    this.mood = (segmentedBar.selectedIndex + 1);
-  }
 
   ngOnInit() {
     this.page.actionBarHidden = true;
