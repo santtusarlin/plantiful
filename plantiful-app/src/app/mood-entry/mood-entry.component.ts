@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { moodConfiguration } from '../model/mood';
 
 import { Item, ActivityService } from './activity/activity.service';
-import { ItemViewState } from './activity/activity.component';
+import { Mood, MoodService } from './mood/mood.service';
+
+import { ItemViewState } from '../model/itemviewstate';
 import { getViewState } from '../../view-state-utils';
 
 import { SegmentedBar, SegmentedBarItem, selectedIndexProperty } from "tns-core-modules/ui/segmented-bar";
@@ -26,15 +27,17 @@ export class MoodEntryComponent implements OnInit {
   //public dataItems = ['Cooking', 'Sports', 'Sleeping', 'Video games', 'Overclocking', 'Programming', 'Cleaning', 'Shopping'];
 
   items: Item[];
+  moods: Mood[];
 
   public moodForm: FormGroup;
   public mood: number;
   public currentConfig: any;
 
-  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService) {
+  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
 
 
     this.items = activityService.getItems();
+    this.moods = moodService.getMoods();
 
     // for-loopilla numerot 1-5 jotka pusketaan myItems tauluun josta <SegmentedBar> ottaa iteminsä.
     // tän voisi siirtää serviceen.

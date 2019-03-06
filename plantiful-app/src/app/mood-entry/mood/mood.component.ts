@@ -1,18 +1,21 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Item } from './activity.service';
+import { Component, Input } from '@angular/core';
+import { Mood } from './mood.service';
 import { attachViewState } from '../../../view-state-utils';
 import { ItemViewState } from '../../model/itemviewstate';
 
 const ItemViewStateFactory = () => { return { selected: false } };
 
 @Component({
-  selector: 'app-item',
-  templateUrl: './activity.component.html',
-  styleUrls: ['./activity.component.css']
+  selector: 'ns-mood',
+  templateUrl: './mood.component.html',
+  styleUrls: ['./mood.component.css'],
+  moduleId: module.id,
 })
-export class ActivityComponent {
+export class MoodComponent {
+
   @attachViewState<ItemViewState>("item", ItemViewStateFactory)
   vs: ItemViewState;
 
-  @Input() item: Item;
+  @Input() item: Mood;
+
 }

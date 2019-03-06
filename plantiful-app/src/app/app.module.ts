@@ -15,9 +15,12 @@ import { SettingsComponent } from './settings/settings.component';
 import { GraphComponent } from './stats/graph/graph.component';
 import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
-
-import { ActivityService } from './mood-entry/activity/activity.service';
 import { ActivityComponent } from './mood-entry/activity/activity.component';
+
+import { MoodService } from "./mood-entry/mood/mood.service";
+import { ActivityService } from './mood-entry/activity/activity.service';
+
+import { MoodComponent } from './mood-entry/mood/mood.component';
 
 @NgModule({
     bootstrap: [
@@ -43,10 +46,12 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         GraphComponent,
         CalendarComponent,
         MoodEntryComponent,
-        ActivityComponent
+        ActivityComponent,
+        MoodComponent
     ],
     providers: [
-        ActivityService
+        ActivityService,
+        MoodService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

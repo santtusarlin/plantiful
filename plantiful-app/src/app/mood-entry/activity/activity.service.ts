@@ -1,10 +1,5 @@
 import { Injectable } from "@angular/core";
 
-const data = [
-
-]
-
-
 export interface Item {
   title: string,
   imageURL: string

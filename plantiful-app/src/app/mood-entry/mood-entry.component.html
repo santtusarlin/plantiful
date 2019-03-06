@@ -6,9 +6,10 @@
         <SegmentedBar class="segmentedBar" formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
         <!-- Aktiviteettien valinta -->
         <Label class="moodText" text="WHAT DID YOU DO TODAY?" ></Label>
-        <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60" height="310">
+        <RadListView [items]="moods" (itemTap)="onItemTap($event)" rowHeight="60" height="310">
             <ng-template tkListItemTemplate let-item="item">
-                <app-item [item]="item"></app-item>
+                <!-- <app-item [item]="item"></app-item> -->
+                <ns-mood [item]="item"></ns-mood>
             </ng-template>
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
         </RadListView>
