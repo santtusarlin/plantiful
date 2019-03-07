@@ -3,6 +3,7 @@ import { Page } from 'tns-core-modules/ui/page';
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/directives/dialogs";
 import { ContextModalComponent } from "./context-modal/context-modal.component";
 import { ClockModalComponent } from './clock-modal/clock-modal.component';
+import { ThemeModalComponent } from './theme-modal/theme-modal.component';
 
 @Component({
   selector: 'ns-settings',
@@ -49,4 +50,12 @@ export class SettingsComponent implements OnInit {
     this.modal.showModal(ClockModalComponent, options)
   }
 
+  showTheme() {
+    let options: ModalDialogOptions = {
+      context: { },
+      fullscreen: false,
+      viewContainerRef: this.vcRef
+    };
+    this.modal.showModal(ThemeModalComponent, options)
+  }
 }

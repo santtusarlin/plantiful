@@ -1,16 +1,19 @@
-<GridLayout rows="auto, auto, auto, auto" columns="*, auto">
-    <GridLayout class="list" row="0" colSpan="auto" (tap)="showToS()">
+<StackLayout>
+    <GridLayout class="list" (tap)="showToS()">
         <Label class="teksti" text="ToS" textWrap="true"></Label>
     </GridLayout>
-    <GridLayout class="list" row="1" colSpan="auto" (tap)="showAbout()">
+    <GridLayout class="list" (tap)="showAbout()">
         <Label class="teksti" text="About" textWrap="true"></Label>
     </GridLayout>
-    <GridLayout class="list" row="2">
-        <Label class="teksti" col="1" text="Hohoo" textWrap="true"></Label>
-        <Switch col="2" [checked]="" class="switch"></Switch>
+    <GridLayout class="list">
+        <Label class="teksti" text="Hohoo" textWrap="true"></Label>
+        <Switch [checked]="" class="switch"></Switch>
     </GridLayout>
-    <GridLayout class="list" row="3" colSpan="auto" (tap)="showClock()">
+    <GridLayout class="list" (tap)="showClock()">
         <Label class="teksti" text="Kello" textWrap="true"></Label>
     </GridLayout>
-</GridLayout>
+    <GridLayout class="list" (tap)="showTheme()">
+        <Label class="teksti" text="Teema" textWrap="true"></Label>
+    </GridLayout>
+</StackLayout>
 
