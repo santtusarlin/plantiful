@@ -18,7 +18,7 @@ import { MoodEntryComponent } from './mood-entry/mood-entry.component';
 
 import { ActivityService } from './mood-entry/activity/activity.service';
 import { ActivityComponent } from './mood-entry/activity/activity.component';
-import { ModalComponent } from './settings/modal/modal.component';
+import { ContextModalComponent } from './settings/context-modal/context-modal.component';
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { ClockModalComponent } from './settings/clock-modal/clock-modal.component';
 
@@ -36,7 +36,7 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
         ReactiveFormsModule,
         GridViewModule
     ],
-    entryComponents: [ModalComponent, ClockModalComponent],
+    entryComponents: [ContextModalComponent, ClockModalComponent],
     declarations: [
         AppComponent,
         NavbarComponent,
@@ -47,7 +47,7 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
         CalendarComponent,
         MoodEntryComponent,
         ActivityComponent,
-        ModalComponent,
+        ContextModalComponent,
         ClockModalComponent
     ],
     providers: [

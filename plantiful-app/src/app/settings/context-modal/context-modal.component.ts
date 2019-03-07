@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ModalDialogParams } from "nativescript-angular/directives/dialogs";
 
 @Component({
-  selector: 'ns-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css'],
+  selector: 'ns-context-modal',
+  templateUrl: './context-modal.component.html',
+  styleUrls: ['./context-modal.component.css'],
   moduleId: module.id,
 })
-export class ModalComponent {
+export class ContextModalComponent {
 
   hello: string;
 
