@@ -53,14 +53,14 @@ import { About } from "./settings/About";
         CalendarComponent,
         MoodEntryComponent,
         ActivityComponent,
+        ContextModalComponent,
+        ClockModalComponent,
+        ThemeModalComponent,
         MoodComponent
     ],
     providers: [
         ActivityService,
         MoodService,
-        ContextModalComponent,
-        ClockModalComponent,
-        ThemeModalComponent,
         ModalDialogService,
         ToS,
         About
