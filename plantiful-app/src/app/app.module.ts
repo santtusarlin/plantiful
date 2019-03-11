@@ -21,6 +21,12 @@ import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
 
 import { MoodComponent } from './mood-entry/mood/mood.component';
+import { ContextModalComponent } from './settings/context-modal/context-modal.component';
+import { ModalDialogService } from "nativescript-angular/modal-dialog";
+import { ClockModalComponent } from './settings/clock-modal/clock-modal.component';
+import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
+import { ToS } from "./settings/ToS";
+import { About } from "./settings/About";
 
 @NgModule({
     bootstrap: [
@@ -35,8 +41,8 @@ import { MoodComponent } from './mood-entry/mood/mood.component';
         FormsModule,
         ReactiveFormsModule,
         GridViewModule
-        
     ],
+    entryComponents: [ContextModalComponent, ClockModalComponent, ThemeModalComponent],
     declarations: [
         AppComponent,
         NavbarComponent,
@@ -51,7 +57,13 @@ import { MoodComponent } from './mood-entry/mood/mood.component';
     ],
     providers: [
         ActivityService,
-        MoodService
+        MoodService,
+        ContextModalComponent,
+        ClockModalComponent,
+        ThemeModalComponent,
+        ModalDialogService,
+        ToS,
+        About
     ],
     schemas: [
         NO_ERRORS_SCHEMA
