@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 
 
 @Component({
-  selector: 'app-item',
+  selector: 'ns-item',
   templateUrl: './activity.component.html',
   styleUrls: ['./activity.component.css']
 })

@@ -23,18 +23,18 @@ import { ObservableArray } from 'tns-core-modules/data/observable-array/observab
 
 export class MoodEntryComponent extends Observable implements OnInit {
 
-  moods: Mood[];
-
   public moodForm: FormGroup;
   public mood: number;
   public currentConfig: any;
 
   private _activityItems: ObservableArray<Item>
+  private _moodItems: ObservableArray<Mood>
 
   constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
     super();
-    this.moods = moodService.getMoods();
   }
+
+  // ACTIVITY ITEMIT
 
   get activityItems(): ObservableArray<Item> {
     return this.get("_activityItems");
@@ -44,16 +44,39 @@ export class MoodEntryComponent extends Observable implements OnInit {
     this.set("_activityItems", value);
   }
 
-  public itemSelected(args: ListViewEventData) {
-    const item = this.activityItems.getItem(args.index);
-    item.selected = true;
-    console.log(item);
+  public activityItemSelected(args: ListViewEventData) {
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = true;
+    console.log(activityItem);
     console.log("args.index: " + args.index);
   }
 
-  public itemDeselected(args: ListViewEventData) {
-    const item = this.activityItems.getItem(args.index);
-    item.selected = false;
+  public activityItemDeselected(args: ListViewEventData) {
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = false;
+  }
+
+
+  // MOOD ITEMIT
+
+  get moodItems(): ObservableArray<Mood> {
+    return this.get("_moodItems");
+  }
+
+  set moodItems(value: ObservableArray<Mood>) {
+    this.set("_moodItems", value);
+  }
+
+  public moodItemSelected(args: ListViewEventData) {
+    const moodItem = this.moodItems.getItem(args.index);
+    moodItem.selected = true;
+    console.log(moodItem);
+    console.log("args.index: " + args.index);
+  }
+
+  public moodItemDeselected(args: ListViewEventData) {
+    const moodItem = this.moodItems.getItem(args.index);
+    moodItem.selected = false;
   }
 
   /* 
@@ -62,13 +85,13 @@ export class MoodEntryComponent extends Observable implements OnInit {
   */
   submitLog() {
 
-     const moodResult = this.moods.filter(item => {
+     /*const moodResult = this.moods.filter(item => {
       const vs = getViewState<ItemViewState>(item);
       return vs && vs.selected;
-    })
+    })*/
     
     let config = {
-      mood: moodResult,
+      mood: '',
       freeText: this.f.freeText.value,
       activities: ''
 
@@ -80,8 +103,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
     dialogs.alert({
       title: "Success!",
-      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood.map(data => "\n" + data.title)}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: `,
+      /*message: `Here is your entry:\nMood koodi:${this.currentConfig.mood.map(data => "\n" + data.title)}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+      \nAktiviteettisi: `,*/
       okButtonText: "OK"
     });
   }
@@ -93,6 +116,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
   ngOnInit() {
     this._activityItems = new ObservableArray(this.activityService.getItems());
+    this._moodItems = new ObservableArray(this.moodService.getMoods());
     this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.

@@ -3,17 +3,21 @@
     <StackLayout>
         <!-- Mood-valinta -->
         <Label class="moodText" text="HOW ARE YOU FEELING TODAY?"></Label>
-        <RadListView [items]="moods" rowHeight="60">
+        <RadListView [items]="moodItems" multipleSelection="false" selectionBehavior="Press" (itemSelected)="moodItemSelected($event)"
+        (itemDeselected)="moodItemDeselected($event)" rowHeight="60">
             <ng-template tkListItemTemplate let-item="item">
-                <!-- <app-item [item]="item"></app-item> -->
-                <ns-mood [item]="item"></ns-mood>
+                <StackLayout height="60" width="60" orientation="horizontal" [item]="item" class="mood">
+                    <GridLayout rows="auto auto" class="select-btn" [backgroundColor]="item.selected ? 'black' : 'red'">
+                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"></Image>
+                    </GridLayout>
+                </StackLayout>
             </ng-template>
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
         </RadListView>
         <!-- Aktiviteettien valinta -->
         <Label class="moodText" text="WHAT DID YOU DO TODAY?"></Label>
-        <RadListView [items]="activityItems" multipleSelection="true" selectionBehavior="Press" (itemSelected)="itemSelected($event)"
-            (itemDeselected)="itemDeselected($event)" rowHeight="60" height="235">
+        <RadListView [items]="activityItems" multipleSelection="true" selectionBehavior="Press" (itemSelected)="activityItemSelected($event)"
+            (itemDeselected)="activityItemDeselected($event)" rowHeight="60" height="235">
             <ng-template tkListItemTemplate let-item="item">
                 <StackLayout height="60" width="60" orientation="horizontal" [item]="item" class="item">
                     <GridLayout rows="auto auto" class="select-btn" [backgroundColor]="item.selected ? 'black' : 'red'">
