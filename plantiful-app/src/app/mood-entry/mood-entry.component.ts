@@ -7,10 +7,13 @@ import { Mood, MoodService } from './mood/mood.service';
 import { ItemViewState } from '../model/itemviewstate';
 import { getViewState } from '../../view-state-utils';
 
+import { ListViewEventData } from "nativescript-ui-listview";
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import * as dialogs from "tns-core-modules/ui/dialogs";
 
-const ItemViewStateFactory = () => { return { selected: false } };
+import { Observable } from 'tns-core-modules/data/observable';
+import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+
 @Component({
   selector: 'ns-mood-entry',
   templateUrl: './mood-entry.component.html',
@@ -18,63 +21,46 @@ const ItemViewStateFactory = () => { return { selected: false } };
   moduleId: module.id
 })
 
-export class MoodEntryComponent implements OnInit {
+export class MoodEntryComponent extends Observable implements OnInit {
 
-  selected: boolean = false;
-
-  //public dataItems = ['Cooking', 'Sports', 'Sleeping', 'Video games', 'Overclocking', 'Programming', 'Cleaning', 'Shopping'];
-
-  items: Item[];
   moods: Mood[];
 
   public moodForm: FormGroup;
   public mood: number;
   public currentConfig: any;
 
+  private _activityItems: ObservableArray<Item>
+
   constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
-
-
-    this.items = activityService.getItems();
+    super();
     this.moods = moodService.getMoods();
-
-   
   }
 
-  // Otetaan moodForm-oliosta talteen controllerit, jotta niitä voidaan käyttää myöhemmin paljon siistimmin.
-  get f() { return this.moodForm.controls; }
+  get activityItems(): ObservableArray<Item> {
+    return this.get("_activityItems");
+  }
 
-  onItemTap(args) {
+  set activityItems(value: ObservableArray<Item>) {
+    this.set("_activityItems", value);
+  }
+
+  public itemSelected(args: ListViewEventData) {
+    const item = this.activityItems.getItem(args.index);
+    item.selected = true;
+    console.log(item);
     console.log("args.index: " + args.index);
-    console.log("args.view: " + args.view);
-    console.log("args.object: " + args.object);
   }
 
-  logItem() {
-    console.log("click");
+  public itemDeselected(args: ListViewEventData) {
+    const item = this.activityItems.getItem(args.index);
+    item.selected = false;
   }
-
-  // palauttaa selected itemit.
-  // checkout() {
-  //   const result = this.items
-  //     .filter(item => {
-  //       const vs = getViewState<ItemViewState>(item);
-  //       return vs && vs.selected;
-  //     })
-  //     .map(item => item.name)
-  //     .join("\n");
-  //   alert("Selected items:\n" + result);
-  //   console.log(result);
-  // }
 
   /* 
-    logaa valitun moodin. Aktiviteetin data kerätään result-muuttujaan getViewState-funktiota
-    hyödyntäen.
+    logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
+    result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   */
   submitLog() {
-    const result = this.items.filter(item => {
-      const vs = getViewState<ItemViewState>(item);
-      return vs && vs.selected;
-    })
 
      const moodResult = this.moods.filter(item => {
       const vs = getViewState<ItemViewState>(item);
@@ -84,25 +70,29 @@ export class MoodEntryComponent implements OnInit {
     let config = {
       mood: moodResult,
       freeText: this.f.freeText.value,
-      activities: result
+      activities: ''
 
     }
 
     this.currentConfig = config;
-    console.log('Button Works');
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
     dialogs.alert({
       title: "Success!",
       message: `Here is your entry:\nMood koodi:${this.currentConfig.mood.map(data => "\n" + data.title)}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
+      \nAktiviteettisi: `,
       okButtonText: "OK"
     });
   }
 
+  // Otetaan moodForm-oliosta talteen controllerit, jotta niitä voidaan käyttää myöhemmin paljon siistimmin.
+  get f() {
+    return this.moodForm.controls;
+  }
 
   ngOnInit() {
+    this._activityItems = new ObservableArray(this.activityService.getItems());
     this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
