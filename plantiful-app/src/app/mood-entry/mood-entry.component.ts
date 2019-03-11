@@ -29,8 +29,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
   private _activityItems: ObservableArray<Item>
   private _moodItems: ObservableArray<Mood>
-  private _selectedActivityItems: string;
-  private _selectedMoodItem: string;
+  private _selectedActivityItems: Array<string>;
+  private _selectedMoodItem: number;
 
   constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
     super();
@@ -50,15 +50,16 @@ export class MoodEntryComponent extends Observable implements OnInit {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
     let selectedTitles = "Selected activities: ";
+    let activityArray = []
     for (let i = 0; i < selectedItems.length; i++) {
         selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
-
+        activityArray.push(selectedItems[i])
         if (i < selectedItems.length - 1) {
             selectedTitles += ", ";
         }
     }
 
-    this._selectedActivityItems = selectedTitles;
+    this._selectedActivityItems = activityArray;
     const activityItem = this.activityItems.getItem(args.index);
     activityItem.selected = true;
     console.log("Item selected: ");
@@ -68,19 +69,18 @@ export class MoodEntryComponent extends Observable implements OnInit {
   public activityItemDeselected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let activityArray = []
     if (selectedItems.length > 0) {
         let selectedTitles = "Selected activityItems: ";
         for (let i = 0; i < selectedItems.length; i++) {
             selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
-
+            activityArray.push(selectedItems[i])
             if (i < selectedItems.length - 1) {
                 selectedTitles += ", ";
             }
         }
 
-        this._selectedActivityItems = selectedTitles;
-    } else {
-        this._selectedActivityItems = "No Selected items.";
+        this._selectedActivityItems = activityArray;
     }
 
     const activityItem = this.activityItems.getItem(args.index);
@@ -104,15 +104,16 @@ export class MoodEntryComponent extends Observable implements OnInit {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Mood>;
     let selectedTitles = "Selected mood: ";
+    let moodTitle;
     for (let i = 0; i < selectedItems.length; i++) {
         selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
-
+        moodTitle = selectedItems[i].title
         if (i < selectedItems.length - 1) {
             selectedTitles += ", ";
         }
     }
 
-    this._selectedMoodItem = selectedTitles;
+    this._selectedMoodItem = moodTitle;
 
     const moodItem = this.moodItems.getItem(args.index);
     moodItem.selected = true;
@@ -126,11 +127,11 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
   // SELECTED ITEMIT
 
-  get selectedActivityItems(): string {
+  get selectedActivityItems(): Array<string> {
     return this._selectedActivityItems;
   }
 
-  get selectedMoodItem(): string {
+  get selectedMoodItem(): number {
     return this._selectedMoodItem;
   }
 
@@ -147,10 +148,9 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log(this._selectedActivityItems);
     console.log(this._selectedMoodItem);
     let config = {
-      mood: '',
+      mood: this._selectedMoodItem,
       freeText: this.f.freeText.value,
-      activities: ''
-
+      activities: this._selectedActivityItems
     }
 
     this.currentConfig = config;
@@ -159,8 +159,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
     dialogs.alert({
       title: "Success!",
-      /*message: `Here is your entry:\nMood koodi:${this.currentConfig.mood.map(data => "\n" + data.title)}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: `,*/
+      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
       okButtonText: "OK"
     });
   }
@@ -173,8 +173,6 @@ export class MoodEntryComponent extends Observable implements OnInit {
   ngOnInit() {
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
-    this._selectedActivityItems = "No Selected activityItems.";
-    this._selectedMoodItem = "No Selected moodItem.";
 
     this.page.actionBarHidden = true;
 
