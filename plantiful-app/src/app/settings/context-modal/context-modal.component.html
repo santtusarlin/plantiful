@@ -1,4 +1,12 @@
-<StackLayout>
-    <Label text="{{ hello }}" textWrap="true"></Label>
-    <Button text="Sulje!" (tap)="close(hello)"></Button>    
-</StackLayout>
+<ScrollView>
+    <GridLayout rows="*,*">
+        <GridLayout row="0">
+            <Label text="{{ hello }}" textWrap="true"></Label>
+        </GridLayout>
+        <GridLayout row="1">
+            <Button verticalAlignment="bottom" text="Sulje!" (tap)="close(hello)"></Button>
+        </GridLayout>
+
+    </GridLayout>
+
+</ScrollView>

@@ -22,6 +22,8 @@ import { ContextModalComponent } from './settings/context-modal/context-modal.co
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { ClockModalComponent } from './settings/clock-modal/clock-modal.component';
 import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
+import { ToS } from "./settings/ToS";
+import { About } from "./settings/About";
 
 @NgModule({
     bootstrap: [
@@ -54,7 +56,9 @@ import { ThemeModalComponent } from './settings/theme-modal/theme-modal.componen
     ],
     providers: [
         ActivityService,
-        ModalDialogService
+        ModalDialogService,
+        ToS,
+        About
     ],
     schemas: [
         NO_ERRORS_SCHEMA

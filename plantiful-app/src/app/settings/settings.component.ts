@@ -4,6 +4,8 @@ import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/dir
 import { ContextModalComponent } from "./context-modal/context-modal.component";
 import { ClockModalComponent } from './clock-modal/clock-modal.component';
 import { ThemeModalComponent } from './theme-modal/theme-modal.component';
+import { ToS } from './ToS';
+import { About } from './About';
 
 @Component({
   selector: 'ns-settings',
@@ -13,16 +15,18 @@ import { ThemeModalComponent } from './theme-modal/theme-modal.component';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor(private page: Page, private modal: ModalDialogService, private vcRef: ViewContainerRef) { }
+  
+  constructor(private tos: ToS, private about: About, private page: Page, private modal: ModalDialogService, private vcRef: ViewContainerRef) { }
 
   ngOnInit() {
     this.page.actionBarHidden = true;
   }
 
   showToS() {
+    console.log(this.tos.getMessage());
     let options: ModalDialogOptions = {
       context: {
-        viesti: "Tämä on ToS-modali!"
+        viesti: this.tos.getMessage()
       },
       fullscreen: false,
       viewContainerRef: this.vcRef
@@ -33,7 +37,7 @@ export class SettingsComponent implements OnInit {
   showAbout() {
     let options: ModalDialogOptions = {
       context: {
-        viesti: "Tämä on About-modali!"
+        viesti: this.about.getMessage()
       },
       fullscreen: false,
       viewContainerRef: this.vcRef
