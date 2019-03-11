@@ -46,6 +46,10 @@ export class MoodEntryComponent extends Observable implements OnInit {
     this.set("_activityItems", value);
   }
 
+  get selectedActivityItems(): Array<string> {
+    return this._selectedActivityItems;
+  }
+
   public activityItemSelected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
@@ -125,12 +129,6 @@ export class MoodEntryComponent extends Observable implements OnInit {
     moodItem.selected = false;
   }
 
-  // SELECTED ITEMIT
-
-  get selectedActivityItems(): Array<string> {
-    return this._selectedActivityItems;
-  }
-
   get selectedMoodItem(): number {
     return this._selectedMoodItem;
   }
@@ -141,15 +139,9 @@ export class MoodEntryComponent extends Observable implements OnInit {
   */
   submitLog() {
 
-     /*const moodResult = this.moods.filter(item => {
-      const vs = getViewState<ItemViewState>(item);
-      return vs && vs.selected;
-    })*/
-    console.log(this._selectedActivityItems);
-    console.log(this._selectedMoodItem);
     let config = {
       mood: this._selectedMoodItem,
-      freeText: this.f.freeText.value,
+      freeText: this.moodForm.controls.freeText.value,
       activities: this._selectedActivityItems
     }
 
@@ -163,11 +155,6 @@ export class MoodEntryComponent extends Observable implements OnInit {
       \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
       okButtonText: "OK"
     });
-  }
-
-  // Otetaan moodForm-oliosta talteen controllerit, jotta niitä voidaan käyttää myöhemmin paljon siistimmin.
-  get f() {
-    return this.moodForm.controls;
   }
 
   ngOnInit() {
