@@ -7,7 +7,7 @@ import { Mood, MoodService } from './mood/mood.service';
 import { ItemViewState } from '../model/itemviewstate';
 import { getViewState } from '../../view-state-utils';
 
-import { ListViewEventData } from "nativescript-ui-listview";
+import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import * as dialogs from "tns-core-modules/ui/dialogs";
 
@@ -29,6 +29,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
 
   private _activityItems: ObservableArray<Item>
   private _moodItems: ObservableArray<Mood>
+  private _selectedActivityItems: string;
+  private _selectedMoodItem: string;
 
   constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
     super();
@@ -45,15 +47,46 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
   public activityItemSelected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let selectedTitles = "Selected activities: ";
+    for (let i = 0; i < selectedItems.length; i++) {
+        selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
+
+        if (i < selectedItems.length - 1) {
+            selectedTitles += ", ";
+        }
+    }
+
+    this._selectedActivityItems = selectedTitles;
     const activityItem = this.activityItems.getItem(args.index);
     activityItem.selected = true;
+    console.log("Item selected: ");
     console.log(activityItem);
-    console.log("args.index: " + args.index);
   }
 
   public activityItemDeselected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    if (selectedItems.length > 0) {
+        let selectedTitles = "Selected activityItems: ";
+        for (let i = 0; i < selectedItems.length; i++) {
+            selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
+
+            if (i < selectedItems.length - 1) {
+                selectedTitles += ", ";
+            }
+        }
+
+        this._selectedActivityItems = selectedTitles;
+    } else {
+        this._selectedActivityItems = "No Selected items.";
+    }
+
     const activityItem = this.activityItems.getItem(args.index);
     activityItem.selected = false;
+    console.log("Item deselected: ");
+    console.log(activityItem);
   }
 
 
@@ -68,15 +101,37 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
   public moodItemSelected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Mood>;
+    let selectedTitles = "Selected mood: ";
+    for (let i = 0; i < selectedItems.length; i++) {
+        selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
+
+        if (i < selectedItems.length - 1) {
+            selectedTitles += ", ";
+        }
+    }
+
+    this._selectedMoodItem = selectedTitles;
+
     const moodItem = this.moodItems.getItem(args.index);
     moodItem.selected = true;
     console.log(moodItem);
-    console.log("args.index: " + args.index);
   }
 
   public moodItemDeselected(args: ListViewEventData) {
     const moodItem = this.moodItems.getItem(args.index);
     moodItem.selected = false;
+  }
+
+  // SELECTED ITEMIT
+
+  get selectedActivityItems(): string {
+    return this._selectedActivityItems;
+  }
+
+  get selectedMoodItem(): string {
+    return this._selectedMoodItem;
   }
 
   /* 
@@ -89,7 +144,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
       const vs = getViewState<ItemViewState>(item);
       return vs && vs.selected;
     })*/
-    
+    console.log(this._selectedActivityItems);
+    console.log(this._selectedMoodItem);
     let config = {
       mood: '',
       freeText: this.f.freeText.value,
@@ -117,6 +173,9 @@ export class MoodEntryComponent extends Observable implements OnInit {
   ngOnInit() {
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
+    this._selectedActivityItems = "No Selected activityItems.";
+    this._selectedMoodItem = "No Selected moodItem.";
+
     this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
