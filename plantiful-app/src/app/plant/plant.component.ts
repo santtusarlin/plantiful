@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { Image } from "tns-core-modules/ui/image";
+import { Image, PlantService } from './plant.service';
+import { Observable } from 'tns-core-modules/data/observable';
+import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+import { ListViewEventData, RadListView } from "nativescript-ui-listview";
+import { topmost } from 'tns-core-modules/ui/frame/frame';
 
 @Component({
   selector: 'ns-plant',
@@ -8,17 +12,22 @@ import { Image } from "tns-core-modules/ui/image";
   styleUrls: ['./plant.component.css'],
   moduleId: module.id,
 })
-export class PlantComponent implements OnInit {
+export class PlantComponent extends Observable implements OnInit {
 
+  private _plantItems: ObservableArray<Image>
+  
 
-  kakkaimg1: Image;
-  isShown: boolean = true;
-  constructor(private page: Page) { }
+  constructor(private page: Page, private plantService: PlantService) {
+    super();
+  }
+
+  get plantItems(): ObservableArray<Image> {
+    return this.get("_plantItems");
+  } 
 
   ngOnInit() {
     this.page.actionBarHidden = true;
-    const imaage = new Image();
-    imaage.src = "res://plant1";
-    this.kakkaimg1 = imaage;
+    this._plantItems = new ObservableArray(this.plantService.getImages());
+    
   }
 }

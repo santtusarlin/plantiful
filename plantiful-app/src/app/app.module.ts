@@ -25,6 +25,7 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
 import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
+import { PlantService } from "./plant/plant.service";
 
 @NgModule({
     bootstrap: [
@@ -58,6 +59,7 @@ import { About } from "./settings/About";
         ActivityService,
         MoodService,
         ModalDialogService,
+        PlantService,
         ToS,
         About
     ],
