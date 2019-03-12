@@ -15,12 +15,10 @@ import { SettingsComponent } from './settings/settings.component';
 import { GraphComponent } from './stats/graph/graph.component';
 import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
-import { ActivityComponent } from './mood-entry/activity/activity.component';
 
 import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
 
-import { MoodComponent } from './mood-entry/mood/mood.component';
 import { ContextModalComponent } from './settings/context-modal/context-modal.component';
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { ClockModalComponent } from './settings/clock-modal/clock-modal.component';
@@ -52,11 +50,9 @@ import { About } from "./settings/About";
         GraphComponent,
         CalendarComponent,
         MoodEntryComponent,
-        ActivityComponent,
         ContextModalComponent,
         ClockModalComponent,
-        ThemeModalComponent,
-        MoodComponent
+        ThemeModalComponent
     ],
     providers: [
         ActivityService,

@@ -4,9 +4,6 @@ import { Page } from 'tns-core-modules/ui/page';
 import { Item, ActivityService } from './activity/activity.service';
 import { Mood, MoodService } from './mood/mood.service';
 
-import { ItemViewState } from '../model/itemviewstate';
-import { getViewState } from '../../view-state-utils';
-
 import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import * as dialogs from "tns-core-modules/ui/dialogs";
@@ -24,7 +21,6 @@ import { ObservableArray } from 'tns-core-modules/data/observable-array/observab
 export class MoodEntryComponent extends Observable implements OnInit {
 
   public moodForm: FormGroup;
-  public mood: number;
   public currentConfig: any;
 
   private _activityItems: ObservableArray<Item>
@@ -36,64 +32,6 @@ export class MoodEntryComponent extends Observable implements OnInit {
     super();
   }
 
-  // ACTIVITY ITEMIT
-
-  get activityItems(): ObservableArray<Item> {
-    return this.get("_activityItems");
-  }
-
-  set activityItems(value: ObservableArray<Item>) {
-    this.set("_activityItems", value);
-  }
-
-  get selectedActivityItems(): Array<string> {
-    return this._selectedActivityItems;
-  }
-
-  public activityItemSelected(args: ListViewEventData) {
-    const listview = args.object as RadListView;
-    const selectedItems = listview.getSelectedItems() as Array<Item>;
-    let selectedTitles = "Selected activities: ";
-    let activityArray = []
-    for (let i = 0; i < selectedItems.length; i++) {
-        selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
-        activityArray.push(selectedItems[i])
-        if (i < selectedItems.length - 1) {
-            selectedTitles += ", ";
-        }
-    }
-
-    this._selectedActivityItems = activityArray;
-    const activityItem = this.activityItems.getItem(args.index);
-    activityItem.selected = true;
-    console.log("Item selected: ");
-    console.log(activityItem);
-  }
-
-  public activityItemDeselected(args: ListViewEventData) {
-    const listview = args.object as RadListView;
-    const selectedItems = listview.getSelectedItems() as Array<Item>;
-    let activityArray = []
-    if (selectedItems.length > 0) {
-        let selectedTitles = "Selected activityItems: ";
-        for (let i = 0; i < selectedItems.length; i++) {
-            selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
-            activityArray.push(selectedItems[i])
-            if (i < selectedItems.length - 1) {
-                selectedTitles += ", ";
-            }
-        }
-
-        this._selectedActivityItems = activityArray;
-    }
-
-    const activityItem = this.activityItems.getItem(args.index);
-    activityItem.selected = false;
-    console.log("Item deselected: ");
-    console.log(activityItem);
-  }
-
-
   // MOOD ITEMIT
 
   get moodItems(): ObservableArray<Mood> {
@@ -104,19 +42,17 @@ export class MoodEntryComponent extends Observable implements OnInit {
     this.set("_moodItems", value);
   }
 
+  // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
+  // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
+  // selectedItemit pusketaan moodTitle muuttujaan
+
   public moodItemSelected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Mood>;
-    let selectedTitles = "Selected mood: ";
     let moodTitle;
     for (let i = 0; i < selectedItems.length; i++) {
-        selectedTitles += selectedItems[i] ? selectedItems[i].title : "";
         moodTitle = selectedItems[i].title
-        if (i < selectedItems.length - 1) {
-            selectedTitles += ", ";
-        }
     }
-
     this._selectedMoodItem = moodTitle;
 
     const moodItem = this.moodItems.getItem(args.index);
@@ -133,10 +69,57 @@ export class MoodEntryComponent extends Observable implements OnInit {
     return this._selectedMoodItem;
   }
 
-  /* 
-    logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
-    result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
-  */
+  // ACTIVITY ITEMIT
+
+  get activityItems(): ObservableArray<Item> {
+    return this.get("_activityItems");
+  }
+
+  set activityItems(value: ObservableArray<Item>) {
+    this.set("_activityItems", value);
+  }
+
+  get selectedActivityItems(): Array<string> {
+    return this._selectedActivityItems;
+  }
+
+  // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
+  // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
+  // selectedItemit pusketaan activityArray taulukkoon
+  
+  public activityItemSelected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let activityArray = []
+    for (let i = 0; i < selectedItems.length; i++) {
+        activityArray.push(selectedItems[i])
+    }
+    this._selectedActivityItems = activityArray;
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = true;
+    console.log("Item selected: ");
+    console.log(activityItem);
+  } 
+
+  public activityItemDeselected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let activityArray = []
+    if (selectedItems.length > 0) {
+        for (let i = 0; i < selectedItems.length; i++) {
+            activityArray.push(selectedItems[i])
+        }
+        this._selectedActivityItems = activityArray;
+    }
+
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = false;
+    console.log("Item deselected: ");
+    console.log(activityItem);
+  }
+   
+  // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
+  // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   submitLog() {
 
     let config = {
