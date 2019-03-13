@@ -6,8 +6,8 @@
         <RadListView [items]="moodItems" multipleSelection="false" selectionBehavior="Press" (itemSelected)="moodItemSelected($event)"
         (itemDeselected)="moodItemDeselected($event)" rowHeight="60">
             <ng-template tkListItemTemplate let-item="item">
-                    <GridLayout id="moodRadGrid" height="60" width="60" orientation="horizontal" [item]="item" rows="auto auto" class="select-btn" [backgroundColor]="item.selected ? 'black' : 'red'">
-                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"></Image>
+                    <GridLayout id="moodRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn"   verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
+                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"  class="batan" opacity="{{ item.selected ? '1' : '0.5'}}"     verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
                     </GridLayout>
             </ng-template>
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
@@ -17,8 +17,8 @@
         <RadListView [items]="activityItems" multipleSelection="true" selectionBehavior="Press" (itemSelected)="activityItemSelected($event)"
             (itemDeselected)="activityItemDeselected($event)" rowHeight="60" height="40%">
             <ng-template tkListItemTemplate let-item="item">
-                    <GridLayout id="activityRadGrid" height="60" width="60" orientation="horizontal" [item]="item" rows="auto auto" class="select-btn" [backgroundColor]="item.selected ? 'black' : 'red'">
-                        <Image src="~/app/images/activity-icons/{{ item.imageURL }}" height="80%" width="80%"></Image>
+                    <GridLayout id="activityRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn"   verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
+                        <Image src="~/app/images/activity-icons/{{ item.imageURL }}" height="75%" width="75%" opacity="{{ item.selected ? '1' : '0.5'}}"  verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
                     </GridLayout>
             </ng-template>
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
