@@ -25,8 +25,15 @@ components that have the btn class name.
     color: #f5f5f5;
 }
 
-
-
+.fas {
+    font-family: 'Font Awesome 5 Free', 'fa-solid-900';
+}
+.far {
+    font-family: 'Font Awesome 5 Regular', 'fa-regular-400';
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands', 'fa-brands-400';
+}
 .buttonstack {
     margin-bottom: 175px;
 }

@@ -19,7 +19,6 @@ export class SettingsComponent implements OnInit {
   constructor(private tos: ToS, private about: About, private page: Page, private modal: ModalDialogService, private vcRef: ViewContainerRef) { }
 
   ngOnInit() {
-    this.page.actionBarHidden = true;
   }
 
   showToS() {

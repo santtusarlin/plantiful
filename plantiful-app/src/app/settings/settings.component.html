@@ -1,19 +1,25 @@
+<ActionBar title="OPTIONS" class="action-bar">
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Label class="header" text="OPTIONS" textWrap="true"></Label>
+    </StackLayout>
+</ActionBar>
 <StackLayout>
-    <GridLayout class="list" (tap)="showToS()">
-        <Label class="teksti" text="ToS" textWrap="true"></Label>
-    </GridLayout>
-    <GridLayout class="list" (tap)="showAbout()">
-        <Label class="teksti" text="About" textWrap="true"></Label>
-    </GridLayout>
+    hei
     <GridLayout class="list">
-        <Label class="teksti" text="Hohoo" textWrap="true"></Label>
+        <Label class="fas" text="&#xf104;"></Label>
+        <!-- <Label class="teksti" text="Notifications" textWrap="true"></Label> -->
         <Switch [checked]="" class="switch"></Switch>
     </GridLayout>
     <GridLayout class="list" (tap)="showClock()">
-        <Label class="teksti" text="Kello" textWrap="true"></Label>
+        <Label class="teksti" text="Timer" textWrap="true"></Label>
     </GridLayout>
     <GridLayout class="list" (tap)="showTheme()">
-        <Label class="teksti" text="Teema" textWrap="true"></Label>
+        <Label class="teksti" text="Themes" textWrap="true"></Label>
+    </GridLayout>
+    <GridLayout class="list" (tap)="showAbout()">
+        <Label class="teksti" text="About us" textWrap="true"></Label>
+    </GridLayout>
+    <GridLayout class="list" (tap)="showToS()">
+        <Label class="teksti" text="Terms of Service" textWrap="true"></Label>
     </GridLayout>
 </StackLayout>
-
