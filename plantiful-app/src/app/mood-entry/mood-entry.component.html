@@ -1,5 +1,4 @@
 <StackLayout id="mainstack" [formGroup]="moodForm">
-
     <StackLayout>
         <!-- Mood-valinta -->
         <Label class="moodText" text="HOW ARE YOU FEELING TODAY?"></Label>
@@ -27,6 +26,7 @@
     <!-- Vapaa teksti -->
     <TextField width="75%" class="textField" formControlName="freeText" hint="Free text" autocorrect="false"></TextField>
 </StackLayout>
-<StackLayout height="60" class="buttonstack" verticalAlignment="bottom">
-    <Button height="60" text="Submit" type="submit" (tap)="submitLog()"></Button>
+<StackLayout class="moodSubmit" verticalAlignment="bottom">
+    <Image src="~/app/images/buttons/submit_button.png" type="submit" (tap)="submitLog()" height="15%" width="15%"></Image>
+    <!-- <Button height="60" text="Submit" type="submit" (tap)="submitLog()"></Button> -->
 </StackLayout>
