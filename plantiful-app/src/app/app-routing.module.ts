@@ -11,7 +11,7 @@ import { CalendarComponent } from "./stats/calendar/calendar.component";
 import { GraphComponent } from "./stats/graph/graph.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/mood_entry", pathMatch: "full" },
+    { path: "", redirectTo: "/settings", pathMatch: "full" },
     { path: "plant", component: PlantComponent },
     { path: "stats", component: StatsComponent },
     { path: "settings", component: SettingsComponent },
