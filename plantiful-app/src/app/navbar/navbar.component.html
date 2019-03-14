@@ -1,8 +1,11 @@
 <!-- Navigaatiopalkki -->
-<GridLayout height="60" verticalAlignment="bottom">
-    <GridLayout class="navGrid" height="60" columns="*, *, *">
-        <Button text="Plant" col="0" nsRouterLink="/plant"></Button>
-        <Button text="Stats" col="1" nsRouterLink="/stats"></Button>
-        <Button text="Settings" col="2" nsRouterLink="/settings"></Button>
+<StackLayout height="60" verticalAlignment="bottom">
+    <GridLayout class="navGrid" height="60" columns="*, *, *" rows="auto, *">
+            <Label class="ikoni fas" text="&#xf004;" col="0" row="0" nsRouterLink="/plant"></Label>
+            <Label class="routerLink" text="Plant" col="0" row="1"></Label>
+            <Label class="ikoni fas" text="&#xf080;" col="1" row="0" nsRouterLink="/stats"></Label>
+            <Label class="routerLink" text="Stats" col="1" row="1"></Label>
+            <Label class="ikoni fas" text="&#xf013;" col="2" row="0" nsRouterLink="/settings"></Label>
+            <Label class="routerLink" text="Settings" col="2" row="1"></Label>
     </GridLayout>
-</GridLayout>
+</StackLayout>
