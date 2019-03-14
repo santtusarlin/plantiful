@@ -3,22 +3,50 @@
         <Label class="header" text="OPTIONS" textWrap="true"></Label>
     </StackLayout>
 </ActionBar>
-<StackLayout>
-    <GridLayout class="list">
-        <Label class="fas" text="&#xf104;"></Label>
-        <!-- <Label class="teksti" text="Notifications" textWrap="true"></Label> -->
-        <Switch [checked]="" class="switch"></Switch>
+<StackLayout id="mainstack">
+
+    <GridLayout class="list" columns="50 auto *">
+        <Label horizontalAlignment="center" class="fas" text="&#xf0f3;" col="0"></Label>
+        <Label class="teksti" text="Notifications" col="1"></Label>
+        <Switch [checked]="" class="switch" col="2"></Switch>
     </GridLayout>
-    <GridLayout class="list" (tap)="showClock()">
+
+    <!-- <GridLayout class="list" (tap)="showClock()">
         <Label class="teksti" text="Timer" textWrap="true"></Label>
+    </GridLayout> -->
+
+    <GridLayout class="list" (tap)="showTheme()" columns="50 *">
+        <Label horizontalAlignment="center" class="fas" text="&#xf53f;" col="0"></Label>
+        <Label class="teksti" text="Themes" textWrap="true" col="1"></Label>
     </GridLayout>
-    <GridLayout class="list" (tap)="showTheme()">
-        <Label class="teksti" text="Themes" textWrap="true"></Label>
+
+    <GridLayout class="list" (tap)="showAbout()" columns="50 *">
+        <Label horizontalAlignment="center" class="fas" text="&#xf128;" col="0"></Label>
+        <Label class="teksti" text="About us" textWrap="true" col="1"></Label>
     </GridLayout>
-    <GridLayout class="list" (tap)="showAbout()">
-        <Label class="teksti" text="About us" textWrap="true"></Label>
+
+    <GridLayout class="list" (tap)="showToS()" columns="50 *">
+        <Label class="fas" text="&#xf12a;" col="0" horizontalAlignment="center"></Label>
+        <Label class="teksti" text="Terms of Service" textWrap="true" col="1"></Label>
     </GridLayout>
-    <GridLayout class="list" (tap)="showToS()">
-        <Label class="teksti" text="Terms of Service" textWrap="true"></Label>
-    </GridLayout>
+
+
+<!-- <GridLayout columns="50, auto, *" rows="60, 60, 60, 60" >
+    
+    <Label class="fas" text="&#xf0f3;" row="0" col="0"></Label>
+    <Label class="teksti" text="Notifications" row="0" col="1"></Label>
+    <Switch [checked]="" class="switch" row="0" col="2"></Switch>
+
+    <Label class="fas" text="&#xf53f;" row="1" col="0"></Label>
+    <Label class="teksti" text="Themes" row="1" col="1"  ></Label>
+
+    <Label class="fas" text="&#xf128;" row="2" col="0"></Label>
+    <Label class="teksti" text="About Us" row="2" col="1"></Label>
+
+    <Label class="fas" text="&#xf12a;" row="3" col="0"></Label>
+    <Label class="teksti" text="Terms of Service" row="3" col="1"></Label>
+  </GridLayout> -->
+
+
+
 </StackLayout>
