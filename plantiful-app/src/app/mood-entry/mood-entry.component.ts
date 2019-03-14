@@ -144,7 +144,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
 
-    this.page.actionBarHidden = true;
+    //this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
     this.moodForm = this.formBuilder.group({
