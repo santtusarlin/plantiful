@@ -1,0 +1,54 @@
+Plantiful - Viikko 11 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Mikko Hannukainen: 27,41h
+- Kasvinäkymän scrollaaminen
+- Asetusnäkymän hiomista
+
+Santtu Sarlin: 30,5h
+- Mood-kirjaus näkymän tyylittelyä
+- Koodin refaktorointia ja kommentointia
+ 
+Miika Pollari: 24,5 (1 sairaslomapäivä)
+- Mood- ja asetus-näkymien tyylittelyä
+- Ikonien hiomista 
+
+Mikko Poutanen: 29,5h
+- TikoBiz
+- Wordpress
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Mikko Hannukainen
+- Sovelluksen toiminnalisuuden kehitystä, testausta
+
+Santtu Sarlin
+- Sovelluksen toiminnallisuuden kehitystä
+ 
+Miika Pollari
+- Graafinäkymää(?)
+
+Mikko Poutanen
+- Wordpress
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Mikko Hannukainen: 172,74h - lomapäiviä käytetty: (4)
+Santtu Sarlin: 197,86h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (2)
+Miika Pollari: 174,11h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (2)
+Mikko Poutanen: 190,78h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (1)
+
+4. AIKATAULU
+
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+
+Tällä hetkellä ei ole ongelmia.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+
+Burndown chart näyttää yllättävän hyvältä.
+Mikko Poutanen lomalla Ma. 18.3.2019.
+
