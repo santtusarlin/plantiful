@@ -1,0 +1,53 @@
+Plantiful - Viikko 7 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Mikko Hannukainen: 19,59h (1 lomapäivä)
+- Asetus-näkymän kehitystä
+
+Santtu Sarlin: 22h (1 sairaslomapäivä)
+- Mood- ja aktiviteetti-listan tyylittelyä ja ikonien käyttöönottoa
+- Mood- ja aktiviteetti-listan toiminnallisuuden kehitystä
+ 
+Miika Pollari: 27,17h
+- Mood- ja aktiviteetti-listan tyylittelyä ja ikonien käyttöönottoa
+- Ikonien etsimistä ja luomista
+
+Mikko Poutanen: 22h (1 sairaslomapäivä)
+- TikoBiz affiliate markkinointi
+- Wordpress-sivuston sisällön suunnittelua
+- Wordpress-sivuston mockupin toteutus
+
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Mikko Hannukainen
+- Asetukset- ja mood-näkymän toiminnallisuuden kehitystä
+
+Santtu Sarlin
+- Mood-näkymän toiminnallisuuden kehitystä
+ 
+Miika Pollari
+- Mood- ja asetukset-näkymän tyylittelyä
+
+Mikko Poutanen
+- Wordpress-sivuston toteutuksen opettelu ja toteutus
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Miika Pollari: 149,61h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (1)
+Santtu Sarlin: 167,36 - lomapäiviä käytetty: (1) + sairaslomapäiviä: (2)
+Mikko Poutanen: 161,28hh - lomapäiviä käytetty: (1) + sairaslomapäiviä: (1)
+Mikko Hannukainen: 145,33h - lomapäiviä käytetty: (4)
+
+4. AIKATAULU
+
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+
+Tällä hetkellä ei ole ongelmia.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+
+n/a

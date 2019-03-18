@@ -1,1 +1,41 @@
 /* Add mobile styles for the component here.  */
+.list{
+    height: 150px;
+    margin: 15px 30px;
+    border-radius: 20px;
+}
+.header {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f5f5f5;
+    font-size: 22px;
+    background-color: transparent;
+}
+.action-bar {
+    height: 200px;
+    background-color: #356455;
+}
+.teksti {
+    vertical-align: center;
+    margin-left: 50px;
+    color: #356455;
+    font-size: 18px;
+        font-weight: bold;
+
+}
+
+.fas {
+    vertical-align: center;
+    margin-left: 50px;
+    color: #356455;
+    font-size: 18px;
+        font-weight: bold;
+}
+#mainstack {
+    background-color: #f5f5f5;
+}
+
+.switch {
+    background-color: rgb(139, 139, 139);
+    
+}

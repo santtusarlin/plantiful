@@ -16,8 +16,16 @@ import { GraphComponent } from './stats/graph/graph.component';
 import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
 
+import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
-import { ActivityComponent } from './mood-entry/activity/activity.component';
+
+import { ContextModalComponent } from './settings/context-modal/context-modal.component';
+import { ModalDialogService } from "nativescript-angular/modal-dialog";
+import { ClockModalComponent } from './settings/clock-modal/clock-modal.component';
+import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
+import { ToS } from "./settings/ToS";
+import { About } from "./settings/About";
+import { PlantService } from "./plant/plant.service";
 
 @NgModule({
     bootstrap: [
@@ -32,8 +40,8 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         FormsModule,
         ReactiveFormsModule,
         GridViewModule
-        
     ],
+    entryComponents: [ContextModalComponent, ClockModalComponent, ThemeModalComponent],
     declarations: [
         AppComponent,
         NavbarComponent,
@@ -43,10 +51,17 @@ import { ActivityComponent } from './mood-entry/activity/activity.component';
         GraphComponent,
         CalendarComponent,
         MoodEntryComponent,
-        ActivityComponent
+        ContextModalComponent,
+        ClockModalComponent,
+        ThemeModalComponent
     ],
     providers: [
-        ActivityService
+        ActivityService,
+        MoodService,
+        ModalDialogService,
+        PlantService,
+        ToS,
+        About
     ],
     schemas: [
         NO_ERRORS_SCHEMA

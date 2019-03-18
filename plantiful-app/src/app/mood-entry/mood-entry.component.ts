@@ -1,16 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { moodConfiguration } from '../model/mood';
 
 import { Item, ActivityService } from './activity/activity.service';
-import { ItemViewState } from './activity/activity.component';
-import { getViewState } from '../../view-state-utils';
+import { Mood, MoodService } from './mood/mood.service';
 
-import { SegmentedBar, SegmentedBarItem, selectedIndexProperty } from "tns-core-modules/ui/segmented-bar";
+import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import * as dialogs from "tns-core-modules/ui/dialogs";
 
-const ItemViewStateFactory = () => { return { selected: false } };
+import { Observable } from 'tns-core-modules/data/observable';
+import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+
 @Component({
   selector: 'ns-mood-entry',
   templateUrl: './mood-entry.component.html',
@@ -18,97 +18,133 @@ const ItemViewStateFactory = () => { return { selected: false } };
   moduleId: module.id
 })
 
-export class MoodEntryComponent implements OnInit {
-
-  selected: boolean = false;
-
-  public myItems: Array<SegmentedBarItem>;
-  //public dataItems = ['Cooking', 'Sports', 'Sleeping', 'Video games', 'Overclocking', 'Programming', 'Cleaning', 'Shopping'];
-
-  items: Item[];
+export class MoodEntryComponent extends Observable implements OnInit {
 
   public moodForm: FormGroup;
-  public mood: number;
   public currentConfig: any;
 
-  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService) {
+  private _activityItems: ObservableArray<Item>
+  private _moodItems: ObservableArray<Mood>
+  private _selectedActivityItems: Array<string>;
+  private _selectedMoodItem: number;
 
+  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
+    super();
+  }
 
-    this.items = activityService.getItems();
+  // MOOD ITEMIT
 
-    // for-loopilla numerot 1-5 jotka pusketaan myItems tauluun josta <SegmentedBar> ottaa iteminsä.
-    // tän voisi siirtää serviceen.
-    this.myItems = [];
-    for (let i = 1; i < 6; i++) {
-      const item = new SegmentedBarItem();
-      item.title = "" + i;
-      this.myItems.push(item);
+  get moodItems(): ObservableArray<Mood> {
+    return this.get("_moodItems");
+  }
+
+  set moodItems(value: ObservableArray<Mood>) {
+    this.set("_moodItems", value);
+  }
+
+  // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
+  // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
+  // selectedItemit pusketaan moodTitle muuttujaan
+
+  public moodItemSelected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Mood>;
+    let moodTitle;
+    for (let i = 0; i < selectedItems.length; i++) {
+        moodTitle = selectedItems[i].title
     }
+    this._selectedMoodItem = moodTitle;
+
+    const moodItem = this.moodItems.getItem(args.index);
+    moodItem.selected = true;
+    console.log(moodItem);
   }
 
-  // Otetaan moodForm-oliosta talteen controllerit, jotta niitä voidaan käyttää myöhemmin paljon siistimmin.
-  get f() { return this.moodForm.controls; }
-
-  onItemTap(args) {
-    console.log("args.index: " + args.index);
-    console.log("args.view: " + args.view);
-    console.log("args.object: " + args.object);
+  public moodItemDeselected(args: ListViewEventData) {
+    const moodItem = this.moodItems.getItem(args.index);
+    moodItem.selected = false;
   }
 
-  logItem() {
-    console.log("click");
+  get selectedMoodItem(): number {
+    return this._selectedMoodItem;
   }
 
-  // palauttaa selected itemit.
-  // checkout() {
-  //   const result = this.items
-  //     .filter(item => {
-  //       const vs = getViewState<ItemViewState>(item);
-  //       return vs && vs.selected;
-  //     })
-  //     .map(item => item.name)
-  //     .join("\n");
-  //   alert("Selected items:\n" + result);
-  //   console.log(result);
-  // }
+  // ACTIVITY ITEMIT
 
-  /* 
-    logaa valitun moodin. Aktiviteetin data kerätään result-muuttujaan getViewState-funktiota
-    hyödyntäen.
-  */
+  get activityItems(): ObservableArray<Item> {
+    return this.get("_activityItems");
+  }
+
+  set activityItems(value: ObservableArray<Item>) {
+    this.set("_activityItems", value);
+  }
+
+  get selectedActivityItems(): Array<string> {
+    return this._selectedActivityItems;
+  }
+
+  // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
+  // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
+  // selectedItemit pusketaan activityArray taulukkoon
+  
+  public activityItemSelected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let activityArray = []
+    for (let i = 0; i < selectedItems.length; i++) {
+        activityArray.push(selectedItems[i])
+    }
+    this._selectedActivityItems = activityArray;
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = true;
+    console.log("Item selected: ");
+    console.log(activityItem);
+  } 
+
+  public activityItemDeselected(args: ListViewEventData) {
+    const listview = args.object as RadListView;
+    const selectedItems = listview.getSelectedItems() as Array<Item>;
+    let activityArray = []
+    if (selectedItems.length > 0) {
+        for (let i = 0; i < selectedItems.length; i++) {
+            activityArray.push(selectedItems[i])
+        }
+        this._selectedActivityItems = activityArray;
+    }
+
+    const activityItem = this.activityItems.getItem(args.index);
+    activityItem.selected = false;
+    console.log("Item deselected: ");
+    console.log(activityItem);
+  }
+   
+  // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
+  // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   submitLog() {
-    const result = this.items.filter(item => {
-      const vs = getViewState<ItemViewState>(item);
-      return vs && vs.selected;
-    })
-    let config = {
-      mood: this.f.mood.value,
-      freeText: this.f.freeText.value,
-      activities: result
 
+    let config = {
+      mood: this._selectedMoodItem,
+      freeText: this.moodForm.controls.freeText.value,
+      activities: this._selectedActivityItems
     }
 
     this.currentConfig = config;
-    console.log('Button Works');
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
     dialogs.alert({
       title: "Success!",
-      message: `Here is your entry:\nMood koodi: ${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.name)}`,
+      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
       okButtonText: "OK"
     });
   }
 
-  public onSelectedIndexChange(args) {
-    // Otetaan segmentedBarin selectedIndex(numero) ja asetetaan se this.mood muuttujaan
-    let segmentedBar = <SegmentedBar>args.object;
-    this.mood = (segmentedBar.selectedIndex + 1);
-  }
-
   ngOnInit() {
-    this.page.actionBarHidden = true;
+    this._activityItems = new ObservableArray(this.activityService.getItems());
+    this._moodItems = new ObservableArray(this.moodService.getMoods());
+
+    //this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
     this.moodForm = this.formBuilder.group({

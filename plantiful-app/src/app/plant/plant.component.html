@@ -1,13 +1,11 @@
-<StackLayout verticalAlignment="center">
-    <Image *ngIf="isShown" src={{kakkaimg2.src}} width="200" height="200"></Image>
-    <Image src={{kakkaimg1.src}} width="200" height="200"></Image>
-</StackLayout>
+<RadListView [items]="plantItems">
+    <ng-template tkListItemTemplate let-item="item">
+        <GridLayout orientation="vertical" [item]="item" rows="auto">
+            <Image src="~/app/images/plant-imgs/{{ item.imageURL }}" height="50%" width="50%"></Image>
+        </GridLayout>
+    </ng-template>
+</RadListView>
 
-<StackLayout class="buttonstack" verticalAlignment="bottom" horizontalAlignment="left">
-    <Button text="Demota tästä!" (tap)="toggleShown()"></Button>    
+<StackLayout class="moodButton" verticalAlignment="bottom" horizontalAlignment="right">
+    <Image src="~/app/images/buttons/submit_button.png" nsRouterLink="/mood_entry" height="15%" width="15%"></Image>
 </StackLayout>
-<StackLayout class="buttonstack" verticalAlignment="bottom" horizontalAlignment="right">
-    <Button text="Mood" nsRouterLink="/mood_entry"></Button>    
-</StackLayout>
-
-

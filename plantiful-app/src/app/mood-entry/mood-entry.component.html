@@ -1,19 +1,37 @@
+<ActionBar title="DIARY ENTRY" class="action-bar">
+        <StackLayout orientation="horizontal" horizontalAlignment="center">
+            <Label class="header" text="DIARY ENTRY"></Label>
+        </StackLayout>
+    </ActionBar>
 <StackLayout id="mainstack" [formGroup]="moodForm">
-    
     <StackLayout>
         <!-- Mood-valinta -->
-        <SegmentedBar class="segmentedBar" formControlName="mood" [items]="myItems" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
-        <!-- Aktiviteettien valinta -->
-        <RadListView [items]="items" (itemTap)="onItemTap($event)" rowHeight="60">
+        <Label class="moodText" text="HOW ARE YOU FEELING TODAY?"></Label>
+        <RadListView [items]="moodItems" multipleSelection="false" selectionBehavior="Press" (itemSelected)="moodItemSelected($event)"
+        (itemDeselected)="moodItemDeselected($event)" rowHeight="60">
             <ng-template tkListItemTemplate let-item="item">
-                <app-item [item]="item"></app-item>
+                    <GridLayout id="moodRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn"   verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
+                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"  class="batan" opacity="{{ item.selected ? '1' : '0.5'}}"     verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
+                    </GridLayout>
             </ng-template>
-            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="3"></ListViewGridLayout>
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
+        </RadListView>
+        <!-- Aktiviteettien valinta -->
+        <Label class="moodText" text="WHAT DID YOU DO TODAY?"></Label>
+        <RadListView [items]="activityItems" multipleSelection="true" selectionBehavior="Press" (itemSelected)="activityItemSelected($event)"
+            (itemDeselected)="activityItemDeselected($event)" rowHeight="60" height="40%">
+            <ng-template tkListItemTemplate let-item="item">
+                    <GridLayout id="activityRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn"   verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
+                        <Image src="~/app/images/activity-icons/{{ item.imageURL }}" height="75%" width="75%" opacity="{{ item.selected ? '1' : '0.5'}}"  verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
+                    </GridLayout>
+            </ng-template>
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
         </RadListView>
     </StackLayout>
     <!-- Vapaa teksti -->
-    <TextField width="75%" class="textField" formControlName="freeText" hint="Free text" autocorrect="false"></TextField>
+    <TextField width="65%" class="textField" formControlName="freeText" hint="Free text" autocorrect="false"></TextField>
 </StackLayout>
-<StackLayout height="60" class="buttonstack" verticalAlignment="bottom">
-    <Button height="60" text="Submit" type="submit" (tap)="submitLog()"></Button>
+<StackLayout class="moodSubmit" verticalAlignment="bottom">
+    <Image src="~/app/images/buttons/submit_button.png" type="submit" (tap)="submitLog()" height="12%" width="12%"></Image>
+    <!-- <Button height="60" text="Submit" type="submit" (tap)="submitLog()"></Button> -->
 </StackLayout>
