@@ -1,101 +1,21 @@
 import { Injectable } from '@angular/core';
+import { plantData } from '../mockdata/mockdata';
 
 export interface Image {
-  id: number,
+  mood: number,
+  freeText: string,
+  activities: Array<any>,
   imageURL: string
 }
 
 @Injectable()
 export class PlantService {
 
-  getImages(): Image[] {
-    let images = [
-      {
-        "id": 1,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 2,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 3,
-        "imageURL": "plant1.png"
-      },
-      {
-        "id": 4,
-        "imageURL": "plant2.png"
-      },
-      {
-        "id": 999,
-        "imageURL": "ruukku.png"
-      },
-    ];
+  _plantData: Array<Image> = [];
 
-    return images;
+  getImages(): Array<Image> {
+    this._plantData = plantData;
+    console.log()
+    return this._plantData;
   }
 }

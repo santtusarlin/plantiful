@@ -10,6 +10,8 @@ import * as dialogs from "tns-core-modules/ui/dialogs";
 
 import { Observable } from 'tns-core-modules/data/observable';
 import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+const firebase = require("nativescript-plugin-firebase/app");
+
 
 @Component({
   selector: 'ns-mood-entry',
@@ -51,7 +53,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     const selectedItems = listview.getSelectedItems() as Array<Mood>;
     let moodTitle;
     for (let i = 0; i < selectedItems.length; i++) {
-        moodTitle = selectedItems[i].title
+      moodTitle = selectedItems[i].title
     }
     this._selectedMoodItem = moodTitle;
 
@@ -86,30 +88,30 @@ export class MoodEntryComponent extends Observable implements OnInit {
   // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
   // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
   // selectedItemit pusketaan activityArray taulukkoon
-  
+
   public activityItemSelected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
     let activityArray = []
     for (let i = 0; i < selectedItems.length; i++) {
-        activityArray.push(selectedItems[i])
+      activityArray.push(selectedItems[i])
     }
     this._selectedActivityItems = activityArray;
     const activityItem = this.activityItems.getItem(args.index);
     activityItem.selected = true;
     console.log("Item selected: ");
     console.log(activityItem);
-  } 
+  }
 
   public activityItemDeselected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
     let activityArray = []
     if (selectedItems.length > 0) {
-        for (let i = 0; i < selectedItems.length; i++) {
-            activityArray.push(selectedItems[i])
-        }
-        this._selectedActivityItems = activityArray;
+      for (let i = 0; i < selectedItems.length; i++) {
+        activityArray.push(selectedItems[i])
+      }
+      this._selectedActivityItems = activityArray;
     }
 
     const activityItem = this.activityItems.getItem(args.index);
@@ -117,20 +119,36 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log("Item deselected: ");
     console.log(activityItem);
   }
-   
+
   // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
   // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   submitLog() {
-
+    const collection = firebase.firestore().collection("users");
     let config = {
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
-      activities: this._selectedActivityItems
+      activities: this._selectedActivityItems,
+      imageURL: this.getURL(this._selectedMoodItem)
     }
 
     this.currentConfig = config;
     // currentConfig => mood olio
     console.log(this.currentConfig);
+
+    collection.add({
+      mood: 2,
+      freeText: "Hei!",
+      activities: [
+        {
+          title: "Dying",
+          imageURL: "kys.png",
+          selected: true
+        }
+      ],
+      imageURL: "plant2.png"
+    }).then(ref => {
+      console.log(`Laitettu tämmönen ${ref.id}`);
+    });
 
     dialogs.alert({
       title: "Success!",
@@ -152,6 +170,28 @@ export class MoodEntryComponent extends Observable implements OnInit {
       freeText: [''],
       activities: ['']
     });
+  }
+
+  getURL(m: number): string {
+    let url = "";
+    switch (m) {
+      case 1:
+        url = "plant1.png"
+        break;
+      case 2:
+        url = "plant2.png"
+        break;
+      case 3:
+        url = "plant3.png"
+        break;
+      case 4:
+        url = "plant4.png"
+        break;
+      case 5:
+        url = "plant5.png"
+        break;
+    }
+    return url;
   }
 
 }
