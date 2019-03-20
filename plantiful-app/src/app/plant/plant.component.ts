@@ -27,7 +27,7 @@ export class PlantComponent extends Observable implements OnInit {
 
   ngOnInit() {
     let taulukko = [];
-    const collection = firebase.firestore().collection("users");
+    const collection = firebase.firestore().collection("users").orderBy("mood", "desc");
     const imageURL = {
       mood: 3,
       activities: [],

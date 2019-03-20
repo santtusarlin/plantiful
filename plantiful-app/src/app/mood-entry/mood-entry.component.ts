@@ -136,26 +136,20 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log(this.currentConfig);
 
     collection.add({
-      mood: 2,
-      freeText: "Hei!",
-      activities: [
-        {
-          title: "Dying",
-          imageURL: "kys.png",
-          selected: true
-        }
-      ],
-      imageURL: "plant2.png"
+      mood: this._selectedMoodItem,
+      freeText: this.moodForm.controls.freeText.value,
+      activities: this._selectedActivityItems,
+      imageURL: this.getURL(this._selectedMoodItem)
     }).then(ref => {
       console.log(`Laitettu tämmönen ${ref.id}`);
     });
 
-    dialogs.alert({
-      title: "Success!",
-      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
-      okButtonText: "OK"
-    });
+    // dialogs.alert({
+    //   title: "Success!",
+    //   message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
+    //   \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
+    //   okButtonText: "OK"
+    // });
   }
 
   ngOnInit() {
@@ -172,6 +166,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     });
   }
 
+  // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua moodin arvoa
   getURL(m: number): string {
     let url = "";
     switch (m) {
