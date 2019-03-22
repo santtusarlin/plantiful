@@ -123,33 +123,33 @@ export class MoodEntryComponent extends Observable implements OnInit {
   // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
   // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   submitLog() {
-    const collection = firebase.firestore().collection("users");
+    let entryDate = new Date();
     let config = {
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
       activities: this._selectedActivityItems,
-      imageURL: this.getURL(this._selectedMoodItem)
+      imageURL: this.getURL(this._selectedMoodItem),
+      date: entryDate
     }
 
     this.currentConfig = config;
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
+    const collection = firebase.firestore().collection("users");
     collection.add({
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
       activities: this._selectedActivityItems,
-      imageURL: this.getURL(this._selectedMoodItem)
+      imageURL: this.getURL(this._selectedMoodItem),
+      date: entryDate
     }).then(ref => {
-      console.log(`Laitettu tämmönen ${ref.id}`);
+      dialogs.alert({
+        title: "Kirjaus onnistui!",
+        message: `Laitettu tämmönen tietokantaan: \n ${ref.id}`,
+        okButtonText: "OK"
+      });
     });
-
-    // dialogs.alert({
-    //   title: "Success!",
-    //   message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-    //   \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
-    //   okButtonText: "OK"
-    // });
   }
 
   ngOnInit() {
@@ -166,24 +166,55 @@ export class MoodEntryComponent extends Observable implements OnInit {
     });
   }
 
+  
+
+//audioElement.setAttribute('src', textArray[randomNumber]);
+
   // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua moodin arvoa
   getURL(m: number): string {
+  let moodArray1 = [
+      'Flower1.png',
+      'Flower2.png',
+  ];
+  let moodArray2= [
+    'Flower3.png',
+    'Flower4.png',
+  ];
+  let moodArray3= [
+    'Flower5.png',
+    'Flower6.png',
+  ];
+  let moodArray4= [
+    'Flower7.png',
+    'Flower8.png',
+  ];
+  let moodArray5= [
+    'Flower9.png',
+    'Flower10.png'
+  ];
+
+  let randomNumber1 = Math.floor(Math.random()*moodArray1.length);
+  let randomNumber2 = Math.floor(Math.random()*moodArray2.length);
+  let randomNumber3 = Math.floor(Math.random()*moodArray3.length);
+  let randomNumber4 = Math.floor(Math.random()*moodArray4.length);
+  let randomNumber5 = Math.floor(Math.random()*moodArray5.length);
+
     let url = "";
     switch (m) {
       case 1:
-        url = "plant1.png"
+        url = moodArray1[randomNumber1];
         break;
       case 2:
-        url = "plant2.png"
+        url = moodArray2[randomNumber2];
         break;
       case 3:
-        url = "plant3.png"
+        url = moodArray3[randomNumber3];
         break;
       case 4:
-        url = "plant4.png"
+        url = moodArray4[randomNumber4];
         break;
       case 5:
-        url = "plant5.png"
+        url = moodArray5[randomNumber5];
         break;
     }
     return url;
