@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { Image, PlantService } from './plant.service';
-import { Observable } from 'tns-core-modules/data/observable';
-import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+import { Observable } from 'rxjs';
+
+import { Image } from './plant.service';
+import { firestore } from "nativescript-plugin-firebase";
+
 const firebase = require("nativescript-plugin-firebase/app");
 
 @Component({
@@ -11,23 +13,16 @@ const firebase = require("nativescript-plugin-firebase/app");
   styleUrls: ['./plant.component.css'],
   moduleId: module.id,
 })
-export class PlantComponent extends Observable implements OnInit {
+export class PlantComponent implements OnInit {
 
-  private _plantItems: ObservableArray<Image>
-  shitti: Array<any> = [];
+  public images: Array<Image> = [];
 
-
-  constructor(private page: Page, private plantService: PlantService) {
-    super();
+  constructor(private page: Page) {
   }
 
-  get plantItems(): ObservableArray<Image> {
-    return this.get("_plantItems");
-  }
 
   ngOnInit() {
-    let taulukko = [];
-    const collection = firebase.firestore().collection("users").orderBy("mood", "desc");
+    const collection = firebase.firestore().collection("users").orderBy("date", "desc");
     const imageURL = {
       mood: 3,
       activities: [],
@@ -37,12 +32,9 @@ export class PlantComponent extends Observable implements OnInit {
     this.page.actionBarHidden = true;
     collection.get().then(querySnapshot => {
       querySnapshot.forEach(doc => {
-        this.shitti.push(doc.data())
+        this.images.push(doc.data())
       });
-
-      this.shitti.push(imageURL)
-
-      console.log(this.shitti);
+      this.images.push(imageURL)
     }); 
     
   }

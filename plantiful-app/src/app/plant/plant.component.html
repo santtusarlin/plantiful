@@ -1,12 +1,10 @@
-<RadListView [items]="shitti">
+<RadListView [items]="images">
     <ng-template tkListItemTemplate let-item="item">
         <GridLayout orientation="vertical" [item]="item" rows="auto">
             <Image src="~/app/images/plant-imgs/{{ item.imageURL }}" height="50%" width="50%"></Image>
         </GridLayout>
     </ng-template>
 </RadListView>
-
-
 
 <StackLayout class="moodButton" verticalAlignment="bottom" horizontalAlignment="right">
     <Image src="~/app/images/buttons/submit_button.png" nsRouterLink="/mood_entry" height="15%" width="15%"></Image>
