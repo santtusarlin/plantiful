@@ -19,8 +19,6 @@ export class GraphComponent implements OnInit {
 
     constructor(private _dataService: MockgraphService) { }
 
-
-
     get dateTimeSource(): ObservableArray<MoodEntry> {
         return this._dateTimeSource;
     }

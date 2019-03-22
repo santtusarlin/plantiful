@@ -12,10 +12,6 @@ export class MockgraphService {
     date7 = new Date('June 23, 2019 15:24:00');
     date8 = new Date('August 23, 2019 15:24:00');
 
-    
-
-
-
     getDateTimeSource(): MoodEntry[] {
         return [
             { Date: this.date1.getTime(), Mood: 1 },
@@ -29,10 +25,8 @@ export class MockgraphService {
 
         ];
     }
-
-
-
 }
+
 export class MoodEntry {
     constructor(public Date?: number, public Mood?: number) {
     }
