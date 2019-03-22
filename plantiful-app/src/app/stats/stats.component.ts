@@ -9,7 +9,7 @@ import { Page } from 'tns-core-modules/ui/page';
 export class StatsComponent implements OnInit {
 
   constructor(private page: Page) { }
-  isTrue: boolean = true;
+  isTrue: boolean = false;
 
   ngOnInit() {
     this.page.actionBarHidden = true;

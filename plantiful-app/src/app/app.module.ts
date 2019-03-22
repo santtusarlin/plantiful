@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NativeScriptFormsModule } from "nativescript-angular/forms"
 import { GridViewModule } from "nativescript-grid-view/angular";
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { NativeScriptUIChartModule } from "nativescript-ui-chart/angular";
 
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./navbar/navbar.component";
@@ -26,6 +27,7 @@ import { ThemeModalComponent } from './settings/theme-modal/theme-modal.componen
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
 import { PlantService } from "./plant/plant.service";
+import { MockgraphService } from "./stats/graph/mockgraph.service"
 
 @NgModule({
     bootstrap: [
@@ -39,7 +41,8 @@ import { PlantService } from "./plant/plant.service";
         TNSCheckBoxModule,
         FormsModule,
         ReactiveFormsModule,
-        GridViewModule
+        GridViewModule,
+        NativeScriptUIChartModule
     ],
     entryComponents: [ContextModalComponent, ClockModalComponent, ThemeModalComponent],
     declarations: [
@@ -61,7 +64,8 @@ import { PlantService } from "./plant/plant.service";
         ModalDialogService,
         PlantService,
         ToS,
-        About
+        About,
+        MockgraphService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
