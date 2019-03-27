@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from 'tns-core-modules/ui/page';
 import { MockgraphService } from './mockgraph.service';
-import { MoodEntry } from './mockgraph.service';
 import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { Image } from '../../plant/plant.service';
+const firebase = require("nativescript-plugin-firebase/app");
 
 @Component({
   selector: 'ns-graph',
@@ -12,26 +14,22 @@ import { ObservableArray } from "tns-core-modules/data/observable-array";
 })
 export class GraphComponent implements OnInit {
 
-  min;
-  max;
+  public entries: Array<any> = [];
 
-  private _dateTimeSource: ObservableArray<MoodEntry>;
-
-    constructor(private _dataService: MockgraphService) { }
-
-    get dateTimeSource(): ObservableArray<MoodEntry> {
-        return this._dateTimeSource;
-    }
+    constructor(private page: Page) { }
 
     ngOnInit() {
-        this._dateTimeSource = new ObservableArray(this._dataService.getDateTimeSource());
-        var date = new Date()
 
-        // this.min = new Date(date.getFullYear(), date.getMonth(), 1).toLocaleDateString();
-        // this.max = new Date(date.getFullYear(), date.getMonth() + 1, 0).toLocaleDateString();
+        // this._dateTimeSource = new ObservableArray(this._dataService.getDateTimeSource());
+        // console.log(this.dateTimeSource);
+        
+        const collection = firebase.firestore().collection("users").orderBy("date", "desc");
 
-        this.min = "3/1/2019";
-        this.max = "3/4/2019"
+        collection.get().then(querySnapshot => {
+          querySnapshot.forEach(doc => {
+            this.entries.push(doc.data())
+          });
+        }); 
+        console.log(this.entries);
     }
-
 }

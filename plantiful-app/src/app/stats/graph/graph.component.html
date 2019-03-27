@@ -8,10 +8,10 @@
         <Button text="Previous Month" (tap)="onButtonTap()" col="0"></Button>
         <Button text="Next Month" (tap)="onButtonTap()" col="1"></Button>
     </GridLayout> -->
-        <RadCartesianChart tkExampleTitle tkToggleNavButton>
-            <DateTimeContinuousAxis tkCartesianHorizontalAxis majorStep="Week" minimum="{{ min }}" maximum="{{ max }}" dateFormat="MMM-dd" labelFitMode="Rotate"
+        <RadCartesianChart>
+            <DateTimeContinuousAxis tkCartesianHorizontalAxis majorStep="Month" dateFormat="MMM"
                 labelRotationAngle="1.2"></DateTimeContinuousAxis>
             <LinearAxis tkCartesianVerticalAxis></LinearAxis>
-            <LineSeries tkCartesianSeries [items]="dateTimeSource" categoryProperty="Date" valueProperty="Mood"></LineSeries>
+            <LineSeries tkCartesianSeries [items]="entries" categoryProperty="date" valueProperty="mood"></LineSeries>
         </RadCartesianChart>
 </StackLayout> 

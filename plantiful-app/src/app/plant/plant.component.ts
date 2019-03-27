@@ -22,19 +22,22 @@ export class PlantComponent implements OnInit {
 
 
   ngOnInit() {
+    const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
+
     const collection = firebase.firestore().collection("users").orderBy("date", "desc");
     const imageURL = {
       mood: 3,
       activities: [],
       freeText: "",
-      imageURL: "ruukku.png"
+      imageURL: "ruukku.png",
+      date: ruukkudate
     }
     this.page.actionBarHidden = true;
     collection.get().then(querySnapshot => {
       querySnapshot.forEach(doc => {
         this.images.push(doc.data())
       });
-      this.images.push(imageURL)
+      this.images.push(imageURL);
     }); 
     
   }
