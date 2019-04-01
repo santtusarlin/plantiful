@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { Image, PlantService } from './plant.service';
-import { Observable } from 'tns-core-modules/data/observable';
-import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
-import { ListViewEventData, RadListView } from "nativescript-ui-listview";
-import { topmost } from 'tns-core-modules/ui/frame/frame';
+import { Observable } from 'rxjs';
+
+import { Image } from './plant.service';
+import { firestore } from "nativescript-plugin-firebase";
+
+const firebase = require("nativescript-plugin-firebase/app");
 
 @Component({
   selector: 'ns-plant',
@@ -12,22 +13,32 @@ import { topmost } from 'tns-core-modules/ui/frame/frame';
   styleUrls: ['./plant.component.css'],
   moduleId: module.id,
 })
-export class PlantComponent extends Observable implements OnInit {
+export class PlantComponent implements OnInit {
 
-  private _plantItems: ObservableArray<Image>
-  
+  public images: Array<Image> = [];
 
-  constructor(private page: Page, private plantService: PlantService) {
-    super();
+  constructor(private page: Page) {
   }
 
-  get plantItems(): ObservableArray<Image> {
-    return this.get("_plantItems");
-  } 
 
   ngOnInit() {
+    const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
+
+    const collection = firebase.firestore().collection("users").orderBy("date", "desc");
+    const imageURL = {
+      mood: 3,
+      activities: [],
+      freeText: "",
+      imageURL: "ruukku.png",
+      date: ruukkudate
+    }
     this.page.actionBarHidden = true;
-    this._plantItems = new ObservableArray(this.plantService.getImages());
+    collection.get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        this.images.push(doc.data())
+      });
+      this.images.push(imageURL);
+    }); 
     
   }
 }
