@@ -11,7 +11,7 @@
         <RadCartesianChart>
             <DateTimeContinuousAxis tkCartesianHorizontalAxis majorStep="Month" dateFormat="MMM"
                 labelRotationAngle="1.2"></DateTimeContinuousAxis>
-            <LinearAxis tkCartesianVerticalAxis></LinearAxis>
+            <LinearAxis tkCartesianVerticalAxis minimum="1" maximum="5"></LinearAxis>
             <LineSeries tkCartesianSeries [items]="entries" categoryProperty="date" valueProperty="mood"></LineSeries>
         </RadCartesianChart>
 </StackLayout> 
