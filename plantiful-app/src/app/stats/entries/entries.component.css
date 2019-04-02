@@ -1,0 +1,12 @@
+/* Add mobile styles for the component here.  */
+
+.entryListItem {
+    background-color: #469b74;
+    color: #f5f5f5;
+    margin: 10px 15px;
+    font-size: 18px;
+}
+
+.entryListItem Label {
+    background-color: #356455; 
+}

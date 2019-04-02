@@ -1,7 +1,7 @@
 export const plantData = [
     {
         "mood": 1,
-        "freeText": "",
+        "freeText": "asd",
         "activities": [
             {
                 "title": "Gym",
@@ -27,7 +27,7 @@ export const plantData = [
         "imageURL": "plant1.png"
     }, {
         "mood": 2,
-        "freeText": "",
+        "freeText": "xd",
         "activities": [
             {
                 "title": "Gym",
@@ -53,7 +53,7 @@ export const plantData = [
         "imageURL": "plant2.png"
     }, {
         "mood": 3,
-        "freeText": "",
+        "freeText": "Lol",
         "activities": [
             {
                 "title": "Gym",
@@ -79,7 +79,7 @@ export const plantData = [
         "imageURL": "plant1.png"
     }, {
         "mood": 4,
-        "freeText": "",
+        "freeText": "Jee",
         "activities": [
             {
                 "title": "Gym",
