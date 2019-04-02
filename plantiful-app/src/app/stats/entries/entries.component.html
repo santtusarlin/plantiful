@@ -1,0 +1,11 @@
+<Label text="Here are your entries"></Label>
+        <RadListView [items]="entries" selectionBehavior="Press">
+            <ng-template tkListItemTemplate let-item="item">
+                    <GridLayout [item]="item" class="entryListItem" columns="80px * auto" rows="auto auto auto" orientation="horizontal">
+                        <Label col="1" row="0" text="{{ item.date }}"></Label>
+                        <Label col="0" row="0" rowspan="4" text="{{ item.mood }}" horizontalAlignment="center" verticalAlignment="center"></Label>
+                        <Label col="1" row="1" text="Activities: [1, 2, 3, 4]"></Label>
+                        <Label col="1" row="2" text="{{ item.freeText }}"></Label>
+                    </GridLayout>
+            </ng-template>
+        </RadListView>

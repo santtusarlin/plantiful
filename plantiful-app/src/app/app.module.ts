@@ -14,11 +14,13 @@ import { PlantComponent } from "./plant/plant.component";
 import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GraphComponent } from './stats/graph/graph.component';
-import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
+import { EntriesComponent } from './stats/entries/entries.component'
 
 import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
+import { PlantService } from "./plant/plant.service";
+import { MockgraphService } from "./stats/graph/mockgraph.service";
 
 import { ContextModalComponent } from './settings/context-modal/context-modal.component';
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
@@ -26,8 +28,6 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
 import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
-import { PlantService } from "./plant/plant.service";
-import { MockgraphService } from "./stats/graph/mockgraph.service"
 
 @NgModule({
     bootstrap: [
@@ -52,11 +52,11 @@ import { MockgraphService } from "./stats/graph/mockgraph.service"
         StatsComponent,
         SettingsComponent,
         GraphComponent,
-        CalendarComponent,
         MoodEntryComponent,
         ContextModalComponent,
         ClockModalComponent,
-        ThemeModalComponent
+        ThemeModalComponent,
+        EntriesComponent
     ],
     providers: [
         ActivityService,
