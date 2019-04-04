@@ -6,8 +6,6 @@
     font-size: 18px;
 }
 
-.entryListItem Label {}
-
 #eka {
     background-color: #8927ca;
 
@@ -27,4 +25,8 @@
 #neljas {
     background-color: #ff0000;
 
+}
+
+#activityIcon {
+    margin-right: 25px;
 }
