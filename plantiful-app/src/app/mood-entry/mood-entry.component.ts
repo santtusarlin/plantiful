@@ -12,6 +12,8 @@ import { Observable } from 'tns-core-modules/data/observable';
 import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
 const firebase = require("nativescript-plugin-firebase/app");
 
+import { Uuid } from '../uuid'
+
 
 @Component({
   selector: 'ns-mood-entry',
@@ -30,7 +32,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   private _selectedActivityItems: Array<string>;
   private _selectedMoodItem: number;
 
-  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
+  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService, private uuid: Uuid) {
     super();
   }
 
@@ -137,7 +139,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
     // currentConfig => mood olio
     console.log(this.currentConfig);
 
-    const collection = firebase.firestore().collection("users");
+    const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
+
     collection.add({
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
@@ -155,6 +158,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.uuid.uuid)
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
 
@@ -189,36 +193,36 @@ export class MoodEntryComponent extends Observable implements OnInit {
     }
     return moodUrl;
   }
-  
+
 
   // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua moodin arvoa
   getPlantURL(m: number): string {
-  let moodArray1 = [
+    let moodArray1 = [
       'Flower1.png',
       'Flower2.png',
-  ];
-  let moodArray2= [
-    'Flower3.png',
-    'Flower4.png',
-  ];
-  let moodArray3= [
-    'Flower5.png',
-    'Flower6.png',
-  ];
-  let moodArray4= [
-    'Flower7.png',
-    'Flower8.png',
-  ];
-  let moodArray5= [
-    'Flower9.png',
-    'Flower10.png'
-  ];
+    ];
+    let moodArray2 = [
+      'Flower3.png',
+      'Flower4.png',
+    ];
+    let moodArray3 = [
+      'Flower5.png',
+      'Flower6.png',
+    ];
+    let moodArray4 = [
+      'Flower7.png',
+      'Flower8.png',
+    ];
+    let moodArray5 = [
+      'Flower9.png',
+      'Flower10.png'
+    ];
 
-  let randomNumber1 = Math.floor(Math.random()*moodArray1.length);
-  let randomNumber2 = Math.floor(Math.random()*moodArray2.length);
-  let randomNumber3 = Math.floor(Math.random()*moodArray3.length);
-  let randomNumber4 = Math.floor(Math.random()*moodArray4.length);
-  let randomNumber5 = Math.floor(Math.random()*moodArray5.length);
+    let randomNumber1 = Math.floor(Math.random() * moodArray1.length);
+    let randomNumber2 = Math.floor(Math.random() * moodArray2.length);
+    let randomNumber3 = Math.floor(Math.random() * moodArray3.length);
+    let randomNumber4 = Math.floor(Math.random() * moodArray4.length);
+    let randomNumber5 = Math.floor(Math.random() * moodArray5.length);
 
     let plantUrl = "";
     switch (m) {

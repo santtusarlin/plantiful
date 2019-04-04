@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { ObservableArray } from "tns-core-modules/data/observable-array";
 const firebase = require("nativescript-plugin-firebase/app");
+import { Uuid } from "../../uuid"
 
 @Component({
   selector: 'ns-entries',
@@ -15,7 +16,7 @@ export class EntriesComponent implements OnInit {
   //public entriesx: Array<any> = [{ date: new Date, mood: 1}, { date: new Date, mood: 3}];
   private _entries: Array<any>
 
-    constructor(private page: Page) { }
+    constructor(private page: Page, private uuid: Uuid) { }
 
     get entries(): Array<any> {
       return this._entries;
@@ -75,7 +76,7 @@ export class EntriesComponent implements OnInit {
     }
 
     getFbEntries(): Array<any> {
-      const collection = firebase.firestore().collection("users").orderBy("date", "desc");
+      const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
       let entries = [];
       collection.get().then(querySnapshot => {
         querySnapshot.forEach(doc => {

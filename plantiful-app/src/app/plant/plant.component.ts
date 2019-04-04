@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Image } from './plant.service';
 import { firestore } from "nativescript-plugin-firebase";
+import { Uuid } from "../uuid"
 
 const firebase = require("nativescript-plugin-firebase/app");
 
@@ -17,14 +18,14 @@ export class PlantComponent implements OnInit {
 
   public images: Array<Image> = [];
 
-  constructor(private page: Page) {
+  constructor(private page: Page, private uuid: Uuid) {
   }
 
 
   ngOnInit() {
     const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
 
-    const collection = firebase.firestore().collection("users").orderBy("date", "desc");
+    const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
     const imageURL = {
       mood: 3,
       activities: [],

@@ -28,6 +28,7 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
 import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
+import { Uuid } from "./uuid";
 
 @NgModule({
     bootstrap: [
@@ -65,7 +66,8 @@ import { About } from "./settings/About";
         PlantService,
         ToS,
         About,
-        MockgraphService
+        MockgraphService,
+        Uuid
     ],
     schemas: [
         NO_ERRORS_SCHEMA
