@@ -33,9 +33,18 @@ export class EntriesComponent implements OnInit {
                 { imageURL: "beer.png",
                   title: "beer",
                   selected: "true"
+                },
+                { imageURL: "beer.png",
+                  title: "beer",
+                  selected: "true"
+                },
+                { imageURL: "beer.png",
+                  title: "beer",
+                  selected: "true"
                 }
               ],
               freeText: "lol xd1",
+              moodImageURL: "mood_icon-01.png",
               imageURL: "Flower1.png"
               },
               { 
@@ -46,6 +55,7 @@ export class EntriesComponent implements OnInit {
                 }
               ],
               freeText: "lol xd2",
+              moodImageURL: "mood_icon-02.png",
               imageURL: "Flower2.png"
               },
               { 
@@ -56,6 +66,7 @@ export class EntriesComponent implements OnInit {
                 }
               ],
               freeText: "lol xd3",
+              moodImageURL: "mood_icon-03.png",
               imageURL: "Flower3.png"
               }
             ];

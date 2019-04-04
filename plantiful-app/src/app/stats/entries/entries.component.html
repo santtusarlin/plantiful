@@ -2,10 +2,10 @@
         <RadListView [items]="entries" selectionBehavior="Press">
             <ng-template tkListItemTemplate let-item="item">
                     <GridLayout [item]="item" class="entryListItem" columns="80px * auto" rows="auto auto auto" orientation="horizontal">
-                        <Label col="1" row="0" text="{{ item.date }}"></Label>
-                        <Label col="0" row="0" rowspan="4" text="{{ item.mood }}" horizontalAlignment="center" verticalAlignment="center"></Label>
-                        <Label col="1" row="1" text="Activities: [1, 2, 3, 4]"></Label>
-                        <Label col="1" row="2" text="{{ item.freeText }}"></Label>
+                        <Label id="eka" col="1" row="0" text="{{ item.date }}" ></Label>
+                        <Image  id="toka" col="0" row="0" rowspan="4" src="~/app/images/mood-icons/{{ item.moodImageURL }}"  height="50%" width="50%" horizontalAlignment="center" verticalAlignment="center"></Image>
+                        <Label id="kolmas" col="1" row="1" text="{{ item.activities }}" ></Label>
+                        <Label id="neljas" col="1" row="2" text="{{ item.freeText }}" ></Label>
                     </GridLayout>
             </ng-template>
         </RadListView>

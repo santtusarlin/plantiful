@@ -1,12 +1,30 @@
 /* Add mobile styles for the component here.  */
 
 .entryListItem {
-    background-color: #469b74;
     color: #f5f5f5;
     margin: 10px 15px;
     font-size: 18px;
 }
 
-.entryListItem Label {
-    background-color: #356455; 
+.entryListItem Label {}
+
+#eka {
+    background-color: #8927ca;
+
+}
+
+#toka {
+    background-color: #88ff00;
+    padding: 25px 50px;
+
+}
+
+#kolmas {
+    background-color: #00ffae;
+
+}
+
+#neljas {
+    background-color: #ff0000;
+
 }
