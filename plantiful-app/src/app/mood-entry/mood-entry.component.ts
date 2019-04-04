@@ -128,7 +128,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
       activities: this._selectedActivityItems,
-      imageURL: this.getURL(this._selectedMoodItem),
+      imageURL: this.getPlantURL(this._selectedMoodItem),
+      moodImageURL: this.getMoodURL(this._selectedMoodItem),
       date: entryDate
     }
 
@@ -141,7 +142,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
       mood: this._selectedMoodItem,
       freeText: this.moodForm.controls.freeText.value,
       activities: this._selectedActivityItems,
-      imageURL: this.getURL(this._selectedMoodItem),
+      imageURL: this.getPlantURL(this._selectedMoodItem),
+      moodImageURL: this.getMoodURL(this._selectedMoodItem),
       date: entryDate
     }).then(ref => {
       dialogs.alert({
@@ -166,12 +168,31 @@ export class MoodEntryComponent extends Observable implements OnInit {
     });
   }
 
+  getMoodURL(m: number): string {
+    let moodUrl = "";
+    switch (m) {
+      case 1:
+        moodUrl = "mood_icon-01.png";
+        break;
+      case 2:
+        moodUrl = "mood_icon-02.png";
+        break;
+      case 3:
+        moodUrl = "mood_icon-03.png";
+        break;
+      case 4:
+        moodUrl = "mood_icon-04.png";
+        break;
+      case 5:
+        moodUrl = "mood_icon-05.png";
+        break;
+    }
+    return moodUrl;
+  }
   
 
-//audioElement.setAttribute('src', textArray[randomNumber]);
-
   // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua moodin arvoa
-  getURL(m: number): string {
+  getPlantURL(m: number): string {
   let moodArray1 = [
       'Flower1.png',
       'Flower2.png',
@@ -199,25 +220,25 @@ export class MoodEntryComponent extends Observable implements OnInit {
   let randomNumber4 = Math.floor(Math.random()*moodArray4.length);
   let randomNumber5 = Math.floor(Math.random()*moodArray5.length);
 
-    let url = "";
+    let plantUrl = "";
     switch (m) {
       case 1:
-        url = moodArray1[randomNumber1];
+        plantUrl = moodArray1[randomNumber1];
         break;
       case 2:
-        url = moodArray2[randomNumber2];
+        plantUrl = moodArray2[randomNumber2];
         break;
       case 3:
-        url = moodArray3[randomNumber3];
+        plantUrl = moodArray3[randomNumber3];
         break;
       case 4:
-        url = moodArray4[randomNumber4];
+        plantUrl = moodArray4[randomNumber4];
         break;
       case 5:
-        url = moodArray5[randomNumber5];
+        plantUrl = moodArray5[randomNumber5];
         break;
     }
-    return url;
+    return plantUrl;
   }
 
 }

@@ -13,15 +13,15 @@ const firebase = require("nativescript-plugin-firebase/app");
 export class EntriesComponent implements OnInit {
 
   //public entriesx: Array<any> = [{ date: new Date, mood: 1}, { date: new Date, mood: 3}];
-  private _entries: ObservableArray<any>
+  private _entries: Array<any>
 
     constructor(private page: Page) { }
 
-    get entries(): ObservableArray<any> {
+    get entries(): Array<any> {
       return this._entries;
     }
 
-    getEntries() {
+    getMockEntries() {
 
       const date1 = new Date('January 23, 2019 15:24:00');
       const date2 = new Date('January 25, 2019 15:24:00');
@@ -74,8 +74,19 @@ export class EntriesComponent implements OnInit {
             return mockdata;
     }
 
+    getFbEntries(): Array<any> {
+      const collection = firebase.firestore().collection("users").orderBy("date", "desc");
+      let entries = [];
+      collection.get().then(querySnapshot => {
+        querySnapshot.forEach(doc => {
+           this.entries.push(doc.data())
+           });
+         });
+         return entries;
+    }
+
     ngOnInit() {
-      this._entries = new ObservableArray(this.getEntries());
+      this._entries = (this.getFbEntries());
     
     }
 }
