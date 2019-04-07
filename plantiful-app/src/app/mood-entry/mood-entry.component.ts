@@ -25,7 +25,6 @@ import { Uuid } from '../uuid'
 export class MoodEntryComponent extends Observable implements OnInit {
 
   public moodForm: FormGroup;
-  public currentConfig: any;
 
   private _activityItems: ObservableArray<Item>
   private _moodItems: ObservableArray<Mood>
@@ -134,27 +133,28 @@ export class MoodEntryComponent extends Observable implements OnInit {
       moodImageURL: this.getMoodURL(this._selectedMoodItem),
       date: entryDate
     }
+    
+    console.log(config);
 
-    this.currentConfig = config;
-    // currentConfig => mood olio
-    console.log(this.currentConfig);
+    if (config.mood) {
+      const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
 
-    const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
-
-    collection.add({
-      mood: this._selectedMoodItem,
-      freeText: this.moodForm.controls.freeText.value,
-      activities: this._selectedActivityItems,
-      imageURL: this.getPlantURL(this._selectedMoodItem),
-      moodImageURL: this.getMoodURL(this._selectedMoodItem),
-      date: entryDate
-    }).then(ref => {
-      dialogs.alert({
-        title: "Kirjaus onnistui!",
-        message: `Laitettu tämmönen tietokantaan: \n ${ref.id}`,
-        okButtonText: "OK"
+      collection.add({ config }).then(ref => {
+        dialogs.alert({
+          title: "Kirjaus onnistui!",
+          message: `Laitettu tämmönen tietokantaan: \n ${ref.id}`,
+          okButtonText: "OK"
+        });
       });
-    });
+    } else {
+      dialogs.alert({
+        title: "Virhe tapahtui!",
+        message: "Ole hyvä ja tarkista merkintä!",
+        okButtonText: "Takaisin"
+      });
+    }
+
+    
   }
 
   ngOnInit() {
@@ -243,6 +243,10 @@ export class MoodEntryComponent extends Observable implements OnInit {
         break;
     }
     return plantUrl;
+  }
+
+  validationCheck() {
+
   }
 
 }
