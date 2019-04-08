@@ -64,6 +64,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
   public moodItemDeselected(args: ListViewEventData) {
+    this._selectedMoodItem = null;
     const moodItem = this.moodItems.getItem(args.index);
     moodItem.selected = false;
   }
@@ -125,21 +126,18 @@ export class MoodEntryComponent extends Observable implements OnInit {
   // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
   submitLog() {
     let entryDate = new Date();
-    let config = {
-      mood: this._selectedMoodItem,
-      freeText: this.moodForm.controls.freeText.value,
-      activities: this._selectedActivityItems,
-      imageURL: this.getPlantURL(this._selectedMoodItem),
-      moodImageURL: this.getMoodURL(this._selectedMoodItem),
-      date: entryDate
-    }
-    
-    console.log(config);
 
-    if (config.mood) {
+    if (this._selectedMoodItem) {
       const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
 
-      collection.add({ config }).then(ref => {
+      collection.add({
+        mood: this._selectedMoodItem,
+        freeText: this.moodForm.controls.freeText.value,
+        activities: this._selectedActivityItems,
+        imageURL: this.getPlantURL(this._selectedMoodItem),
+        moodImageURL: this.getMoodURL(this._selectedMoodItem),
+        date: entryDate
+      }).then(ref => {
         dialogs.alert({
           title: "Kirjaus onnistui!",
           message: `Laitettu tämmönen tietokantaan: \n ${ref.id}`,
@@ -154,7 +152,9 @@ export class MoodEntryComponent extends Observable implements OnInit {
       });
     }
 
-    
+    this._selectedMoodItem = null;
+
+
   }
 
   ngOnInit() {
