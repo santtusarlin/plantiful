@@ -1,48 +1,54 @@
-Plantiful - Viikko 13 - viikkoraportti
+Plantiful - Viikko 14 - viikkoraportti
 
 1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
 
-Miika Pollari: 19,50h + (1 vapaapäivä)
-- Graafinäkymän kehitystä
+Miika Pollari: 23,84h
+- Listanäkymän tyylittelyä sekä kehitystä
 
-Santtu Sarlin: 10,33h + (1 vapaapäivä + 2 sairaslomapäivää)
-- Graafinäkymän kehitystä
+Santtu Sarlin: 29,83h
+- Listanäkymän kehitystä
+- Firebase servicen kanssa pähkäilyä
 
-Mikko Poutanen: 29,84h
+Mikko Poutanen: 22,67 + (1 vapaa)
 - TikoBiz
-- Wordpress (PHP:ta)
+- Wordpress-sisällöntuottoa
 
-Mikko Hannukainen: 9,08h + (3 vapaapäivää)
-- Tietokantakehitystä ja kyselyitä
+Mikko Hannukainen: 27,01
+- Firebase servicen kanssa pähkäilyä
+- Autentikaation implenentointi
 
 2. TULEVAN VIIKON SUUNNITELMA
 
 Miika Pollari
-- Kirjauslistanäkymän kehitystä
+- Listanäkymän tyylittely
+- Latausanimaatiot
+- Notifikaatioiden kehittämistä (ehkä?)
 
 Santtu Sarlin
-- Kirjauslistanäkymän ja tietokantakyselyiden kehitystä
+- Latausanimaatiot
+- Notifikaatioiden kehittämistä (ehkä?)
 
 Mikko Poutanen
 - Wordpress ja TikoBiz
 
 Mikko Hannukainen
-- Autentikaatio ja Firebase
+- Datan lataus valmiiksi (sessionStorage?)
+- Koodin refaktorointia
+- Kaavion toiminta (ehkä?)
 
 3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
 
-Miika Pollari: 219,1h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (2)
-Santtu Sarlin: 238,52h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (4)
-Mikko Poutanen: 242,38h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (1)
-Mikko Hannukainen: 214,32h - lomapäiviä käytetty: (4)
+Miika Pollari: 242,94h - lomapäiviä käytetty: (3) + sairaslomapäiviä: (2)
+Santtu Sarlin: 267,45h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (4)
+Mikko Poutanen: 265,05h - lomapäiviä käytetty: (3) + sairaslomapäiviä: (1)
+Mikko Hannukainen: 241,33h - lomapäiviä käytetty: (4)
 
 4. AIKATAULU
 
 Burndown chart löytyy liitteenä.
  
 5. ONGELMAT JA RISKIT
-
-Riskitaulukko liitteenä.
+-
  
 6. YLEISET ASIAT JA TIEDOTUKSET
 
