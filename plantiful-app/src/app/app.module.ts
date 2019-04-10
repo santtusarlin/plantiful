@@ -19,8 +19,6 @@ import { EntriesComponent } from './stats/entries/entries.component'
 
 import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
-import { PlantService } from "./plant/plant.service";
-import { MockgraphService } from "./stats/graph/mockgraph.service";
 
 import { ContextModalComponent } from './settings/context-modal/context-modal.component';
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
@@ -63,10 +61,8 @@ import { Uuid } from "./uuid";
         ActivityService,
         MoodService,
         ModalDialogService,
-        PlantService,
         ToS,
         About,
-        MockgraphService,
         Uuid
     ],
     schemas: [
