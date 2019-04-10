@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { MockgraphService } from './mockgraph.service';
 import { ObservableArray } from "tns-core-modules/data/observable-array";
-import { Image } from '../../plant/plant.service';
+import { Image } from '../../models/image';
 const firebase = require("nativescript-plugin-firebase/app");
 
 @Component({
@@ -10,7 +9,7 @@ const firebase = require("nativescript-plugin-firebase/app");
   templateUrl: './graph.component.html',
   styleUrls: ['./graph.component.css'],
   moduleId: module.id,
-  providers: [MockgraphService],
+  providers: [],
 })
 export class GraphComponent implements OnInit {
 

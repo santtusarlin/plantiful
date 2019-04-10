@@ -14,7 +14,6 @@ const firebase = require("nativescript-plugin-firebase/app");
 
 import { Uuid } from '../uuid'
 
-
 @Component({
   selector: 'ns-mood-entry',
   templateUrl: './mood-entry.component.html',
@@ -151,18 +150,13 @@ export class MoodEntryComponent extends Observable implements OnInit {
         okButtonText: "Takaisin"
       });
     }
-
     this._selectedMoodItem = null;
-
-
   }
 
   ngOnInit() {
     console.log(this.uuid.uuid)
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
-
-    //this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
     this.moodForm = this.formBuilder.group({
@@ -184,8 +178,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
       case 3:
         moodUrl = "mood_icon-03.png";
         break;
-      case 4:
         moodUrl = "mood_icon-04.png";
+        case 4:
         break;
       case 5:
         moodUrl = "mood_icon-05.png";
