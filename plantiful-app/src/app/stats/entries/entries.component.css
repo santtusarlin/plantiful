@@ -1,29 +1,49 @@
 /* Add mobile styles for the component here.  */
 
-.entryListItem {
+.list{
+    height: 150px;
+    margin: 15px 30px;
+    border-radius: 20px;
+}
+.header {
+    text-decoration: underline;
+    font-weight: bold;
     color: #f5f5f5;
-    margin: 10px 15px;
+    font-size: 22px;
+    background-color: transparent;
+}
+.action-bar {
+    height: 200px;
+    background-color: #356455;
+}
+.teksti {
+    vertical-align: center;
+    margin-left: 50px;
+    color: #356455;
     font-size: 18px;
+        font-weight: bold;
+
 }
 
+
 #eka {
-    background-color: #8927ca;
+    background-color: #d4d5d6;
 
 }
 
 #toka {
-    background-color: #88ff00;
+    background-color: #d4d5d6;
     padding: 25px 50px;
 
 }
 
 #kolmas {
-    background-color: #00ffae;
+    background-color: #d4d5d6;
 
 }
 
 #neljas {
-    background-color: #ff0000;
+    background-color: #d4d5d6;
 
 }
 

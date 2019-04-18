@@ -1,4 +1,7 @@
-<Label text="Here are your entries"></Label>
+
+
+<StackLayout id="mainstack">
+
 <RadListView [items]="entries" selectionBehavior="Press">
     <ng-template tkListItemTemplate let-item="item">
         <GridLayout [item]="item" class="entryListItem" columns="80px * auto" rows="auto auto auto"
@@ -13,3 +16,4 @@
         </GridLayout>
     </ng-template>
 </RadListView>
+</StackLayout>
