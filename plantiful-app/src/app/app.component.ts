@@ -28,35 +28,9 @@ export class AppComponent {
             }).then(user => {
                 console.log(`Uid on täsä: ${user.uid}`)
                 this.uuid.uuid = user.uid;
-                this.getData();
-            }
-            ).catch((error) => {
+            }).catch((error) => {
                 console.log(`firebase.init error: ${error}`);
             }
             ))
-    }
-
-    // Hankitaan data valmiiksi sovelluksen käyttöä varten.
-    getData() {
-        const collection = firestore.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
-        let data = [];
-        collection.get().then(querySnapshot => {
-            querySnapshot.forEach(doc => {
-                data.push(doc.data())
-            });
-            const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
-
-            const imageURL = {
-                mood: 3,
-                activities: [],
-                freeText: "",
-                imageURL: "ruukku.png",
-                date: ruukkudate
-            }
-
-            data.push(imageURL)
-            sessionStorage.setItemObject("data", data);
-
-        })
     }
 }
