@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Image } from '../models/image';
 import * as sessionStorage from "nativescript-localstorage";
 import { firestore } from "nativescript-plugin-firebase";
-import { Uuid } from "../uuid"
+import { Uuid } from "../uuid"
 
 const firebase = require("nativescript-plugin-firebase/app");
 
@@ -25,10 +25,26 @@ export class PlantComponent implements OnInit {
 
   ngOnInit() {
     this.page.actionBarHidden = true;
-    
-    let data = sessionStorage.getItem("data");
-    this.images = data;
-    console.log(this.images);
-    
+
+    const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
+    let data = [];
+    collection.get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        this.images.push(doc.data())
+      });
+      const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
+
+      const imageURL = {
+        mood: 3,
+        activities: [],
+        freeText: "",
+        imageURL: "ruukku.png",
+        date: ruukkudate
+      }
+
+      this.images.push(imageURL)
+
+    })
+
   }
 }
