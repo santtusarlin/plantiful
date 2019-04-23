@@ -10,8 +10,8 @@
         <RadListView [items]="moodItems" multipleSelection="false" selectionBehavior="Press" (itemSelected)="moodItemSelected($event)"
         (itemDeselected)="moodItemDeselected($event)" rowHeight="60">
             <ng-template tkListItemTemplate let-item="item">
-                    <GridLayout id="moodRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn"   verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
-                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"  class="batan" opacity="{{ item.selected ? '1' : '0.5'}}"     verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
+                    <GridLayout id="moodRadGrid" height="60" width="60" orientation="horizontal" [item]="item" class="select-btn" verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit">
+                        <Image src="~/app/images/mood-icons/{{ item.imageURL }}" height="80%" width="80%"  class="batan" opacity="{{ item.selected ? '1' : '0.5'}}" verticalAlignment="center" horizontalAlignment="center" stretch="aspectFit"></Image>
                     </GridLayout>
             </ng-template>
             <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="5"></ListViewGridLayout>
@@ -32,6 +32,6 @@
     <TextField width="65%" class="textField" formControlName="freeText" hint="Free text" autocorrect="false"></TextField>
 </StackLayout>
 <StackLayout class="moodSubmit" verticalAlignment="bottom">
-    <Image src="~/app/images/buttons/submit_button.png" type="submit" (tap)="submitLog()" height="12%" width="12%"></Image>
+    <Image src="~/app/images/buttons/submit_button.png" type="submit" (tap)="submitLog()" nsRouterLink="/plant" height="12%" width="12%"></Image>
     <!-- <Button height="60" text="Submit" type="submit" (tap)="submitLog()"></Button> -->
 </StackLayout>
