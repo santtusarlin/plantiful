@@ -27,22 +27,40 @@
     font-weight: bold;
 }
 
+#entry {
+    padding-bottom: 10px;
+}
 
 #eka {
+<<<<<<< HEAD
     background-color: #5dc8ad;
+=======
+    background-color: rgb(159, 211, 187);
+    padding-top: 30px;
+>>>>>>> vikaviikko
 }
 
 #toka {
-    background-color: #5dc8ad;
+    background-color: rgb(159, 211, 187);
     padding: 25px 50px;
 }
 
 #kolmas {
+<<<<<<< HEAD
     background-color: #5dc8ad;
 }
 
 #neljas {
     background-color: #5dc8ad;
+=======
+    background-color: rgb(159, 211, 187);
+
+}
+
+#neljas {
+    background-color: rgb(159, 211, 187);
+
+>>>>>>> vikaviikko
 }
 
 #activityIcon {

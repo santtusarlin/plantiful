@@ -5,7 +5,7 @@
 <RadListView [items]="entries" selectionBehavior="Press">
     <ng-template tkListItemTemplate let-item="item">
         <GridLayout [item]="item" class="entryListItem" columns="80px * auto" rows="auto auto auto"
-            orientation="horizontal">
+            orientation="horizontal" id="entry">
             <Label id="eka" col="1" row="0" text="{{ item.date.toLocaleDateString() }}"></Label>
             <Image id="toka" col="0" row="0" rowspan="4" src="~/app/images/mood-icons/{{ item.moodImageURL }}"
                 height="50%" width="50%" horizontalAlignment="center" verticalAlignment="center"></Image>

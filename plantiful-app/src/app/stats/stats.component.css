@@ -9,12 +9,20 @@
     color: #f5f5f5;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> vikaviikko
 .list{
     height: 150px;
     margin: 30px 30px;
-    border-radius: 20px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> vikaviikko
 .header {
     text-decoration: underline;
     font-weight: bold;
@@ -32,6 +40,10 @@
     margin-left: 50px;
     color: #356455;
     font-size: 18px;
+<<<<<<< HEAD
         font-weight: bold;
 
+=======
+    font-weight: bold;
+>>>>>>> vikaviikko
 }
