@@ -8,3 +8,16 @@
     background-color: #356455;
     color: #f5f5f5;
 }
+
+.action-bar {
+    height: 200px;
+    background-color: #356455;
+}
+.teksti {
+    vertical-align: center;
+    margin-left: 50px;
+    color: #356455;
+    font-size: 18px;
+        font-weight: bold;
+
+}
