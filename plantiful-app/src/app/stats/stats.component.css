@@ -9,6 +9,7 @@
     color: #f5f5f5;
 }
 
+<<<<<<< HEAD
 .list{
     height: 150px;
     margin: 30px 30px;
@@ -21,6 +22,8 @@
     font-size: 22px;
     background-color: transparent;
 }
+=======
+>>>>>>> listaa
 .action-bar {
     height: 200px;
     background-color: #356455;
@@ -32,4 +35,8 @@
     font-size: 18px;
         font-weight: bold;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> listaa

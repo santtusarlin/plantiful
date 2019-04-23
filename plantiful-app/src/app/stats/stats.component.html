@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ActionBar title="Diary Entries" class="action-bar">
     <StackLayout orientation="horizontal" horizontalAlignment="center">
         <Label class="header" text="ENTRIES" textWrap="true"></Label>
@@ -5,15 +6,23 @@
 </ActionBar>
 
 
+=======
+<ActionBar title="Diary Entry" class="action-bar">
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Label class="header" text="OPTIONS" textWrap="true"></Label>
+    </StackLayout>
+</ActionBar>
+
+>>>>>>> listaa
 <StackLayout id="mainstack">
     <!-- <StackLayout orientation="horizontal" height="200px" horizontalAlignment="center" verticalAlignment="top">
         <Button class="statButton" text="Entries" width="50%" (tap)="setBoolean(false)"></Button>
         <Button class="statButton" text="Graph" width="50%" (tap)="setBoolean(true)"></Button>
-    </StackLayout>
+    </StackLayout> -->
     <StackLayout *ngIf="!isTrue">
         <ns-entries></ns-entries>
     </StackLayout>
-    <StackLayout *ngIf="isTrue">
+    <!-- <StackLayout *ngIf="isTrue">
         <ns-graph></ns-graph>
     </StackLayout> -->
     <!-- <StackLayout class="moodButton" verticalAlignment="bottom" horizontalAlignment="right">

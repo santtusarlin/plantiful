@@ -12,7 +12,6 @@ export class StatsComponent implements OnInit {
   isTrue: boolean = false;
 
   ngOnInit() {
-    this.page.actionBarHidden = true;
   }
 
   setBoolean(b) {
