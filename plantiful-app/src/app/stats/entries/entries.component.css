@@ -25,25 +25,28 @@
 
 }
 
+#entry {
+    padding-bottom: 10px;
+}
 
 #eka {
-    background-color: #5dc8ad;
-
+    background-color: rgb(159, 211, 187);
+    padding-top: 30px;
 }
 
 #toka {
-    background-color: #5dc8ad;
+    background-color: rgb(159, 211, 187);
     padding: 25px 50px;
 
 }
 
 #kolmas {
-    background-color: #5dc8ad;
+    background-color: rgb(159, 211, 187);
 
 }
 
 #neljas {
-    background-color: #5dc8ad;
+    background-color: rgb(159, 211, 187);
 
 }
 

@@ -9,12 +9,14 @@
     color: #f5f5f5;
 }
 
-<<<<<<< HEAD
+
+
 .list{
     height: 150px;
     margin: 30px 30px;
-    border-radius: 20px;
 }
+
+
 .header {
     text-decoration: underline;
     font-weight: bold;
@@ -22,8 +24,6 @@
     font-size: 22px;
     background-color: transparent;
 }
-=======
->>>>>>> listaa
 .action-bar {
     height: 200px;
     background-color: #356455;
@@ -33,10 +33,5 @@
     margin-left: 50px;
     color: #356455;
     font-size: 18px;
-        font-weight: bold;
-
-<<<<<<< HEAD
+    font-weight: bold;
 }
-=======
-}
->>>>>>> listaa
