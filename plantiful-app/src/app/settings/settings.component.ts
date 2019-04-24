@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/directives/dialogs";
+import * as dialogs from "tns-core-modules/ui/dialogs";
+
 import { ContextModalComponent } from "./context-modal/context-modal.component";
 import { ClockModalComponent } from './clock-modal/clock-modal.component';
 import { ThemeModalComponent } from './theme-modal/theme-modal.component';
@@ -60,5 +62,13 @@ export class SettingsComponent implements OnInit {
       viewContainerRef: this.vcRef
     };
     this.modal.showModal(ThemeModalComponent, options)
+  }
+
+  notWorking() {
+    dialogs.alert({
+      title: "Näppäin epäkunnossa!",
+      message: "Tämän näppäimen toiminnallisuutta ei ole vielä implementoitu!",
+      okButtonText: "Takaisin"
+    });
   }
 }

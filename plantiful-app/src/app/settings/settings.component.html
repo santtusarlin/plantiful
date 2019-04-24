@@ -8,7 +8,7 @@
     <GridLayout class="list" columns="50 auto *">
         <Label horizontalAlignment="center" class="fas" text="&#xf0f3;" col="0"></Label>
         <Label class="teksti" text="Notifications" col="1"></Label>
-        <Switch [checked]="" class="switch" col="2"></Switch>
+        <Switch [checked]="" (tap)="notWorking()" class="switch" col="2"></Switch>
     </GridLayout>
 
     <!-- <GridLayout class="list" (tap)="showClock()">

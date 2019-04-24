@@ -32,12 +32,8 @@
 }
 
 #eka {
-<<<<<<< HEAD
-    background-color: #5dc8ad;
-=======
     background-color: rgb(159, 211, 187);
     padding-top: 30px;
->>>>>>> vikaviikko
 }
 
 #toka {
@@ -46,13 +42,6 @@
 }
 
 #kolmas {
-<<<<<<< HEAD
-    background-color: #5dc8ad;
-}
-
-#neljas {
-    background-color: #5dc8ad;
-=======
     background-color: rgb(159, 211, 187);
 
 }
@@ -60,7 +49,6 @@
 #neljas {
     background-color: rgb(159, 211, 187);
 
->>>>>>> vikaviikko
 }
 
 #activityIcon {
