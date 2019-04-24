@@ -1,6 +1,8 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { Image } from '../models/image';
+import * as sessionStorage from "nativescript-localstorage";
+import { firestore } from "nativescript-plugin-firebase";
 import { Uuid } from "../uuid"
 
 const firebase = require("nativescript-plugin-firebase/app");
