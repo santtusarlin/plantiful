@@ -21,6 +21,7 @@ export class PlantComponent implements OnInit {
 
   ngOnInit() {
     this.page.actionBarHidden = true;
+    this.page.backgroundImage = "~/app/images/background/sky1.png";
 
     const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
     let data = [];
