@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { ObservableArray } from "tns-core-modules/data/observable-array";
 const firebase = require("nativescript-plugin-firebase/app");
 import { Uuid } from "../../uuid"
 
