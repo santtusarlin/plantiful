@@ -1,10 +1,7 @@
 import { Component } from "@angular/core";
 import { Uuid } from './uuid'
-import * as sessionStorage from "nativescript-localstorage";
-import { getViewData } from "@angular/core/src/render3/state";
 
 const firebase = require("nativescript-plugin-firebase");
-const firestore = require("nativescript-plugin-firebase/app");
 
 @Component({
     moduleId: module.id,
