@@ -1,21 +1,9 @@
 /* Add mobile styles for the component here.  */
-
-.fas {
-    vertical-align: center;
-    margin-left: 50px;
-    color: #356455;
-    font-size: 18px;
-        font-weight: bold;
+.list{
+    height: 150px;
+    margin: 15px 30px;
+    border-radius: 20px;
 }
-#mainstack {
-    background-color: #f5f5f5;
-}
-
-.switch {
-    background-color: rgb(139, 139, 139);
-    
-}
-
 .header {
     text-decoration: underline;
     font-weight: bold;
@@ -36,3 +24,18 @@
 
 }
 
+.fas {
+    vertical-align: center;
+    margin-left: 50px;
+    color: #356455;
+    font-size: 18px;
+        font-weight: bold;
+}
+#mainstack {
+    background-color: #f5f5f5;
+}
+
+.switch {
+    background-color: rgb(139, 139, 139);
+    
+}
