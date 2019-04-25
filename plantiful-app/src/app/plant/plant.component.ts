@@ -16,7 +16,7 @@ export class PlantComponent implements OnInit {
   public images: Array<Image> = [];
   isLoading = false;
 
-  constructor(private page: Page, private uuid: Uuid, ) { }
+  constructor(private page: Page, private uuid: Uuid) { }
 
   ngOnInit() {
     this.isLoading = true;

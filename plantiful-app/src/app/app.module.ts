@@ -27,7 +27,6 @@ import { ThemeModalComponent } from './settings/theme-modal/theme-modal.componen
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
 import { Uuid } from "./uuid";
-import { Check } from "./check";
 
 @NgModule({
     bootstrap: [
@@ -64,8 +63,7 @@ import { Check } from "./check";
         ModalDialogService,
         ToS,
         About,
-        Uuid,
-        Check
+        Uuid
     ],
     schemas: [
         NO_ERRORS_SCHEMA
