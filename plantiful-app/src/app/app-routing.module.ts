@@ -11,7 +11,7 @@ import { EntriesComponent } from "./stats/entries/entries.component";
 import { GraphComponent } from "./stats/graph/graph.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/stats", pathMatch: "full" },
+    { path: "", redirectTo: "/plant", pathMatch: "full" },
     { path: "plant", component: PlantComponent },
     { path: "stats", component: StatsComponent },
     { path: "settings", component: SettingsComponent },
