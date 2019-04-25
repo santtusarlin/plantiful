@@ -23,7 +23,7 @@ export class PlantComponent implements OnInit {
     this.page.actionBarHidden = true;
     this.page.backgroundImage = "~/app/images/background/sky3.png";
 
-    this.delay(1000).then(() => {
+    this.delay(2000).then(() => {
       const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
       let data = [];
       collection.get().then(querySnapshot => {

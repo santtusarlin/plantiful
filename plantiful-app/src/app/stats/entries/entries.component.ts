@@ -13,6 +13,7 @@ import { Uuid } from "../../uuid"
 export class EntriesComponent implements OnInit {
 
   private _entries: Array<any>
+  isLoading = false;
 
     constructor(private page: Page, private uuid: Uuid) { }
 
@@ -28,10 +29,12 @@ export class EntriesComponent implements OnInit {
            this.entries.push(doc.data())
            });
          });
+         this.isLoading = false;
          return entries;
     }
 
     ngOnInit() {
+      this.isLoading = true;
       this._entries = (this.getFbEntries());
     }
 }
