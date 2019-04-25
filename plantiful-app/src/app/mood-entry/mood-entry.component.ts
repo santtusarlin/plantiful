@@ -121,8 +121,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log(activityItem);
   }
 
-  // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
-  // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
+
   submitLog() {
     let entryDate = new Date();
 
@@ -138,16 +137,16 @@ export class MoodEntryComponent extends Observable implements OnInit {
         date: entryDate
       }).then(ref => {
         dialogs.alert({
-          title: "Kirjaus onnistui!",
-          message: `Laitettu tämmönen tietokantaan: \n ${ref.id}`,
+          title: "Entry successful!",
+          message: `POST to database: \n ${ref.id}`,
           okButtonText: "OK"
         });
       });
     } else {
       dialogs.alert({
-        title: "Virhe tapahtui!",
-        message: "Ole hyvä ja tarkista merkintä!",
-        okButtonText: "Takaisin"
+        title: "Error!",
+        message: "Please check that your entry is not empty!",
+        okButtonText: "Return"
       });
     }
     this._selectedMoodItem = null;
@@ -178,8 +177,8 @@ export class MoodEntryComponent extends Observable implements OnInit {
       case 3:
         moodUrl = "mood_icon-03.png";
         break;
+      case 4:
         moodUrl = "mood_icon-04.png";
-        case 4:
         break;
       case 5:
         moodUrl = "mood_icon-05.png";

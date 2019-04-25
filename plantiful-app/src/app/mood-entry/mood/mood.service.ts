@@ -31,10 +31,7 @@ export class MoodService {
   "imageURL": "mood_icon-01.png",
   "selected": false
 }, ];
-    /*for (let i = 0; i < 20; i++) {
-      items.push({ title: "item " + i, imageURL: "item " + i })
-    }*/
- 
+
     return moods;
   }
 }

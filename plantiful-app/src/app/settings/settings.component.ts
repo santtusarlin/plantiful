@@ -66,9 +66,9 @@ export class SettingsComponent implements OnInit {
 
   notWorking() {
     dialogs.alert({
-      title: "Näppäin epäkunnossa!",
-      message: "Tämän näppäimen toiminnallisuutta ei ole vielä implementoitu!",
-      okButtonText: "Takaisin"
+      title: "Button is NOT functional!",
+      message: "The functionality for notifications is NOT implemented yet!",
+      okButtonText: "Return"
     });
   }
 }
