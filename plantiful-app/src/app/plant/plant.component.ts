@@ -31,7 +31,8 @@ export class PlantComponent implements OnInit {
       querySnapshot.forEach(doc => {
         this.images.push(doc.data())
       });
-      const ruukkudate = new Date("2000-03-23T11:59:35.511Z");
+      const ruukkudate = new Date("2002-03-23T11:59:35.511Z");
+
 
       const imageURL = {
         mood: 3,
@@ -41,8 +42,25 @@ export class PlantComponent implements OnInit {
         date: ruukkudate
       }
 
-      this.images.push(imageURL)
+      const imageURL2 = {
+        mood: 3,
+        activities: [],
+        freeText: "",
+        imageURL: "Flower5.png",
+        date: ruukkudate
+      }
 
+      const imageURL3 = {
+        mood: 3,
+        activities: [],
+        freeText: "",
+        imageURL: "Flower6.png",
+        date: ruukkudate
+      }
+
+      this.images.push(imageURL3);
+      this.images.push(imageURL2);
+      this.images.push(imageURL);
     })
 
   }
