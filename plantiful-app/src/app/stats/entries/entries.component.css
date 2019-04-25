@@ -1,53 +1,26 @@
-/* Add mobile styles for the component here.  */
 
-.list{
-    height: 150px;
-    margin: 15px 30px;
-    border-radius: 20px;
-}
-
-.header {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #f5f5f5;
-    font-size: 22px;
-    background-color: transparent;
-}
-
-.action-bar {
-    height: 200px;
-    background-color: #356455;
-}
-
-.teksti {
-    vertical-align: center;
-    margin-left: 50px;
-    color: #356455;
-    font-size: 18px;
-    font-weight: bold;
-}
 
 #entry {
-    padding-bottom: 15px;
+    margin: 15px 30px 0px 35px;
 }
 
 #eka {
-    background-color: rgb(147, 207, 165);
+    background-color: rgba(145, 186, 167, 0.8);
     padding-top: 30px;
 }
 
 #toka {
-    background-color: rgb(147, 207, 165);
+    background-color: rgba(145, 186, 167, 0.55);
     padding: 25px 50px;
 }
 
 #kolmas {
-    background-color: rgb(147, 207, 165);
+    background-color: rgba(145, 186, 167, 0.8);
 
 }
 
 #neljas {
-    background-color: rgb(147, 207, 165);
+    background-color: rgba(145, 186, 167, 0.8);
 
 }
 
