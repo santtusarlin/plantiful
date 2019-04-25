@@ -13,6 +13,7 @@ import { ObservableArray } from 'tns-core-modules/data/observable-array/observab
 const firebase = require("nativescript-plugin-firebase/app");
 
 import { Uuid } from '../uuid'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ns-mood-entry',
@@ -30,7 +31,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   private _selectedActivityItems: Array<string>;
   private _selectedMoodItem: number;
 
-  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService, private uuid: Uuid) {
+  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService, private uuid: Uuid, private router: Router) {
     super();
   }
 
@@ -141,6 +142,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
           message: `POST to database: \n ${ref.id}`,
           okButtonText: "OK"
         });
+        this.router.navigate(["/plant"]);
       });
     } else {
       dialogs.alert({
