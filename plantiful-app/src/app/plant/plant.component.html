@@ -1,4 +1,4 @@
-<RadListView *ngIf="!isLoading" [items]="images">
+<RadListView verticalAlignment="bottom" *ngIf="!isLoading" [items]="images">
     <ng-template tkListItemTemplate let-item="item">
         <GridLayout orientation="vertical" [item]="item" rows="auto">
             <Image class="background" src="~/app/images/plant-imgs/{{ item.imageURL }}" height="50%" width="50%"></Image>

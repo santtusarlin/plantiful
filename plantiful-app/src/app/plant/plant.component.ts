@@ -33,7 +33,7 @@ export class PlantComponent implements OnInit {
         const ruukkudate = new Date("2002-03-23T11:59:35.511Z");
 
 
-        const imageURL = {
+        const ruukkuUrl = {
           mood: 3,
           activities: [],
           freeText: "",
@@ -41,25 +41,7 @@ export class PlantComponent implements OnInit {
           date: ruukkudate
         }
 
-        const imageURL2 = {
-          mood: 3,
-          activities: [],
-          freeText: "",
-          imageURL: "Flower5.png",
-          date: ruukkudate
-        }
-
-        const imageURL3 = {
-          mood: 3,
-          activities: [],
-          freeText: "",
-          imageURL: "Flower6.png",
-          date: ruukkudate
-        }
-
-        this.images.push(imageURL3);
-        this.images.push(imageURL2);
-        this.images.push(imageURL);
+        this.images.push(ruukkuUrl);
         this.isLoading = false;
       })
     })
