@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Uuid } from './uuid'
+import { Check } from "./check";
 
 const firebase = require("nativescript-plugin-firebase");
 
@@ -10,7 +11,7 @@ const firebase = require("nativescript-plugin-firebase");
 })
 export class AppComponent {
 
-    constructor(private uuid: Uuid) { }
+    constructor(private uuid: Uuid, private check: Check) { }
 
     ngOnInit() {
         firebase.init({
@@ -25,6 +26,8 @@ export class AppComponent {
             }).then(user => {
                 console.log(`Uid on täsä: ${user.uid}`)
                 this.uuid.uuid = user.uid;
+                this.check.check = true;
+                
             }).catch((error) => {
                 console.log(`firebase.init error: ${error}`);
             }
