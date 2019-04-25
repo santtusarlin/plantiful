@@ -18,6 +18,7 @@ export class EntriesComponent implements OnInit {
     constructor(private page: Page, private uuid: Uuid) { }
 
     get entries(): Array<any> {
+      this.isLoading = false;
       return this._entries;
     }
 
@@ -29,12 +30,15 @@ export class EntriesComponent implements OnInit {
            this.entries.push(doc.data())
            });
          });
-         this.isLoading = false;
+         
          return entries;
     }
 
     ngOnInit() {
       this.isLoading = true;
       this._entries = (this.getFbEntries());
+      
     }
+
+    
 }

@@ -17,6 +17,6 @@
     </RadListView>
 </StackLayout>
 
-<StackLayout class="loader" *ngIf="isLoading">
+<StackLayout height="100%" class="loader" *ngIf="isLoading">
     <ActivityIndicator class="indicator" color="#469b74" height="125" [busy]="isLoading"></ActivityIndicator>
 </StackLayout>
