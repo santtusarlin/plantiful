@@ -136,12 +136,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
         imageURL: this.getPlantURL(this._selectedMoodItem),
         moodImageURL: this.getMoodURL(this._selectedMoodItem),
         date: entryDate
-      }).then(ref => {
-        dialogs.alert({
-          title: "Entry successful!",
-          message: `POST to database: \n ${ref.id}`,
-          okButtonText: "OK"
-        });
+      }).then(() => {
         this.router.navigate(["/plant"]);
       });
     } else {
