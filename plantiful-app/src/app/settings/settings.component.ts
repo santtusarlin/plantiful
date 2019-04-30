@@ -24,7 +24,6 @@ export class SettingsComponent implements OnInit {
   }
 
   showToS() {
-    console.log(this.tos.getMessage());
     let options: ModalDialogOptions = {
       context: {
         viesti: this.tos.getMessage()

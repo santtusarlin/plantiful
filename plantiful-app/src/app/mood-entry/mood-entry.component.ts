@@ -122,13 +122,19 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log(activityItem);
   }
 
-
+  // Kirjauksen lähettämiseen käytettävä funktio mikä samalla tarkistaa,
+  // että kirjaus on tehty oikein
   submitLog() {
     let entryDate = new Date();
 
+    // Tarkistus, mikäli käyttäjä on muistanut ilmoittaa mielialansa kirjaukseen
     if (this._selectedMoodItem) {
+      
+      // Muuttuja, johon asetetaan käyttäjän tunnuksen avulla kokoelma pilveen,
+      // mihin kirjaukset talletetaan
       const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
 
+      // Kirjauksen lisäys-funktio
       collection.add({
         mood: this._selectedMoodItem,
         freeText: this.moodForm.controls.freeText.value,
@@ -137,15 +143,21 @@ export class MoodEntryComponent extends Observable implements OnInit {
         moodImageURL: this.getMoodURL(this._selectedMoodItem),
         date: entryDate
       }).then(() => {
+        // Jos kaikki menee hyvin, on tässä vaiheessa kirjaus onnistuttu
+        // tallettamaan pilveen. Jäljellä on enää käyttäjän siirtäminen
+        // takaisin kasvi-komponenttiin
         this.router.navigate(["/plant"]);
       });
     } else {
+      // Jos käyttäjä ei muistanut laittaa mielialaa kirjaukseensa,
+      // tässä vaiheessa siitä ilmoitetaan
       dialogs.alert({
         title: "Error!",
         message: "Please check that your entry is not empty!",
         okButtonText: "Return"
       });
     }
+    // Nollataan mieliala lopussa seuraavaa käyttöä varten
     this._selectedMoodItem = null;
   }
 
@@ -162,6 +174,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     });
   }
 
+  // Käyttäjän antamaa mielialaa hyödyntäen palautetaan mielialaa vastaavan kuvan url talteen
   getMoodURL(m: number): string {
     let moodUrl = "";
     switch (m) {
@@ -185,7 +198,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
 
-  // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua moodin arvoa
+  // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua mielialan arvoa
   getPlantURL(m: number): string {
     let moodArray1 = [
       'Flower1.png',

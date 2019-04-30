@@ -24,14 +24,19 @@ export class PlantComponent implements OnInit {
     this.page.backgroundImage = "~/app/images/background/sky3.png";
 
     this.delay(1500).then(() => {
+      // Kokoelma, mistä käyttäjän data haetaan käyttäen apuna käyttäjän uniikkia tunnusta
+      // Tämä data järjestetään päivämäärän mukaan laskevaan järjestykseen
       const collection = firebase.firestore().collection(`${this.uuid.uuid}`).orderBy("date", "desc");
-      let data = [];
+      
+      // Datan haku
       collection.get().then(querySnapshot => {
         querySnapshot.forEach(doc => {
+          // Pilvestä tullut data pusketaan taulukkoon
           this.images.push(doc.data())
         });
+        
+        // Ruukun alustaminen
         const ruukkudate = new Date("2002-03-23T11:59:35.511Z");
-
 
         const ruukkuUrl = {
           mood: 3,
@@ -40,8 +45,12 @@ export class PlantComponent implements OnInit {
           imageURL: "ruukku.png",
           date: ruukkudate
         }
-
+         
+        // Ruukun pusku taulukkoon
         this.images.push(ruukkuUrl);
+        
+        // Kun data on haettu ja on valmiina näytettäväksi, piilotetaan komponentissa
+        // pyörivä latausindikaattori pois
         this.isLoading = false;
       })
     })
