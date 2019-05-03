@@ -1,0 +1,48 @@
+Plantiful - Viikko 17 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Miika Pollari: 22,58h
+- Sovelluksen viimeistelyä julkaisukelpoiseksi
+
+Santtu Sarlin: 23,92h
+- Sovelluksen viimeistelyä julkaisukelpoiseksi
+
+Mikko Poutanen: 21,67h
+- Wordpress-sivujen viimeistelyä
+
+Mikko Hannukainen: 19,84h
+- Sovelluksen viimeistelyä julkaisukelpoiseksi
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Miika Pollari
+- Jälkituotanto, portfolio ja loppuraportti
+
+Santtu Sarlin
+- Jälkituotanto, portfolio ja loppuraportti
+
+Mikko Poutanen
+- Jälkituotanto, portfolio ja loppuraportti
+
+Mikko Hannukainen
+- Jälkituotanto, portfolio ja loppuraportti
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Miika Pollari: 359,6h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (4) - lomat tunteina: 54h
+Santtu Sarlin: 380,04h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (6) - lomat tunteina: 67,5h
+Mikko Poutanen: 364,2h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (2) - lomat tunteina: 40,5h
+Mikko Hannukainen: 345,17h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (6) - lomat tunteina: 67,5h
+
+4. AIKATAULU
+
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+-
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+-
+
+
