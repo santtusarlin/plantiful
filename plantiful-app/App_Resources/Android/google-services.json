@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1009051948171",
+    "firebase_url": "https://plantiful-666.firebaseio.com",
+    "project_id": "plantiful-666",
+    "storage_bucket": "plantiful-666.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009051948171:android:ce05e7a43be49c7d",
+        "android_client_info": {
+          "package_name": "org.nativescript.plantifulapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009051948171-3427e9t49g6k127vn525tqh94dahdr2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYGo5iE1OmQR-cBAc0x5ASazVeibkPMQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,1 +1,7 @@
 /* Add mobile styles for the component here.  */
+.loader {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.indicator {
+    margin-top: 200vw;
+}

@@ -1,1 +1,17 @@
-<Label text="Graafi on täällä!" textWrap="true"></Label>
+<ActionBar title="Graph" class="action-bar">
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Label class="header" text="STATS" textWrap="true"></Label>
+    </StackLayout>
+</ActionBar>
+<StackLayout id="mainstack">
+    <!-- <GridLayout class="list" columns="auto auto">
+        <Button text="Previous Month" (tap)="onButtonTap()" col="0"></Button>
+        <Button text="Next Month" (tap)="onButtonTap()" col="1"></Button>
+    </GridLayout> -->
+        <RadCartesianChart>
+            <DateTimeContinuousAxis tkCartesianHorizontalAxis majorStep="Month" dateFormat="MMM"
+                labelRotationAngle="1.2"></DateTimeContinuousAxis>
+            <LinearAxis tkCartesianVerticalAxis minimum="1" maximum="5"></LinearAxis>
+            <LineSeries tkCartesianSeries [items]="entries" categoryProperty="date" valueProperty="mood"></LineSeries>
+        </RadCartesianChart>
+</StackLayout> 

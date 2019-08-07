@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NativeScriptFormsModule } from "nativescript-angular/forms"
 import { GridViewModule } from "nativescript-grid-view/angular";
 import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { NativeScriptUIChartModule } from "nativescript-ui-chart/angular";
 
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./navbar/navbar.component";
@@ -13,8 +14,8 @@ import { PlantComponent } from "./plant/plant.component";
 import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GraphComponent } from './stats/graph/graph.component';
-import { CalendarComponent } from './stats/calendar/calendar.component';
 import { MoodEntryComponent } from './mood-entry/mood-entry.component';
+import { EntriesComponent } from './stats/entries/entries.component'
 
 import { MoodService } from "./mood-entry/mood/mood.service";
 import { ActivityService } from './mood-entry/activity/activity.service';
@@ -25,7 +26,7 @@ import { ClockModalComponent } from './settings/clock-modal/clock-modal.componen
 import { ThemeModalComponent } from './settings/theme-modal/theme-modal.component';
 import { ToS } from "./settings/ToS";
 import { About } from "./settings/About";
-import { PlantService } from "./plant/plant.service";
+import { Uuid } from "./uuid";
 
 @NgModule({
     bootstrap: [
@@ -39,7 +40,8 @@ import { PlantService } from "./plant/plant.service";
         TNSCheckBoxModule,
         FormsModule,
         ReactiveFormsModule,
-        GridViewModule
+        GridViewModule,
+        NativeScriptUIChartModule
     ],
     entryComponents: [ContextModalComponent, ClockModalComponent, ThemeModalComponent],
     declarations: [
@@ -49,19 +51,19 @@ import { PlantService } from "./plant/plant.service";
         StatsComponent,
         SettingsComponent,
         GraphComponent,
-        CalendarComponent,
         MoodEntryComponent,
         ContextModalComponent,
         ClockModalComponent,
-        ThemeModalComponent
+        ThemeModalComponent,
+        EntriesComponent
     ],
     providers: [
         ActivityService,
         MoodService,
         ModalDialogService,
-        PlantService,
         ToS,
-        About
+        About,
+        Uuid
     ],
     schemas: [
         NO_ERRORS_SCHEMA

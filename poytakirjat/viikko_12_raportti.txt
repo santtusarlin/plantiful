@@ -1,0 +1,51 @@
+Plantiful - Viikko 12 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Mikko Hannukainen: 32,5h
+- Tietokannan käyttöönottoa
+
+Santtu Sarlin: 30,33h
+- Tietokannan käyttöönottoa
+- Toiminnallisuuden kehitystä
+ 
+Miika Pollari: 25,49h
+- Graafinäkymän kehitystä
+
+Mikko Poutanen: 21,76h + (1 lomapäivä)
+- TikoBiz
+- Wordpress
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Mikko Hannukainen
+- Graafinäkymää (+ testausta?)
+
+Santtu Sarlin
+- Graafinäkymän kehitystä
+
+Miika Pollari
+- Graafinäkymän kehitystä
+
+Mikko Poutanen
+- Wordpress
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Mikko Hannukainen: 205,24h - lomapäiviä käytetty: (4)
+Santtu Sarlin: 228,19h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (2)
+Miika Pollari: 199,6h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (2)
+Mikko Poutanen: 212,54h - lomapäiviä käytetty: (2) + sairaslomapäiviä: (1)
+
+4. AIKATAULU
+
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+
+Tällä hetkellä ei ole ongelmia.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+
+Mikko Hannukainen vapaalla 25.3. ja 26.3., on jo käyttänyt kaikki lomapäivät joten joutunee korvaamaan tunnit joskus.
+

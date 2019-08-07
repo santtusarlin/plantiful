@@ -1,0 +1,37 @@
+
+
+#entry {
+    margin: 15px 30px 0px 35px;
+}
+
+#eka {
+    background-color: rgba(145, 186, 167, 0.8);
+    padding-top: 30px;
+}
+
+#toka {
+    background-color: rgba(145, 186, 167, 0.55);
+    padding: 25px 50px;
+}
+
+#kolmas {
+    background-color: rgba(145, 186, 167, 0.8);
+
+}
+
+#neljas {
+    background-color: rgba(145, 186, 167, 0.8);
+
+}
+
+#activityIcon {
+    margin-right: 25px;
+}
+
+.loader {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.indicator {
+    margin-top: 200vw;
+}

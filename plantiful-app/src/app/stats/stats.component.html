@@ -1,15 +1,21 @@
-<StackLayout>
-    <StackLayout orientation="horizontal" height="100" horizontalAlignment="center" verticalAlignment="top">
-        <Button text="Kalenteri" (tap)="setBoolean(true)"></Button>
-        <Button text="Graafi" (tap)="setBoolean(false)"></Button>
+<ActionBar title="Mood Entries" class="action-bar">
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Label class="header" text="ENTRIES" textWrap="true"></Label>
     </StackLayout>
-    <StackLayout *ngIf="isTrue">
-        <ns-calendar></ns-calendar>
+</ActionBar>
+
+<StackLayout id="mainstack">
+    <!-- <StackLayout orientation="horizontal" height="200px" horizontalAlignment="center" verticalAlignment="top">
+        <Button class="statButton" text="Entries" width="50%" (tap)="setBoolean(false)"></Button>
+        <Button class="statButton" text="Graph" width="50%" (tap)="setBoolean(true)"></Button>
+    </StackLayout> -->
+    <StackLayout>
+        <ns-entries></ns-entries>
     </StackLayout>
-    <StackLayout *ngIf="!isTrue">
+    <!-- <StackLayout *ngIf="isTrue">
         <ns-graph></ns-graph>
-    </StackLayout>
-</StackLayout>
-<StackLayout class="moodButton" verticalAlignment="bottom" horizontalAlignment="right">
-    <Image src="~/app/images/buttons/submit_button.png" nsRouterLink="/mood_entry" height="15%" width="15%"></Image>  
+    </StackLayout> -->
+    <!-- <StackLayout class="moodButton" verticalAlignment="bottom" horizontalAlignment="right">
+        <Image src="~/app/images/buttons/submit_button.png" nsRouterLink="/mood_entry" height="15%" width="15%"></Image>
+    </StackLayout> -->
 </StackLayout>

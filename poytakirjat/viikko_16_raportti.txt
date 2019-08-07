@@ -1,0 +1,55 @@
+Plantiful - Viikko 16 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Miika Pollari: 18.75h + (1 lomapäivä)
+- Sisältötekstien kirjoittelua
+- Kirjausnäkymän tyylittelyä
+
+Santtu Sarlin: 5h + (3 lomapäivää)
+- LOMALLA
+- Hieman ehti tutkimaan notifikaatioiden toteutusta
+
+Mikko Poutanen: 22,50h
+- Wordpress ja TikoBiz
+
+Mikko Hannukainen: 0h
+- SAIRASLOMALLA
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Miika Pollari
+- Tyylittelyjen viimeistelyä
+- Koodin kommentointia ja refaktorointia
+
+Santtu Sarlin
+- Toiminnallisuuksien viimeistelyä
+- Koodin kommentointia ja refaktorointia
+
+Mikko Poutanen
+- Wordpress ja TikoBiz
+
+Mikko Hannukainen
+- Toiminnallisuuksien viimeistelyä
+- Koodin kommentointia ja refaktorointia
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Miika Pollari: 337,02h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (4) - lomat tunteina: 54h
+Santtu Sarlin: 356,12h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (6) - lomat tunteina: 67,5h
+Mikko Poutanen: 342,53 - lomapäiviä käytetty: (4) + sairaslomapäiviä: (2) - lomat tunteina: 40,5h
+Mikko Hannukainen: 325,33h - lomapäiviä käytetty: (4) + sairaslomapäiviä: (6) - lomat tunteina: 67,5h
+
+4. AIKATAULU
+
+Burndown chart ja riskit löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+Motivaation puute (jota ollut myös viikolla 15 havaittavissa koko ryhmällä), lomat ja sairaslomat ovat lähestulkooon pysäyttäneet tuotannon.
+Viikko 17 pusketaan hommat loppuun paremmin mielin kun on saatu lomailla rauhassa.
+Riskitaulukko liittennä.
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+-
+
+

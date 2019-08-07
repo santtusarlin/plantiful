@@ -18,3 +18,7 @@
     vertical-align: center;
 }
 
+.activeRoute {
+    background-color: #356455;
+    border-radius: 15px;
+}

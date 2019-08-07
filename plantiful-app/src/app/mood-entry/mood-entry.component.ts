@@ -10,6 +10,10 @@ import * as dialogs from "tns-core-modules/ui/dialogs";
 
 import { Observable } from 'tns-core-modules/data/observable';
 import { ObservableArray } from 'tns-core-modules/data/observable-array/observable-array';
+const firebase = require("nativescript-plugin-firebase/app");
+
+import { Uuid } from '../uuid'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ns-mood-entry',
@@ -21,14 +25,13 @@ import { ObservableArray } from 'tns-core-modules/data/observable-array/observab
 export class MoodEntryComponent extends Observable implements OnInit {
 
   public moodForm: FormGroup;
-  public currentConfig: any;
 
   private _activityItems: ObservableArray<Item>
   private _moodItems: ObservableArray<Mood>
   private _selectedActivityItems: Array<string>;
   private _selectedMoodItem: number;
 
-  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService) {
+  constructor(private page: Page, private formBuilder: FormBuilder, private activityService: ActivityService, private moodService: MoodService, private uuid: Uuid, private router: Router) {
     super();
   }
 
@@ -51,7 +54,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
     const selectedItems = listview.getSelectedItems() as Array<Mood>;
     let moodTitle;
     for (let i = 0; i < selectedItems.length; i++) {
-        moodTitle = selectedItems[i].title
+      moodTitle = selectedItems[i].title
     }
     this._selectedMoodItem = moodTitle;
 
@@ -61,6 +64,7 @@ export class MoodEntryComponent extends Observable implements OnInit {
   }
 
   public moodItemDeselected(args: ListViewEventData) {
+    this._selectedMoodItem = null;
     const moodItem = this.moodItems.getItem(args.index);
     moodItem.selected = false;
   }
@@ -86,30 +90,30 @@ export class MoodEntryComponent extends Observable implements OnInit {
   // listView muuttujaan otetaan RadListView-komponentti eli ListViewEventData.object
   // getSelectedItems()-metodi palauttaa ObservableArrayn joka sisältää RadListViewin selected itemit
   // selectedItemit pusketaan activityArray taulukkoon
-  
+
   public activityItemSelected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
     let activityArray = []
     for (let i = 0; i < selectedItems.length; i++) {
-        activityArray.push(selectedItems[i])
+      activityArray.push(selectedItems[i])
     }
     this._selectedActivityItems = activityArray;
     const activityItem = this.activityItems.getItem(args.index);
     activityItem.selected = true;
     console.log("Item selected: ");
     console.log(activityItem);
-  } 
+  }
 
   public activityItemDeselected(args: ListViewEventData) {
     const listview = args.object as RadListView;
     const selectedItems = listview.getSelectedItems() as Array<Item>;
     let activityArray = []
     if (selectedItems.length > 0) {
-        for (let i = 0; i < selectedItems.length; i++) {
-            activityArray.push(selectedItems[i])
-        }
-        this._selectedActivityItems = activityArray;
+      for (let i = 0; i < selectedItems.length; i++) {
+        activityArray.push(selectedItems[i])
+      }
+      this._selectedActivityItems = activityArray;
     }
 
     const activityItem = this.activityItems.getItem(args.index);
@@ -117,34 +121,50 @@ export class MoodEntryComponent extends Observable implements OnInit {
     console.log("Item deselected: ");
     console.log(activityItem);
   }
-   
-  // logaa valitun moodin. Aktiviteetin ja moodin data kerätään 
-  // result- ja moodResult-muuttujiinn getViewState-funktiota hyödyntäen.
+
+  // Kirjauksen lähettämiseen käytettävä funktio mikä samalla tarkistaa,
+  // että kirjaus on tehty oikein
   submitLog() {
+    let entryDate = new Date();
 
-    let config = {
-      mood: this._selectedMoodItem,
-      freeText: this.moodForm.controls.freeText.value,
-      activities: this._selectedActivityItems
+    // Tarkistus, mikäli käyttäjä on muistanut ilmoittaa mielialansa kirjaukseen
+    if (this._selectedMoodItem) {
+      
+      // Muuttuja, johon asetetaan käyttäjän tunnuksen avulla kokoelma pilveen,
+      // mihin kirjaukset talletetaan
+      const collection = firebase.firestore().collection(`${this.uuid.uuid}`);
+
+      // Kirjauksen lisäys-funktio
+      collection.add({
+        mood: this._selectedMoodItem,
+        freeText: this.moodForm.controls.freeText.value,
+        activities: this._selectedActivityItems,
+        imageURL: this.getPlantURL(this._selectedMoodItem),
+        moodImageURL: this.getMoodURL(this._selectedMoodItem),
+        date: entryDate
+      }).then(() => {
+        // Jos kaikki menee hyvin, on tässä vaiheessa kirjaus onnistuttu
+        // tallettamaan pilveen. Jäljellä on enää käyttäjän siirtäminen
+        // takaisin kasvi-komponenttiin
+        this.router.navigate(["/plant"]);
+      });
+    } else {
+      // Jos käyttäjä ei muistanut laittaa mielialaa kirjaukseensa,
+      // tässä vaiheessa siitä ilmoitetaan
+      dialogs.alert({
+        title: "Error!",
+        message: "Please check that your entry is not empty!",
+        okButtonText: "Return"
+      });
     }
-
-    this.currentConfig = config;
-    // currentConfig => mood olio
-    console.log(this.currentConfig);
-
-    dialogs.alert({
-      title: "Success!",
-      message: `Here is your entry:\nMood koodi:${this.currentConfig.mood}\nKirjoitettu tekstisi: ${this.currentConfig.freeText}
-      \nAktiviteettisi: ${this.currentConfig.activities.map(data => "\n" + data.title)}`,
-      okButtonText: "OK"
-    });
+    // Nollataan mieliala lopussa seuraavaa käyttöä varten
+    this._selectedMoodItem = null;
   }
 
   ngOnInit() {
+    console.log(this.uuid.uuid)
     this._activityItems = new ObservableArray(this.activityService.getItems());
     this._moodItems = new ObservableArray(this.moodService.getMoods());
-
-    //this.page.actionBarHidden = true;
 
     // luodaan uusi formgrouppi johon pusketaan mood.
     this.moodForm = this.formBuilder.group({
@@ -152,6 +172,84 @@ export class MoodEntryComponent extends Observable implements OnInit {
       freeText: [''],
       activities: ['']
     });
+  }
+
+  // Käyttäjän antamaa mielialaa hyödyntäen palautetaan mielialaa vastaavan kuvan url talteen
+  getMoodURL(m: number): string {
+    let moodUrl = "";
+    switch (m) {
+      case 1:
+        moodUrl = "mood_icon-01.png";
+        break;
+      case 2:
+        moodUrl = "mood_icon-02.png";
+        break;
+      case 3:
+        moodUrl = "mood_icon-03.png";
+        break;
+      case 4:
+        moodUrl = "mood_icon-04.png";
+        break;
+      case 5:
+        moodUrl = "mood_icon-05.png";
+        break;
+    }
+    return moodUrl;
+  }
+
+
+  // Valitsee lähetettävälle kirjaukselle referenssin kasvinosaan, käyttäen parametrina tuotua mielialan arvoa
+  getPlantURL(m: number): string {
+    let moodArray1 = [
+      'Flower1.png',
+      'Flower2.png',
+    ];
+    let moodArray2 = [
+      'Flower3.png',
+      'Flower4.png',
+    ];
+    let moodArray3 = [
+      'Flower5.png',
+      'Flower6.png',
+    ];
+    let moodArray4 = [
+      'Flower7.png',
+      'Flower8.png',
+    ];
+    let moodArray5 = [
+      'Flower9.png',
+      'Flower10.png'
+    ];
+
+    let randomNumber1 = Math.floor(Math.random() * moodArray1.length);
+    let randomNumber2 = Math.floor(Math.random() * moodArray2.length);
+    let randomNumber3 = Math.floor(Math.random() * moodArray3.length);
+    let randomNumber4 = Math.floor(Math.random() * moodArray4.length);
+    let randomNumber5 = Math.floor(Math.random() * moodArray5.length);
+
+    let plantUrl = "";
+    switch (m) {
+      case 1:
+        plantUrl = moodArray1[randomNumber1];
+        break;
+      case 2:
+        plantUrl = moodArray2[randomNumber2];
+        break;
+      case 3:
+        plantUrl = moodArray3[randomNumber3];
+        break;
+      case 4:
+        plantUrl = moodArray4[randomNumber4];
+        break;
+      case 5:
+        plantUrl = moodArray5[randomNumber5];
+        break;
+    }
+    return plantUrl;
+  }
+
+  validationCheck() {
+
   }
 
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/directives/dialogs";
+import * as dialogs from "tns-core-modules/ui/dialogs";
+
 import { ContextModalComponent } from "./context-modal/context-modal.component";
 import { ClockModalComponent } from './clock-modal/clock-modal.component';
 import { ThemeModalComponent } from './theme-modal/theme-modal.component';
@@ -22,7 +24,6 @@ export class SettingsComponent implements OnInit {
   }
 
   showToS() {
-    console.log(this.tos.getMessage());
     let options: ModalDialogOptions = {
       context: {
         viesti: this.tos.getMessage()
@@ -60,5 +61,13 @@ export class SettingsComponent implements OnInit {
       viewContainerRef: this.vcRef
     };
     this.modal.showModal(ThemeModalComponent, options)
+  }
+
+  notWorking() {
+    dialogs.alert({
+      title: "Button is NOT functional!",
+      message: "The functionality for notifications is NOT implemented yet!",
+      okButtonText: "Return"
+    });
   }
 }

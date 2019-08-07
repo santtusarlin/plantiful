@@ -1,0 +1,56 @@
+Plantiful - Viikko 14 - viikkoraportti
+
+1. TEHDYT TYÖT EDELLISELLÄ VIIKOLLA
+
+Miika Pollari: 23,84h
+- Listanäkymän tyylittelyä sekä kehitystä
+
+Santtu Sarlin: 29,83h
+- Listanäkymän kehitystä
+- Firebase servicen kanssa pähkäilyä
+
+Mikko Poutanen: 22,67 + (1 vapaa)
+- TikoBiz
+- Wordpress-sisällöntuottoa
+
+Mikko Hannukainen: 27,01
+- Firebase servicen kanssa pähkäilyä
+- Autentikaation implenentointi
+
+2. TULEVAN VIIKON SUUNNITELMA
+
+Miika Pollari
+- Listanäkymän tyylittely
+- Latausanimaatiot
+- Notifikaatioiden kehittämistä (ehkä?)
+
+Santtu Sarlin
+- Latausanimaatiot
+- Notifikaatioiden kehittämistä (ehkä?)
+
+Mikko Poutanen
+- Wordpress ja TikoBiz
+
+Mikko Hannukainen
+- Datan lataus valmiiksi (sessionStorage?)
+- Koodin refaktorointia
+- Kaavion toiminta (ehkä?)
+
+3. KOOSTE TUNNEISTA KOKO PROJEKTIN OSALTA
+
+Miika Pollari: 242,94h - lomapäiviä käytetty: (3) + sairaslomapäiviä: (2)
+Santtu Sarlin: 267,45h - lomapäiviä käytetty: (1) + sairaslomapäiviä: (4)
+Mikko Poutanen: 265,05h - lomapäiviä käytetty: (3) + sairaslomapäiviä: (1)
+Mikko Hannukainen: 241,33h - lomapäiviä käytetty: (4)
+
+4. AIKATAULU
+
+Burndown chart löytyy liitteenä.
+ 
+5. ONGELMAT JA RISKIT
+-
+ 
+6. YLEISET ASIAT JA TIEDOTUKSET
+
+Santtu Sarlin pitää lomapäivät 16-18.4. ja ehkä myös 15.4.
+
